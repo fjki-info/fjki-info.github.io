@@ -1,1 +1,40 @@
-# fjki-info.github.io
+
+# KI-Workshop Ressourcen von Franz Jankowski
+
+> **Zentrale Anlaufstelle für Informationen zu KI-Workshops, Transparenz und verwendete Begriffe**
+
+## In Veranstaltungen und Handouts verwendete Links
+
+**- ChatBots-Liste mit Recherche-Portalen** <BR>
+🔗 Link: [https://https://fjki-info.github.io/tools/](https://https://fjki-info.github.io/tools/)
+
+**- Kleines KI-Glossar** <BR>
+🔗 Link: [https://https://fjki-info.github.io/glossar/](https://fjki-info.github.io/glossar/)
+
+**- Ideen-Buffet - Was kann KI für mich tun?** <BR>
+🔗 Link: [https://https://fjki-info.github.io/ideen-buffet/](https://fjki-info.github.io/ideen-buffet/)
+
+**- Transparenzangaben** <BR>
+🔗 Link: [https://fjki-info.github.io/transparenz/](https://fjki-info.github.io/transparenz/)
+
+<p> <br><br><br> </p> 
+<p> <br><br><br> </p> 
+
+---
+
+# Übungsbereich Markdown-Formatierungen etc
+
+### Schnellzugriff
+
+| Ressource | Kurzbeschreibung | URL |
+|-----------|------------------|-----|
+| 🔍 Transparenz | KI-Tool-Offenlegung | [ki-transparenz](https://franzjankowski.github.io/ki-transparenz) |
+| 📖 Glossar | Begriffserklärungen | [ki-glossar](https://franzjankowski.github.io/ki-glossar) |
+| 🤖 ChatBot-Liste | Tool-Übersicht | [chatbot-liste](https://franzjankowski.github.io/chatbot-liste) |
+
+---
+
+**Erstellt mit:** Markdown, strukturiert für optimale Lesbarkeit und Navigation
+
+*Tags: #KI #Workshops #ChatBots #Transparenz #Glossar #AI #Bildung*
+
