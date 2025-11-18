@@ -207,7 +207,7 @@ ul
 
 <p class=MsoTitle>Kleines KI-Glossar </p>
 
-<p class=MsoSubtitle>In Unterlagen und Veranstaltungen verwendete Begriffe (v0.8g)</p>
+<p class=MsoSubtitle>In Unterlagen und Veranstaltungen verwendete Begriffe (v0.8h)</p>
 
 <p class=MsoTocHeading>Inhalt</p>
 
@@ -681,25 +681,59 @@ Modellgewichten arbeitet und Nachtraining auf handelsüblichen GPUs ermöglicht.
 
 <h2><a name="_Toc214293808">Verfahren zum Training von Sprachmodellen</a></h2>
 
+<p class=MsoNormal>Die internen Abläufe bleiben über alle Stufen hinweg
+überwiegend eine Blackbox – das genaue „Wie“ der Entscheidungen ist in vielen
+Details nicht durchschaubar.</p>
+
 <p class=MsoNormal><b>1) <a name="Pre_Training">Pre-Training </a>&#8594;
 Basismodell</b><br>
-Lernt auf sehr vielen Texten <b>das nächste Wort</b> vorherzusagen &#8594; <b>Sprachgefühl
-&amp; Weltbezüge</b> entstehen in den Gewichten.<br>
-<i>Pro:</i> Transformer, Milliarden <b>Parameter</b>, Datenbereinigung &amp;
-Deduplizierung.</p>
+Lernt auf sehr vielen Texten das nächste Wort vorherzusagen. Sprachgefühl &amp;
+Weltbezüge entstehen in den Gewichten.<br>
+<i>Merkmale:</i> Transformer, Milliarden Parameter, Datenbereinigung &amp;
+Deduplizierung (unerwünschte Quellen entfernen, qualitativ hochwertige
+duplizieren).</p>
 
 <p class=MsoNormal><b>2) <a name="Fine_Tuning">Fine-Tuning </a>&amp; Alignment
 &#8594; Standard-Version</b><br>
-Mit Beispielen &amp; Bewertungen wird das Verhalten <b>hilfreich, ehrlich,
-harmlos</b>. <b>System-Prompt/Regeln</b> setzen Leitplanken.<br>
-<i>Pro:</i> <b>SFT</b>, <b>RLHF/DPO</b>, Evals/Red-Teaming; Leitplanken = <b>Laufzeit</b>,
+Mit Beispielen &amp; Bewertungen wird das Verhalten hilfreich, ehrlich, harmlos.
+System-Prompt/Regeln setzen Leitplanken.<br>
+<i>Merkmale:</i> SFT, RLHF/DPO, Evals/Red-Teaming; Leitplanken = Laufzeit,
 keine Gewichtsänderung.</p>
 
 <p class=MsoNormal><b>3) <a name="In_Context">In-Context</a>-Nutzung &#8594;
 Persona im Gespräch</b><br>
-Passt <b>situativ</b> Rolle, Stil, Aufgabe an – <b>ohne</b> Nachtrainieren.<br>
-<i>Pro:</i> Kontextfenster, <b>Few-Shot</b>, optional <b>RAG/Tools</b>
-(Nachschlagen, Rechnen, Funktionen).</p>
+Passt situativ Rolle, Stil, Aufgabe an – ohne Nachtrainieren.<br>
+<i>Merkmale:</i> Kontextfenster, Few-Shot, optional RAG/Tools (Nachschlagen,
+Rechnen, Funktionen).</p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:3.0pt;
+line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b>Noch nicht definierte Begriffe
+aus diesem Kontext:</b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><b><span lang=EN-US>Transformer</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>Eine fortschrittliche Architektur
+für KI-Modelle, die mithilfe eines sogenannten&nbsp;<i>Attention</i>-Mechanismus
+den Zusammenhang zwischen allen Wörtern eines Textes gleichzeitig analysieren
+kann. Sie ermöglicht dadurch besonders gutes Sprachverständnis und ist heute
+Standard für große Sprachmodelle.</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span lang=EN-US>SFT / Supervised Fine-Tuning</span></b></p>
+
+<p class=MsoNormal>Das Modell wird gezielt mit von Menschen markierten
+Beispielen weitertrainiert („überwachtes Feintuning“). Dabei bekommt es
+richtige Antworten auf Inputs und passt die eigenen Vorhersagen danach an.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><b>DPO&nbsp;/&nbsp;Direct
+Preference Optimization</b></p>
+
+<p class=MsoNormal>Eine moderne Feinabstimmungsmethode: Hier wird das Modell so
+angepasst, dass es die von Menschen bevorzugten Antworten direkt lernt – und
+zwar ohne komplexe Belohnungsmodelle wie beim RLHF. Es vergleicht verschiedene
+Outputs und wird daraufhin optimiert, den bevorzugten Output zu wählen.</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
