@@ -1,0 +1,1441 @@
+<html>
+
+<head>
+<meta charset="UTF-8"> 
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Aptos Display";}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+h1
+	{mso-style-link:"Überschrift 1 Zchn";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Überschrift 2 Zchn";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:35.4pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Untertitel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+a:link, span.MsoHyperlink
+	{color:#467886;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift1Zchn
+	{mso-style-name:"Überschrift 1 Zchn";
+	mso-style-link:"Überschrift 1";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift2Zchn
+	{mso-style-name:"Überschrift 2 Zchn";
+	mso-style-link:"Überschrift 2";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.TitelZchn
+	{mso-style-name:"Titel Zchn";
+	mso-style-link:Titel;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+span.UntertitelZchn
+	{mso-style-name:"Untertitel Zchn";
+	mso-style-link:Untertitel;
+	font-family:"Times New Roman",serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 2.0cm 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+@media (max-width: 768px) {
+  body {
+    font-size: 1.5em;
+    padding-left: 17px;   /* Abstand links */
+    padding-right: 17px;  /* Abstand rechts */
+  }
+  
+  table {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+</style>
+
+</head>
+
+<body lang=DE link="#467886" vlink="#96607D" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<div class=MsoNormal align=center style='text-align:center'><b>
+
+<hr size=1 width="100%" align=center>
+
+</b></div>
+
+<p class=MsoTitle>Kleines KI-Glossar </p>
+
+<p class=MsoSubtitle><span style='font-size:16.0pt;line-height:115%'>Begriffe
+aus Unterlagen und Veranstaltungen – ergänzt um einige angrenzende und
+vertiefende Themen. (v0.9b)</span></p>
+
+<p class=MsoTocHeading>Inhalt</p>
+
+<p class=MsoToc1><a
+href="#_Toc214293805"><span style='font-size:14.0pt;line-height:115%'>Glossar</span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc214293806"><span style='font-size:14.0pt;
+line-height:115%'>Ergänzungen</span><span style='font-size:14.0pt;line-height:
+115%;color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>13</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc214293807"><span style='font-size:14.0pt;
+line-height:115%'>Verfahren zur Feinabstimmung und Anpassung von Sprachmodellen</span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>13</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc214293808"><span style='font-size:14.0pt;
+line-height:115%'>Verfahren zum Training von Sprachmodellen</span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>14</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc214293809"><span style='font-size:14.0pt;
+line-height:115%'>Urheberrecht &amp; Verwendungshinweis, KI-Transparenz</span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>17</span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div class=MsoNormal align=center style='text-align:center'><b>
+
+<hr size=1 width="100%" align=center>
+
+</b></div>
+
+<h1 style='margin-bottom:0cm'><a name="_Toc214293805">Glossar</a></h1>
+
+<p class=MsoNormal style='margin-bottom:0cm'><a name=Agent><span
+style='font-size:14.0pt;line-height:115%'>Dieses kleine Glossar erläutert
+KI-Begriffe (sowie vielleicht weniger geläufige sonstige Begriffe) aus meinen
+Veranstaltungen und Unterlagen nur kurz, um ein gewisses Verständnis und
+dadurch einen sichereren Umgang mit den Tools zu erleichtern und sowohl
+Möglichkeiten als auch realistische Erwartungen zu fördern.</span></a></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><a name="Uebersicht_der_Eintraege"></a><a
+name="Übersicht_der_Einträge"><span style='font-size:16.0pt;line-height:115%'>Übersicht
+der Einträge</span></a><span style='font-size:16.0pt;line-height:115%'>            </span></p>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=189 valign=top style='width:5.0cm;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Account"><span lang=EN-US>Account</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Advocatus_Diaboli"><span lang=EN-US>Advocatus Diaboli</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Agent"><span lang=EN-US>Agent / agentisch</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Agentischer_Browser"><span lang=EN-US>Agentischer Browser</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a href="#AI"><span
+  lang=EN-US>AI</span></a><br>
+  <a href="#API"><span lang=EN-US>API</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Appeasement"><span lang=EN-US>Appeasement</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Braindump"><span lang=EN-US>Braindump / Brain Dump</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Browser"><span lang=EN-US>Browser</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#ChatBot"><span lang=EN-US>ChatBot / Chatbot</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Chunking"><span lang=EN-US>Chunking</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Cloud"><span lang=EN-US>Cloud</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Cognitiv_Offloading"><span lang=EN-US>Cognitive Offloading</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Deep_Research">Deep Research</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Diktat_Funktion">Diktat-Funktion</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a href="#DPO">DPO</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Emergenz">Emergenz</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Few_Shot"><span lang=EN-US>Few-Shot Prompting</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Filterblase"><span lang=EN-US>Filterblase</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Gewichte"><span lang=EN-US>Gewichte</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a href="#GPU"><span
+  lang=EN-US>GPU</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Human_in_the_Loop"><span lang=EN-US>Human in the Loop</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#How_to"><span lang=EN-US>How to</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#In_Context"><span lang=EN-US>In-Context Learning</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Input"><span lang=EN-US>Input</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Kontext">Kontext</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Link">Link</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a href="#LLM">LLM</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Lokale_KI">Lokale KI</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#LoRA">LoRA</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=170 valign=top style='width:127.6pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Modellgewichte"><span lang=EN-US>Modellgewichte</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Multimodal"><span lang=EN-US>Multimodal</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#One_Shot"><span lang=EN-US>One-Shot Prompting</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Open_Weights"><span lang=EN-US>Open Weights</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Output"><span lang=EN-US>Output</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#People_Pleasing"><span lang=EN-US>People Pleasing</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Persona"><span lang=EN-US>Persona</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Pitch"><span lang=EN-US>Pitch</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Prompt"><span lang=EN-US>Prompt</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#QLoRA"><span lang=EN-US>QLoRA</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Quantisierung">Quantisierung</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#QR_Code">QR-Code</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a href="#RAG">RAG</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#RLAIF">RLAIF</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#RLHF">RLHF</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Sampling_Parameter"><span lang=EN-US>Sampling-Parameter</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Screen_Sharing"><span lang=EN-US>Screen Sharing</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a href="#SFT"><span
+  lang=EN-US>SFT</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Sokratischer_Dialog"><span lang=EN-US>Sokratischer Dialog</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Speech_to_Text"><span lang=EN-US>Speech-to-Text / S2T</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Streaming"><span lang=EN-US>Streaming</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Thinking_Mode"><span lang=EN-US>Thinking Mode</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Token"><span lang=EN-US>Token</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Transformer"><span lang=EN-US>Transformer</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Transkription"><span lang=EN-US>Transkription</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Transliteration"><span lang=EN-US>Transliteration</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Voice_Mode"><span lang=EN-US>Voice Mode</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a
+  href="#Zero_Shot"><span lang=EN-US>Zero-Shot Prompting</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;line-height:120%'>Die Einträge sind mit Labeln versehen (<a
+href="#Tags_im_Glossar">Label im Glossar</a>).</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="Advocatus_Diaboli"></a><a name=Account><b><span
+style='font-size:14.0pt;line-height:115%'>Account</span></b></a><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Alltag</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Persönliches Benutzerkonto, mit dem man sich bei einer
+Website, App oder einem Dienst anmeldet. Es enthält Informationen wie
+Nutzername, Passwort und persönliche Einstellungen, die den Zugriff und die
+Nutzung ermöglichen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Advocatus
+Diaboli</span></b><span style='font-size:14.0pt;line-height:115%;color:#ADADAD'>
+· Reflexion · Kern</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>(lat. „Teufelsanwalt“) bezeichnet eine argumentative Rolle,
+bei der bewusst eine Gegenposition eingenommen wird, um die eigenen oder
+fremden Perspektiven kritisch zu hinterfragen. In der KI-Nutzung dient diese
+Haltung als Maßnahme gegen die Gefälligkeitsneigung von KI-Systemen, indem die
+KI dazu aufgefordert wird, nicht nur zustimmend zu antworten, sondern auch
+kritische oder kontroverse Sichtweisen einzubringen. So wird eine tiefere,
+ausgewogenere Analyse gefördert.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Agent</span></b><b><span
+style='font-size:14.0pt;line-height:115%'> / agentisch</span></b><span
+style='font-size:14.0pt;line-height:115%'> <span style='color:#ADADAD'>· Praxis
+· Technik</span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>(in der KI): Selbstständig handelnde KI-Systeme, die Aufgaben
+planen, ausführen und auch mit externen Diensten oder Geräten (z.B. Telefon)
+interagieren können, sofern Schnittstellen vorhanden sind.<a name=ChatBot></a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Braindump></a><a name=Appeasement></a><a
+name="Agentischer_Browser"><b><span style='font-size:14.0pt;line-height:115%'>Agentischer
+Browser</span></b></a><span style='font-size:14.0pt;line-height:115%'> <span
+style='color:#ADADAD'>· Praxis · Technik</span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Spezieller Browser, der alles kann, was ein normaler Browser
+auch macht – surfen, klicken, Formulare ausfüllen –, aber zusätzlich
+eigenständig Aufgaben erledigt. Die KI hinter diesem Browser denkt und handelt
+im Auftrag des Nutzers, führt komplexe Abläufe selbstständig aus und nutzt dazu
+viele offene Tabs und kontextbezogene Informationen. Beispiel: Comet von
+Perplexity ist so ein Agenten-Browser.</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>Man sollte dem
+agentischen Browser keine sensiblen Daten wie Kreditkarteninformationen
+anvertrauen. Die KI kann Fehler machen oder von außen beeinflusst werden (z.B.
+durch einen „indirekten Prompt-Injection-Angriff“: versteckte Anweisungen auf
+Webseiten in kleinster weißer Schrift auf weißem Grund).</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=AI><b><span style='font-size:14.0pt;line-height:
+115%'>AI / KI</span></b></a><span style='font-size:14.0pt;line-height:115%;
+color:#ADADAD'> · Alltag</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Artificial Intelligence. Produkte und Websites enthalten oft
+die englische Abkürzung für Künstliche Intelligenz, auch als Top-Level-Domain
+(anstelle von .de oder .com usw. „.ai“). Diese Top-Level-Domain</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span
+style='font-size:14.0pt;line-height:115%'> geh</span><span style='font-size:
+14.0pt;line-height:115%'>ö</span><span style='font-size:14.0pt;line-height:
+115%'>rt der britischen </span><span style='font-size:14.0pt;line-height:115%'>Karibik-Insel</span><span
+style='font-size:14.0pt;line-height:115%'> Anguilla</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span
+style='font-size:14.0pt;line-height:115%'>, die z. B. im Jahr 2024 fast ein
+Viertel ihrer Staatseinnahmen daraus bezog. </span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm'><i><span style='font-size:14.0pt;line-height:115%'>In diesen
+Unterlagen verwende ich „KI“ als pragmatischen Sammelbegriff für moderne,
+überwiegend datengetriebene Systeme wie ChatBots (z. B. ChatGPT).</span></i></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=API><b><span style='font-size:14.0pt;line-height:
+115%'>API</span></b></a><span style='font-size:14.0pt;line-height:115%'> <span
+style='color:#ADADAD'>· Technik</span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Application Programming Interface. Programmierschnittstelle,
+über die Software direkt mit einem Dienst oder Modell kommuniziert – ohne
+fertige Benutzeroberfläche.</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>Im Unterschied
+zu KI-Portalen (z. B. ChatGPT-Web, Perplexity), die Oberfläche, Verlauf
+(„Memory“) und Komfortfunktionen mitliefern, ruft ein eigenes Programm über die
+API gezielt Funktionen auf und muss Dinge wie Kontext/Memory, Darstellung und
+Fehlerbehandlung selbst implementieren.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Appeasement</span></b><span
+style='font-size:14.0pt;line-height:115%'> <span style='color:#ADADAD'>·
+Reflexion · Kern</span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Bezeichnet die Neigung, Konflikte durch Nachgeben oder
+Beschwichtigen zu vermeiden, oft auf Kosten von Klarheit oder kritischem
+Hinterfragen. In der KI-Nutzung kann es dazu führen, dass die KI überwiegend
+zustimmende, gefällige Antworten gibt und kritische oder kontroverse
+Standpunkte vermeidet. Deshalb ist es wichtig, bei der Arbeit mit KI-Systemen
+aktiv gegenzusteuern, etwa durch die Rolle des &quot;Advocatus Diaboli&quot;</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span
+style='font-size:14.0pt;line-height:115%'>, um eine differenziertere und
+weniger einseitige Antwort zu f</span><span style='font-size:14.0pt;line-height:
+115%'>ö</span><span style='font-size:14.0pt;line-height:115%'>rdern.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Braindump</span></b><b><span
+style='font-size:14.0pt;line-height:115%'> / Brain Dump</span></b><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Unstrukturiertes Aufschreiben oder Herunterladen aller
+Gedanken zu einem Thema, ohne sie zu bewerten. In der KI-Welt und Projektarbeit
+wird der Begriff oft verwendet, um den Prozess des freien Ideenflusses oder der
+ersten Informationssammlung zu beschreiben.</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>Beispiel: Per
+Diktat einfach alle Gedanken zu einem Thema unsortiert aussprechen und
+anschließend die KI bitten, nicht inhaltlich darauf zu antworten, sondern die
+Gedanken zu sortieren, zu strukturieren und am Ende ein paar kurze Anregungen
+zu geben. Anschließend ergänzt man die (nun sortierten) Gedanken vielleicht
+noch durch eine weitere Eingabe und erhält erst dann die inhaltliche Antwort.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Browser><b><span style='font-size:14.0pt;
+line-height:115%'>Browser</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Alltag</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Eine Softwareanwendung, mit der man Websites im Internet
+anzeigen, navigieren und mit ihnen interagieren kann. Beispiele sind
+&quot;Google Chrome&quot;</span><span style='font-size:14.0pt;line-height:115%;
+font-family:"Tahoma",sans-serif'>&#65279;</span><span style='font-size:14.0pt;
+line-height:115%'>, &quot;Mozilla Firefox&quot;</span><span style='font-size:
+14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span
+style='font-size:14.0pt;line-height:115%'> oder &quot;Safari&quot;</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span
+style='font-size:14.0pt;line-height:115%'>.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>ChatBot</span></b><b><span
+style='font-size:14.0pt;line-height:115%'> / Chatbot</span></b><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Praxis · Kern</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Kofferwort
+(Wortverschmelzung) aus englisch „Chat“ (plaudern) und „Robot“ (Roboter).
+Textbasiertes Dialogsystem, das mithilfe von<b> </b>LLMs menschenähnliche
+Gespräche führen und komplexe Anfragen beantworten kann.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Cloud></a><a name=Chunking><b><span
+style='font-size:14.0pt;line-height:115%'>Chunking</span></b></a><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Das Zerlegen längerer Aufgaben oder großer Informationsmengen
+in kleinere, handhabbare Abschnitte (Chunks). Im kognitiven Kontext beschreibt
+es die Fähigkeit, einzelne Informationsbrocken im Kurzzeitgedächtnis zu bündeln
+und zu verknüpfen, wodurch komplexere Zusammenhänge leichter verarbeitet werden
+können. Diese Verlinkung bekannter Inhalte als mentale „Chunks“ ermöglicht es,
+mehr Informationen gleichzeitig verständlich zu behalten und effizienter zu
+lernen oder zu arbeiten. Das Zerlegen in kleinere Aufgaben kann auch für die
+Bearbeitung mit / durch KI effektiv sein.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Cloud</span></b><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Alltag</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Onlinedienste
+mit Programmen, Speicherplatz und Rechenleistung über das Internet, anstatt <b>lokal</b>
+auf dem eigenen Gerät.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="Cognitiv_Offloading"><b><span style='font-size:
+14.0pt;line-height:115%'>Cognitive Offloading</span></b></a><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Reflexion · Kern</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Auslagern
+geistiger Aufgaben an Geräte, andere oder in die Zukunft – hilfreich zur
+Entlastung, riskant bei Gewöhnung, weil Analysefähigkeit verkümmern kann.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Emergenz></a><a name="Diktat_Funktion"></a><a
+name="Deep_Research"><b><span style='font-size:14.0pt;line-height:115%'>Deep
+Research / Tiefe Recherche</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Fähigkeit
+von KI-Programmen, komplexe Suchanfragen im Internet selbstständig zu
+untersuchen, Texte zu analysieren und daraus eine strukturierte, umfassende
+Zusammenfassung zu erstellen. Statt nur einzelne Webseiten aufzulisten, liest
+die KI die gefundenen Informationen, erkennt wichtige Fakten, vergleicht
+Quellen und präsentiert eine klare, gut gegliederte Erklärung.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Diktat-Funktion</span></b><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span style='font-size:14.0pt;
+line-height:115%'>Beispiel: Jemand diktiert einen Text, der in Schrift
+umgewandelt (transkribiert) und in das Eingabefeld z.B. einer KI gestellt wird
+und vom Benutzer noch per Tastatur (oder weiterem Diktat) ergänzt werden kann. </span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Diese
+Diktat-Funktion kann unter anderem über das in der Smartphone-Tastatur
+integrierte Mikrofon-Symbol aktiviert werden, über ein sonstiges dafür
+vorgesehenes Mikrofon-Symbol oder unter Windows mit der Tastenkombination
+Win+H. Der Cursor muss auf einem Text-Eingabefeld stehen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Emergenz</span></b><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Reflexion</span><span
+style='font-size:14.0pt;line-height:115%'><br>
+<i>hier: Unerwartete neue Fähigkeiten großer Modelle.</i><br>
+Ab einer bestimmten Komplexität zeigen KI-Modelle plötzlich Verhaltensweisen
+oder Leistungen, die aus einzelnen Bausteinen oder Trainingsdaten allein nicht
+vorhersehbar sind.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="Few_Shot"><b><span style='font-size:14.0pt;
+line-height:115%'>Few-Shot Prompting</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Das Geben weniger (mehrerer) Beispiele in einem Prompt, um
+das Modell dazu zu bringen, eine Aufgabe besser zu verstehen und auszuführen,
+ohne das Modell nachzutrainieren. </span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>Siehe auch </span><a
+href="#In_Context"><span style='font-size:14.0pt;line-height:115%'>In-Context
+Learning</span></a><span style='font-size:14.0pt;line-height:115%;font-family:
+"Tahoma",sans-serif'>&#65279;</span><span style='font-size:14.0pt;line-height:
+115%'>, da Few-Shot eine spezielle Form davon ist.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Filterblase><b><span style='font-size:14.0pt;
+line-height:115%'>Filterblase</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Reflexion · Kern</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Eingeengte
+Info-Welt –</span><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif'>&#8239;</span><span style='font-size:14.0pt;line-height:
+115%'>entsteht durch automatische Empfehlungsfunktionen oder durch bewusste
+Auswahl immer gleicher Kontakte und Medien. Andere Perspektiven bleiben au</span><span
+style='font-size:14.0pt;line-height:115%'>ß</span><span style='font-size:14.0pt;
+line-height:115%'>en vor.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="Human_in_the_Loop"></a><a name=Gewichte><b><span
+style='font-size:14.0pt;line-height:115%'>Gewichte / Weights</span></b></a><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Numerische Parameter in einem KI-Modell, die während des
+Trainingsprozesses angepasst werden, um Eingaben in sinnvolle Ausgaben zu
+überführen. Sie repräsentieren das erlernte Wissen des Modells. Siehe auch </span><a
+href="#Open_Weights"><span style='font-size:14.0pt;line-height:115%'>Open
+Weights</span></a><span style='font-size:14.0pt;line-height:115%'>.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=GPU><b><span style='font-size:14.0pt;line-height:
+115%'>GPU</span></b></a><span style='font-size:14.0pt;line-height:115%;
+color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Grafische Prozessoreinheit</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span
+style='font-size:14.0pt;line-height:115%'>. Eine Hardwarekomponente, die urspr</span><span
+style='font-size:14.0pt;line-height:115%'>ü</span><span style='font-size:14.0pt;
+line-height:115%'>nglich f</span><span style='font-size:14.0pt;line-height:
+115%'>ü</span><span style='font-size:14.0pt;line-height:115%'>r die Berechnung
+von Grafiken und Bildern entwickelt wurde. GPUs besitzen eine sehr hohe Anzahl
+von Rechenkernen, die parallel arbeiten k</span><span style='font-size:14.0pt;
+line-height:115%'>ö</span><span style='font-size:14.0pt;line-height:115%'>nnen,
+im Gegensatz zu CPUs (Zentrale Prozessoreinheiten</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span
+style='font-size:14.0pt;line-height:115%'>). Sie sind besonders geeignet f</span><span
+style='font-size:14.0pt;line-height:115%'>ü</span><span style='font-size:14.0pt;
+line-height:115%'>r parallelisierbare Aufgaben in der KI.</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>Ein aktuelles
+Beispiel ist die NVIDIA H200</span><span style='font-size:14.0pt;line-height:
+115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span style='font-size:
+14.0pt;line-height:115%'>, die besonders f</span><span style='font-size:14.0pt;
+line-height:115%'>ü</span><span style='font-size:14.0pt;line-height:115%'>r k</span><span
+style='font-size:14.0pt;line-height:115%'>ü</span><span style='font-size:14.0pt;
+line-height:115%'>nstliche Intelligenz entwickelt wurde. Das
+Colossus-Rechenzentrum</span><span style='font-size:14.0pt;line-height:115%;
+font-family:"Tahoma",sans-serif'>&#65279;</span><span style='font-size:14.0pt;
+line-height:115%'> aus dem Jahr 2025 nutzt rund 200.000 solcher GPUs, um enorme
+Rechenleistungen f</span><span style='font-size:14.0pt;line-height:115%'>ü</span><span
+style='font-size:14.0pt;line-height:115%'>r die KI-Forschung und -Anwendung
+bereitzustellen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span lang=EN-US style='font-size:14.0pt;line-height:
+115%'>Human in the Loop</span></b><span lang=EN-US style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Reflexion · Praxis</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Ansatz, bei
+dem der Mensch bewusst Teil eines KI-Systems bleibt – um Ergebnisse zu prüfen,
+Entscheidungen zu bestätigen und Verantwortung zu behalten.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="How_to"><b><span style='font-size:14.0pt;
+line-height:115%'>How to</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Alltag</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Wörtlich
+„Wie man …“; Anleitung oder Schritt-für-Schritt-Beschreibung.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="In_Context"><b><span style='font-size:14.0pt;
+line-height:115%'>In-Context Learning</span></b></a><span style='font-size:
+14.0pt;line-height:115%;color:#ADADAD'> · Praxis · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span style='font-size:14.0pt;
+line-height:115%'>Die Fähigkeit eines Modells, sein Verhalten kontextabhängig
+anzupassen, indem es Informationen aus dem aktuellen Prompt-Text (Beispiele,
+Kontext, …) nutzt, ohne seine Parameter zu verändern.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Enthält Techniken wie </span><a href="#Few_Shot"><span
+style='font-size:14.0pt;line-height:115%'>Few-Shot Prompting</span></a><span
+style='font-size:14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span
+style='font-size:14.0pt;line-height:115%'>, </span><a href="#One_Shot"><span
+style='font-size:14.0pt;line-height:115%'>One-Shot</span></a><span
+style='font-size:14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span
+style='font-size:14.0pt;line-height:115%'> und </span><a href="#Zero_Shot"><span
+style='font-size:14.0pt;line-height:115%'>Zero-Shot</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span></a><span
+style='font-size:14.0pt;line-height:115%'>.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Kontext></a><a name=Input><b><span
+style='font-size:14.0pt;line-height:115%'>Input</span></b></a><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Die Daten, Informationen oder Befehle, die in ein System oder
+eine KI eingegeben werden, um verarbeitet zu werden.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Kontext</span></b><b><span
+style='font-size:14.0pt;line-height:115%'> </span></b><span style='font-size:
+14.0pt;line-height:115%;color:#ADADAD'>· Praxis · Kern</span></p>
+
+<p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:18.0pt;text-indent:-18.0pt'><span style='font-size:14.0pt;
+line-height:115%'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt;line-height:115%'>Kontextfenster</span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt;
+line-height:115%'>Der Abschnitt von Text oder Informationen, den eine KI
+gleichzeitig verarbeiten kann, um eine Antwort zu generieren. Er definiert den
+Rahmen der Daten, die für eine einzelne Anfrage berücksichtigt werden.</span></p>
+
+<p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:18.0pt;text-indent:-18.0pt'><span style='font-size:14.0pt;
+line-height:115%'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt;line-height:115%'>Anfragekontext</span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt;
+line-height:115%'>Die spezifischen Umstände, Bedingungen und vorausgehenden
+Informationen einer individuellen Nutzeranfrage, die das Verständnis und die
+Relevanz der Antwort beeinflussen. Dies kann frühere Interaktionen, thematische
+Hinweise oder externe Fakten umfassen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Link><b><span style='font-size:14.0pt;line-height:
+115%'>Link</span></b></a><span style='font-size:14.0pt;line-height:115%;
+color:#ADADAD'> · Alltag</span></p>
+
+<p class=MsoNormal><i><span style='font-size:14.0pt;line-height:115%'>hier</span></i><span
+style='font-size:14.0pt;line-height:115%'>: Verknüpfung zu Internetadressen; <i>allgemein</i>:
+Verbindung zwischen zwei Elementen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=LLM><b><span style='font-size:14.0pt;line-height:
+115%'>LLM</span></b></a><span style='font-size:14.0pt;line-height:115%;
+color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Large
+Language Model, Große Sprachmodelle; KI, mit der man in menschlicher Sprache
+kommunizieren kann.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="Lokale_KI"><b><span style='font-size:14.0pt;
+line-height:115%'>Lokale KI</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Technik · Praxis</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Läuft
+vollständig auf dem eigenen Rechner, Smartphone, unabhängig vom Internet.
+Manche Tools für lokale KIs erlauben z.B. die Einbindung von Suchmaschinen,
+sofern das lokale KI-Modell „Tool Use“ beherrscht und Suchen selbständig
+anfordern und die Ergebnisse entgegennehmen kann.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Multimodal></a><a name=Modellgewichte><b><span
+style='font-size:14.0pt;line-height:115%'>Modellgewichte</span></b></a><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Siehe </span><a href="#Gewichte"><span style='font-size:14.0pt;
+line-height:115%'>Gewichte / Weights</span></a></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Multimodal</span></b><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Praxis · Technik</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Beschreibt
+KI-Systeme, die viele verschiedene Dateitypen als Eingaben verarbeiten und auch
+unterschiedlich ausgeben können. Die Bandbreite reicht von einfachen Texten bis
+hin zu Bildern, Audio und Video. Dabei gibt es große Unterschiede zwischen den
+Anbietern: Einige unterstützen nur wenige Formate, andere fast alle gängigen
+Dateitypen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="One_Shot"><b><span style='font-size:14.0pt;
+line-height:115%'>One-Shot Prompting</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span style='font-size:14.0pt;
+line-height:115%'>Gibt dem Modell zusätzlich zu einer Anweisung genau ein
+Beispiel als Orientierung, um die Aufgabe oder den Stil besser zu verstehen. Gut,
+wenn die Aufgabe klar umrissen ist und ein einzelnes Beispiel ausreicht, um die
+gewünschten Ergebnisse präziser zu machen.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Beispiel: Ein Satz mit Produktbewertung vorgeben und dann
+eine weitere Bewertung im gleichen Stil erzeugen lassen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Persona></a><a name="People_Pleasing"></a><a
+name=Output></a><a name="Open_Weights"><b><span style='font-size:14.0pt;
+line-height:115%'>Open Weights</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Trainierte Modellgewichte (numerische Parameter) eines
+KI-Modells, die öffentlich zugänglich gemacht werden. Anders als bei echten
+Open Source</span><span style='font-size:14.0pt;line-height:115%;font-family:
+"Tahoma",sans-serif'>&#65279;</span><span style='font-size:14.0pt;line-height:
+115%'> Modellen, bei denen neben den Gewichten auch der Quellcode, die
+Architektur und die Trainingsdaten offenliegen, enthalten Open Weight-Modelle
+meist nur die trainierten Gewichtungen, nicht aber vollst</span><span
+style='font-size:14.0pt;line-height:115%'>ä</span><span style='font-size:14.0pt;
+line-height:115%'>ndige Einblicke in Trainingsmethoden oder den Code. Dennoch
+bezeichnen einige Hersteller ihre downloadbaren Modelle f</span><span
+style='font-size:14.0pt;line-height:115%'>ä</span><span style='font-size:14.0pt;
+line-height:115%'>lschlicherweise als Open Source.</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>Der Autor
+nutzt zum Beispiel das lokale Modell GPT OSS 20B, obwohl es keine echte Open
+Source Software (OSS) ist, sondern nur Open Weights besitzt. Mit entsprechender
+Expertise und Hardware können die Gewichte analysiert werden, und das Modell
+kann durch angepasste, adaptive Gewichte in seinem Wissen und Verhalten
+verändert werden.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Output</span></b><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Das Ergebnis oder die Antwort, die ein System oder eine KI
+nach der Verarbeitung der Eingaben liefert.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>People
+Pleasing </span></b><span style='font-size:14.0pt;line-height:115%;color:#ADADAD'>·
+Reflexion · Kern</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Das Verhalten, anderen Menschen zu gefallen oder es ihnen
+recht zu machen, oft aus dem Wunsch heraus, gemocht, akzeptiert zu werden oder
+Konflikten aus dem Weg zu gehen. Im Gegensatz zu &quot;Appeasement&quot;</span><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span
+style='font-size:14.0pt;line-height:115%'> ist es meist weniger dramatisch und
+mehr auf Einschmeicheln oder Harmonie ausgerichtet. Im KI-Kontext kann dieses
+Muster bedeuten, dass die KI dazu neigt, besonders zustimmend oder
+entgegenkommend zu antworten, ohne kritische Punkte ausreichend zu betonen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Persona</span></b><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Reflexion · Kern</span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Allgemein:</span></b><span
+style='font-size:14.0pt;line-height:115%'> Fiktive Figur zur Darstellung einer
+bestimmten Sichtweise;<b> hier: </b>vordefinierte Rolle in einer KI, die
+Tonfall, Stil oder Fachperspektive bestimmt.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Pitch><b><span style='font-size:14.0pt;line-height:
+115%'>Pitch</span></b></a><span style='font-size:14.0pt;line-height:115%;
+color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Kurze,
+überzeugende Zusammenfassung einer Idee, meist mündlich präsentiert (eigentlich
+„Tonhöhe“).</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Prompt><b><span style='font-size:14.0pt;
+line-height:115%'>Prompt</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Praxis · Kern</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Eingabeaufforderung;
+Text oder Frage, die man einer Künstlichen Intelligenz (KI) gibt, um eine
+Antwort oder Aktion auszulösen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Quantisierung><b><span style='font-size:14.0pt;
+line-height:115%'>Quantisierung</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Quantisierung
+in der KI bezeichnet die Reduktion der Präzision von Modellparametern (wie
+Gewichten und Aktivierungen) von höheren Bit-Darstellungen (typischerweise
+32-Bit Gleitkommazahlen) auf niedrigere Bit-Darstellungen wie 8-Bit oder 4-Bit
+Ganzzahlen. Dies führt zu kleineren Modellgrößen, schnelleren Berechnungen und
+geringerem Speicherbedarf, meist mit nur geringfügigem Verlust der
+Modellgenauigkeit. </span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Lokale
+KI-Modelle profitieren von Q4 oder Q8 sehr, da damit größere Modelle überhaupt
+auf normalen Computern mit begrenztem Speicher ausgeführt werden können.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="QR_Code"><b><span style='font-size:14.0pt;
+line-height:115%'>QR-Code</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Alltag</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Quick
+Response Code, lesbar für Smartphones, enthält z.B. Internetadressen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=RAG><b><span style='font-size:14.0pt;line-height:
+115%'>RAG</span></b></a><span style='font-size:14.0pt;line-height:115%;
+color:#ADADAD'> · Technik · Praxis</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Retrieval-Augmented
+Generation; KI bezieht zusätzlich externe Infos; ursprünglich für
+„tokenisierte“ Bibliotheken (heute auch als Baustein agentischer Systeme
+verwendet). Ein Service des Portals (z. B. Mistral, Le Chat) durchsucht zuvor
+aufbereitete Texte und wählt passende Abschnitte aus. Diese werden mit über das
+Kontextfenster an das eigentliche KI-Modell übergeben.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="Sampling_Parameter"><b><span style='font-size:
+14.0pt;line-height:115%'>Sampling-Parameter</span></b></a><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Praxis · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><a name="Sokratischer_Dialog"></a><a
+name="Screen_Sharing"><span style='font-size:14.0pt;line-height:115%'>Steuern
+die Kreativität und Präzision von KI-Antworten.</span></a></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>Sie legen
+fest, wie das Modell zwischen möglichen nächsten Wörtern wählt (z. B. über
+Temperature, Top-K, Top-P): höhere Werte führen zu freieren,
+kreativ-variableren Antworten, niedrigere zu berechenbareren und konsistenteren
+Ergebnissen.</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>Zugänglich z.
+B. über Google AI Studio, lokale LLM-Plattformen wie LM Studio sowie über </span><a
+href="#API"><span style='font-size:14.0pt;line-height:115%'>API</span></a><span
+style='font-size:14.0pt;line-height:115%'>s.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Screen
+Sharing</span></b><span style='font-size:14.0pt;line-height:115%;color:#ADADAD'>
+· Praxis</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Das Teilen des eigenen Computer- oder Smartphone-Bildschirms
+mit anderen Personen, oft über das Internet, um Inhalte, Anwendungen oder
+Probleme live zu zeigen. Es wird häufig bei technischen Support-Situationen,
+Online-Meetings oder Anwendungstipps genutzt, etwa um bei Problemen mit einer
+App oder Internetseite direkt Unterstützung zu geben. Mittlerweile kann man
+auch mit einer KI den Bildschirm teilen (sofern die Option angeboten wird), um
+mit ihr über ein Problem mit einer App oder einem Programm zu sprechen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Sokratischer
+Dialog</span></b><span style='font-size:14.0pt;line-height:115%;color:#ADADAD'>
+· Praxis · Reflexion</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'> Dialogische
+Methode, die mit klug gesetzten Denkanstößen dazu anregt, eigene Antworten und
+Erkenntnisse zu entwickeln.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="Speech_to_Text"><b><span style='font-size:14.0pt;
+line-height:115%'>Speech-to-Text </span></b></a><a name=S2T></a><b><span
+style='font-size:14.0pt;line-height:115%'>/ S2T</span></b><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Automatische
+Umwandlung von gesprochener Sprache in Text (z. B. für Diktierfunktionen). Das
+„2“ (engl. „two“) wird wie „to“ („zu“) ausgesprochen und ersetzt es im
+Kurzwort.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:14.0pt;line-height:115%;font-family:Symbol'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:14.0pt;line-height:115%'>weitere verwandte Technologien: <a
+name="Text_to_Speech"><b>Text-to-Speech</b> </a>(TTS), <b>Text-to-Video</b>
+(teils auch als Text2Video oder T2V abgekürzt). Interessante Ergänzung:</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><a
+name="Brain_to_Text"><span style='font-size:14.0pt;line-height:115%;font-family:
+Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt;line-height:115%'>Brain-to-Text</span></b></a><b><span
+style='font-size:14.0pt;line-height:115%'> </span></b><span style='font-size:
+14.0pt;line-height:115%'>(B2T):<b>&nbsp;</b>Forschungsfeld zur direkten
+Umwandlung von Gehirnaktivität in Text, mittels invasiver
+(Gehirn-Computer-Schnittstelle, BCI) oder nicht-invasiver Methoden (z. B. EEG,
+MEG). Stand 2025: Invasive Systeme erreichen bis zu 97,5</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif'>&#8239;</span><span
+style='font-size:14.0pt;line-height:115%'>% Genauigkeit (</span><span lang=DA
+style='font-size:14.0pt;line-height:115%'>Jayalath et al., 2025,
+arXiv:2505.13446)</span><span style='font-size:14.0pt;line-height:115%'> bei
+ausgewählten, intensiv trainierten Personen; nicht-invasive Verfahren bis zu 68</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif'>&#8239;</span><span
+style='font-size:14.0pt;line-height:115%'>% (beste: 81</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif'>&#8239;</span><span
+style='font-size:14.0pt;line-height:115%'>%).</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="Thinking_Mode"></a><a name=Streaming><b><span
+style='font-size:14.0pt;line-height:115%'>Streaming</span></b></a><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Das Übertragen von Live-Video- oder Audioinhalten über das
+Internet in Echtzeit. Mittlerweile kann man auch Live-Video mit einer KI
+teilen, um mit ihr direkt über die Umgebung zu sprechen oder gezielt Fragen zu
+stellen, zum Beispiel ob die KI bestimmte Objekte erkennt, wie etwa die Brille
+des Benutzers. Diese Anwendung erweitert die Interaktionsmöglichkeiten mit KI
+um eine visuelle Komponente und unterstützt dabei Problemlösungen oder
+assistierende Funktionen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Thinking
+Mode</span></b><span style='font-size:14.0pt;line-height:115%;color:#ADADAD'> ·
+Praxis · Kern</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Arbeitsmodus moderner KI-Systeme, bei dem die Modelle
+ausdrücklich zusätzliche Zeit zum „Nachdenken“ verwenden. Das Ergebnis sind oft
+ausführlichere, reflektierte Antworten mit größerem Kontextbezug oder
+kreativeren Lösungen. Diese „Reflexionen“ sind häufig auch nachlesbar und
+gegebenenfalls zusammengefasst dargestellt.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Token><b><span style='font-size:14.0pt;line-height:
+115%'>Token</span></b></a><span style='font-size:14.0pt;line-height:115%;
+color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>hier: die kleinste, handhabbare bedeutungstragende
+Dateneinheit, in die ein Text oder andere Daten vor der Verarbeitung durch ein
+KI-Modell zerlegt werden. Im Bereich der Sprachmodelle kann ein Token ein
+ganzes Wort, ein Wortteil oder sogar ein einzelnes Zeichen wie ein Satzzeichen
+sein. Dieser Vorgang, der Tokenisierung genannt wird, ermöglicht es
+KI-Modellen, komplexe, unstrukturierte Daten in strukturierte Einheiten zu
+zerlegen, die das Modell verstehen und analysieren kann.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Transkription><b><span style='font-size:14.0pt;
+line-height:115%'>Transkription</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Gibt die tatsächliche Lautung einer Sprache wieder, meist in
+einem phonetischen oder phonemischen Schriftsystem. Im Deutschen wird der
+Begriff „Transkription“ häufiger verwendet, wenn es um die Wiedergabe
+gesprochener Sprache in Schrift geht. </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=Transliteration><b><span style='font-size:14.0pt;
+line-height:115%'>Transliteration</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Dabei geht es eigentlich um die Umwandlung von
+Schriftsystemen (z. B. Kyrillisch zu Lateinisch). Die Unterscheidung zur
+Transkription ist nicht immer strikt.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name="Voice_Mode"><b><span style='font-size:14.0pt;
+line-height:115%'>Voice Mode</span></b></a><span style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Praxis</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Darunter
+verstehe ich den Modus mündlicher Kommunikation mit einer KI, in der die KI
+ebenfalls per Stimme antwortet – im Gegensatz zum Diktat (</span><a
+href="https://fjki-info.github.io/glossar#Speech_to_Text"><span
+style='font-size:14.0pt;line-height:115%'>Speech-to-Text</span></a><span
+style='font-size:14.0pt;line-height:115%'>, S2T), der genau so umfassend, wie
+eine Tastatureingabe schriftlich beantwortet wird. Der Voice Mode fördert den
+kreativen Input – allerdings ist die Antwort bedeutend &quot;flacher&quot;</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Tahoma",sans-serif'>&#65279;</span><span
+style='font-size:14.0pt;line-height:115%'> (auf ein flüssiges Gespräch hin optimiert)
+</span><span style='font-size:14.0pt;line-height:115%'>–</span><span
+style='font-size:14.0pt;line-height:115%'> was gef</span><span
+style='font-size:14.0pt;line-height:115%'>ä</span><span style='font-size:14.0pt;
+line-height:115%'>hrliche Auslassungen von wichtigen Fakten zur Folge haben
+kann. Dieses Verst</span><span style='font-size:14.0pt;line-height:115%'>ä</span><span
+style='font-size:14.0pt;line-height:115%'>ndnis zum Unterschied finde ich auch
+in anderen Quellen, allerdings nicht überall.<a name="Zero_Shot"></a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><b><span style='font-size:14.0pt;line-height:115%'>Zero-Shot
+Prompting</span></b><span style='font-size:14.0pt;line-height:115%;color:#ADADAD'>
+· Praxis</span></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='margin-bottom:0cm;border:none;padding:0cm'><span
+style='font-size:14.0pt;line-height:115%'>Das KI-Modell erhält eine klare
+Anweisung, aber keine Beispiele. Es muss die Aufgabe allein anhand seines
+vortrainierten Wissens lösen. Ideal für einfache Faktenabfragen oder Aufgaben
+ohne komplexe Nuancen.</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;border:none;padding:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Beispiel: „Schreibe eine kurze Produktbeschreibung für einen
+Kaffeevollautomaten.&quot;</span></p>
+
+<p class=MsoNormal style='border:none;padding:0cm'>&nbsp;</p>
+
+</div>
+
+<h1><a name="_Toc214293806">Ergänzungen</a></h1>
+
+<h2><a name="_Toc214293807">Verfahren zur Feinabstimmung und Anpassung von
+Sprachmodellen</a></h2>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=RLHF><b><span style='font-size:14.0pt;line-height:
+115%'>RLHF</span></b></a><span style='font-size:14.0pt;line-height:115%;
+color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Reinforcement Learning from Human Feedback,<b> </b>Verstärkendes
+Lernen durch menschliche Bewertungen von Modellantworten; dient der Anpassung
+an gewünschte Werte, Stil und Sicherheit.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=RLAIF><b><span style='font-size:14.0pt;line-height:
+115%'>RLAIF</span></b></a><span style='font-size:14.0pt;line-height:115%;
+color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Reinforcement
+Learning from AI Feedback; Gleiche Methode, jedoch mit Feedback durch ein
+anderes KI-Modell statt durch Menschen – schneller und kostengünstiger.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=LoRA><b><span style='font-size:14.0pt;line-height:
+115%'>LoRA</span></b></a><span style='font-size:14.0pt;line-height:115%;
+color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Low-Rank
+Adaptation; Methode zum Nachtraining großer Sprachmodelle, bei der kleine
+Zusatzgewichte („Adapter“) gelernt und beim Einsatz zum Basismodell addiert
+werden – das Original bleibt unverändert.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=QLoRA><b><span style='font-size:14.0pt;line-height:
+115%'>QLoRA</span></b></a><span style='font-size:14.0pt;line-height:115%;
+color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Quantized LoRA.<b> </b>Speicher- und kostensparende Variante,
+die mit </span><a href="#Quantisierung"><span style='font-size:14.0pt;
+line-height:115%'>quantisierten</span></a><span style='font-size:14.0pt;
+line-height:115%'> (z. B. 4-Bit) Modellgewichten arbeitet und Nachtraining auf
+handelsüblichen </span><a href="#GPU"><span style='font-size:14.0pt;line-height:
+115%'>GPU</span></a><span style='font-size:14.0pt;line-height:115%'>s
+ermöglicht.</span></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<h2><a name="_Toc214293808">Verfahren zum Training von Sprachmodellen</a></h2>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Die internen
+Abläufe bleiben über alle Stufen hinweg überwiegend eine Blackbox – das genaue
+„Wie“ der Entscheidungen ist in vielen Details nicht durchschaubar.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>1) <a
+name="Pre_Training">Pre-Training </a>&#8594; Basismodell</span></b><span
+style='font-size:14.0pt;line-height:115%'><br>
+Lernt auf sehr vielen Texten das nächste Wort vorherzusagen. Sprachgefühl &amp;
+Weltbezüge entstehen in den Gewichten.<br>
+<i>Merkmale:</i> </span><a href="#Transformer"><span style='font-size:14.0pt;
+line-height:115%'>Transformer</span></a><span style='font-size:14.0pt;
+line-height:115%'>, Milliarden Parameter, Datenbereinigung &amp; Deduplizierung
+(unerwünschte Quellen entfernen, qualitativ hochwertige duplizieren).</span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>2) <a
+name="Fine_Tuning">Fine-Tuning </a>&amp; Alignment &#8594; Standard-Version</span></b><span
+style='font-size:14.0pt;line-height:115%'><br>
+Mit Beispielen &amp; Bewertungen wird das Verhalten hilfreich, ehrlich,
+harmlos. System-Prompt/Regeln setzen Leitplanken.<br>
+<i>Merkmale:</i> </span><a href="#SFT"><span style='font-size:14.0pt;
+line-height:115%'>SFT</span></a><span style='font-size:14.0pt;line-height:115%'>,
+</span><a href="#RLHF"><span style='font-size:14.0pt;line-height:115%'>RLHF</span></a><span
+style='font-size:14.0pt;line-height:115%'>/</span><a href="#DPO"><span
+style='font-size:14.0pt;line-height:115%'>DPO</span></a><span style='font-size:
+14.0pt;line-height:115%'>, Evals/Red-Teaming; Leitplanken = Laufzeit, keine
+Gewichtsänderung.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>3) In-Context-Nutzung
+&#8594; Persona im Gespräch</span></b><span style='font-size:14.0pt;line-height:
+115%'><br>
+Passt situativ Rolle, Stil, Aufgabe an – ohne Nachtrainieren.<br>
+<i>Merkmale:</i> Kontextfenster, </span><a href="#Few_Shot"><span
+style='font-size:14.0pt;line-height:115%'>Few-Shot</span></a><span
+style='font-size:14.0pt;line-height:115%'>, optional </span><a href="#RAG"><span
+style='font-size:14.0pt;line-height:115%'>RAG</span></a><span style='font-size:
+14.0pt;line-height:115%'>/Tools (Nachschlagen, Rechnen, Funktionen).</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:4.0pt;
+line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:14.0pt;
+line-height:115%'>Noch nicht definierte Begriffe aus diesem Kontext:</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><a name=Transformer><b><span
+style='font-size:14.0pt;line-height:115%'>Transformer</span></b></a><span
+style='font-size:14.0pt;line-height:115%;color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Eine fortschrittliche Architektur für KI-Modelle, die
+mithilfe eines sogenannten&nbsp;<i>Attention</i>-Mechanismus den Zusammenhang
+zwischen allen Wörtern eines Textes gleichzeitig analysieren kann. Sie
+ermöglicht dadurch besonders gutes Sprachverständnis und ist heute Standard für
+große Sprachmodelle.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=SFT><b><span lang=EN-US style='font-size:14.0pt;
+line-height:115%'>SFT</span></b></a><span lang=EN-US style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span lang=EN-US style='font-size:
+14.0pt;line-height:115%'>Supervised Fine-Tuning. </span><span style='font-size:
+14.0pt;line-height:115%'>Das Modell wird gezielt mit von Menschen markierten
+Beispielen weitertrainiert („überwachtes Feintuning“). Dabei bekommt es
+richtige Antworten auf Inputs und passt die eigenen Vorhersagen danach an.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><a name=DPO><b><span lang=EN-US style='font-size:14.0pt;
+line-height:115%'>DPO</span></b></a><span lang=EN-US style='font-size:14.0pt;
+line-height:115%;color:#ADADAD'> · Technik</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span lang=EN-US style='font-size:
+14.0pt;line-height:115%'>Direct Preference Optimization. </span><span
+style='font-size:14.0pt;line-height:115%'>Eine moderne Feinabstimmungsmethode:
+Hier wird das Modell so angepasst, dass es die von Menschen bevorzugten
+Antworten direkt lernt – und zwar ohne komplexe Belohnungsmodelle wie beim </span><a
+href="#RLHF"><span style='font-size:14.0pt;line-height:115%'>RLHF</span></a><span
+style='font-size:14.0pt;line-height:115%'>. Es vergleicht verschiedene Outputs
+und wird daraufhin optimiert, den bevorzugten Output zu wählen.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><a name="Tags_im_Glossar"><b><span
+style='font-size:16.0pt;line-height:115%'>Tags/Label im Glossar</span></b></a></p>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=113 valign=top style='width:3.0cm;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'>– Praxis:</span></p>
+  </td>
+  <td width=624 valign=top style='width:467.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'>konkrete Nutzung und Bedienung</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 valign=top style='width:3.0cm;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'>– Technik:</span></p>
+  </td>
+  <td width=624 valign=top style='width:467.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'>Modelle, Trainingsarten, „unter der Haube“</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 valign=top style='width:3.0cm;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'>– Reflexion:</span></p>
+  </td>
+  <td width=624 valign=top style='width:467.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'>Risiken, Denkfehler, Medienkompetenz</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 valign=top style='width:3.0cm;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'>– Alltag:</span></p>
+  </td>
+  <td width=624 valign=top style='width:467.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'>allgemeiner Digital-Alltag (Browser, Account etc.)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 valign=top style='width:3.0cm;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'>– Kern:</span></p>
+  </td>
+  <td width=624 valign=top style='width:467.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'>besonders wichtig für einen bewussten KI-Umgang</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=737 colspan=2 valign=top style='width:552.85pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:0cm;line-height:normal'><span style='font-size:14.0pt'>Zurück
+  zur </span><a href="#Übersicht_der_Einträge"><span style='font-size:14.0pt'>Übersicht
+  der Einträge</span></a></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div class=MsoNormal align=center style='text-align:center'><b>
+
+<hr size=1 width="100%" align=center>
+
+</b></div>
+
+<h1><a name="_Toc214293809">Urheberrecht &amp; Verwendungshinweis,
+KI-Transparenz</a></h1>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>© Franz
+Jankowski 2025. Alle Rechte vorbehalten.</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Diese
+Unterlagen sind urheberrechtlich geschützt und ausschließlich für den
+persönlichen, nicht-kommerziellen Gebrauch bestimmt. Jegliche Vervielfältigung
+oder Weitergabe von Kopien der Inhalte sowie jede kommerzielle Nutzung – ganz
+oder teilweise – bedürfen meiner vorherigen schriftlichen Zustimmung.
+Gesetzliche Schranken (z. B. Zitatrecht) bleiben unberührt. Das bloße Verlinken
+auf diese Seite ist ausdrücklich erlaubt. Zur KI-Transparenz siehe </span><a
+href="https://fjki-info.github.io/transparenz"><i><span style='font-size:14.0pt;
+line-height:115%'>hier</span></i></a><span style='font-size:14.0pt;line-height:
+115%'>.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
