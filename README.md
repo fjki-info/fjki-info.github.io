@@ -38,9 +38,9 @@
 
 | Ressource | Kurzbeschreibung | URL |
 |-----------|------------------|-----|
-| 🔍 Transparenz | KI-Tool-Offenlegung | [ki-transparenz](https://franzjankowski.github.io/ki-transparenz) |
-| 📖 Glossar | Begriffserklärungen | [ki-glossar](https://franzjankowski.github.io/ki-glossar) |
-| 🤖 ChatBot-Liste | Tool-Übersicht | [chatbot-liste](https://franzjankowski.github.io/chatbot-liste) |
+| 🔍 Transparenz | KI-Tool-Offenlegung | [ki-transparenz](https://fjki-info.github.io/transparenz) |
+| 📖 Glossar | Begriffserklärungen | [ki-glossar](https://fjki-info.github.io/glossar) |
+| 🤖 ChatBot-Liste | Tool-Übersicht | [chatbot-liste](https://fjki-info.github.io/tools) |
 
 ---
 
