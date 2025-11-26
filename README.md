@@ -18,7 +18,6 @@
 🔗 Link: [https://fjki-info.github.io/transparenz/](https://fjki-info.github.io/transparenz/)
 
 <p> <br><br><br> </p> 
-<p> <br><br><br> </p> 
 
 ---
 # Aufruf von Test-Versionen
@@ -30,6 +29,7 @@
 🔗 Link: [https://fjki-info.github.io/ideen-buffet/test-ideen-buffet](https://fjki-info.github.io/ideen-buffet/test-ideen-buffet)  
 🔗 Link: [https://fjki-info.github.io/transparenz/test-transparenz](https://fjki-info.github.io/transparenz/test-transparenz)  
 
+<p> <br><br><br> </p> 
 ---
 
 # Übungsbereich Markdown-Formatierungen etc
