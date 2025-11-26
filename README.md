@@ -22,7 +22,7 @@
 ---
 # Aufruf von Test-Versionen
 
-🔗 Link: [https://fjki-info.github.io/test-hub/](https://fjki-info.github.io/test-hub/)  
+🔗 Link: [https://fjki-info.github.io/test-hub](https://fjki-info.github.io/test-hub)  
   
 🔗 Link: [https://fjki-info.github.io/tools/test-tools](https://fjki-info.github.io/tools/test-tools)  
 🔗 Link: [https://fjki-info.github.io/glossar/test-glossar](https://fjki-info.github.io/glossar/test-glossar)  
