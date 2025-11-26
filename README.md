@@ -6,13 +6,13 @@
 ## In Veranstaltungen und Handouts verwendete Links
 
 **- ChatBots-Liste mit Recherche-Portalen** <BR>
-🔗 Link: [https://https://fjki-info.github.io/tools/](https://https://fjki-info.github.io/tools/)
+🔗 Link: [https://fjki-info.github.io/tools/](https://fjki-info.github.io/tools/)
 
 **- Kleines KI-Glossar** <BR>
-🔗 Link: [https://https://fjki-info.github.io/glossar/](https://fjki-info.github.io/glossar/)
+🔗 Link: [https://fjki-info.github.io/glossar/](https://fjki-info.github.io/glossar/)
 
 **- Ideen-Buffet - Was kann KI für mich tun?** <BR>
-🔗 Link: [https://https://fjki-info.github.io/ideen-buffet/](https://fjki-info.github.io/ideen-buffet/)
+🔗 Link: [https://fjki-info.github.io/ideen-buffet/](https://fjki-info.github.io/ideen-buffet/)
 
 **- Transparenzangaben** <BR>
 🔗 Link: [https://fjki-info.github.io/transparenz/](https://fjki-info.github.io/transparenz/)
