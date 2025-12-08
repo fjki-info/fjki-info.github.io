@@ -1,0 +1,36 @@
+/* Basis-Container für alle Screens */
+.container {
+  max-width: 1200px;  /* Optimal für Lesbarkeit bei Tabellen */
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+body {
+  font-size: 1rem;
+}
+
+/* Kleine Mobile */
+@media (max-width: 480px) {
+  body { font-size: 1.2em; }
+  .container { padding-left: 1rem; padding-right: 1rem; }  /* ~16px */
+  table { font-size: 1.1em; word-break: break-word; }
+}
+
+/* Tablets/Smartphones */
+@media (max-width: 768px) {
+  body { font-size: 1.4em; }
+  .container { padding-left: 1.1rem; padding-right: 1.1rem; }  /* ~17px */
+  table { font-size: 1.3em; word-break: break-word; }
+  img { padding-left: 1.1rem; padding-right: 1.1rem; }
+}
+
+/* Desktop */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container { padding-left: 1.5rem; padding-right: 1.5rem; }  /* Breitere Ränder */
+}
+
+/* Große Screens */
+@media (min-width: 1201px) {
+  .container { padding-left: 4rem; padding-right: 4rem; }  /* Deutlich breiter */
+}
