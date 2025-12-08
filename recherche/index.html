@@ -1,1 +1,1774 @@
-/* dummy */
+<html>
+
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<!-- Optional: Bootstrap über CDN für bessere Tabellen-Darstellung -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Aptos Display";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+h1
+	{mso-style-link:"Überschrift 1 Zchn";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:22.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Überschrift 2 Zchn";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Überschrift 3 Zchn";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:12.0pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Untertitel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+a:link, span.MsoHyperlink
+	{color:#467886;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift1Zchn
+	{mso-style-name:"Überschrift 1 Zchn";
+	mso-style-link:"Überschrift 1";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift2Zchn
+	{mso-style-name:"Überschrift 2 Zchn";
+	mso-style-link:"Überschrift 2";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift3Zchn
+	{mso-style-name:"Überschrift 3 Zchn";
+	mso-style-link:"Überschrift 3";
+	font-family:"Times New Roman",serif;
+	color:#0F4761;}
+span.TitelZchn
+	{mso-style-name:"Titel Zchn";
+	mso-style-link:Titel;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+span.UntertitelZchn
+	{mso-style-name:"Untertitel Zchn";
+	mso-style-link:Untertitel;
+	font-family:"Times New Roman",serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:841.9pt 595.3pt;
+	margin:70.9pt 14.2pt 70.9pt 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+@media (max-width: 768px) {
+  body {
+    font-size: 1.5em;
+    padding-left: 17px;   /* Abstand links */
+    padding-right: 17px;  /* Abstand rechts */
+  }
+  
+  table {
+    font-size: 1.4em;
+    word-break: break-word;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+</style>
+
+</head>
+
+<body lang=DE link="#467886" vlink="#96607D" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<div class=MsoNormal align=center style='text-align:center'><b>
+
+<hr size=1 width="100%" align=center>
+
+</b></div>
+
+<p class=MsoTitle>Recherche &amp; Lernen</p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoSubtitle style='margin-bottom:0cm;border:none;padding:0cm'><span
+style='font-size:16.0pt;line-height:115%'>KI-gestützte und klassische Recherche-
+und Lernwege</span></p>
+
+</div>
+
+<p class=MsoTocHeading>Inhalt</p>
+
+<p class=MsoToc1><a href="#_Toc216107529">Schwerpunkt Recherchieren<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc216107530">Multi-Quellen-Analyse &amp;
+Recherche-Synthese<span style='color:#BFBFBF'> (NotebookLM, STORM)</span><span
+style='color:#BFBFBF;display:none;text-decoration:none'> </span><span
+style='color:#BFBFBF;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc216107531">KI-gestützte Recherche-Tools<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc216107532">Klassische Recherche-Portale<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc216107533">Wissenschaftliche Open-Access-Quellen<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoNormal><span style='font-size:1.0pt;line-height:115%'> </span></p>
+
+<p class=MsoToc1><a href="#_Toc216107534">Schwerpunkt Lernen<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc216107535">Strukturiertes Online-Lernen (MOOCs)<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc216107536">OpenCourseWare &amp;
+Universitäts-Eigenangebote<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoNormal><span style='font-size:1.0pt;line-height:115%'> </span></p>
+
+<p class=MsoToc1><a href="#_Toc216107537">Urheberrecht &amp;
+Verwendungshinweis, KI-Transparenz<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h1 style='margin-bottom:3.0pt'><a name="_Toc216107529"><span style='line-height:
+115%'>Schwerpunkt Recherchieren</span></a></h1>
+
+<p class=MsoNormal style='line-height:normal'>Über die im Folgenden
+aufgeführten Möglichkeiten hinaus bieten viele große KI-ChatBots (siehe
+separate Unterlage „<a href="https://fjki-info.github.io/">Tools – ChatBots</a>“)
+Funktionen wie tiefe Recherche, Deep Research oder ähnliche Erweiterungen.</p>
+
+<p class=MsoNormal style='line-height:normal'>ChatBots mit solchen Optionen
+erstellen teilweise zunächst Recherchepläne, fragen nach Anpassungen und
+recherchieren dann über längere Zeit, oft bis zu 30 Minuten, mit ausführlichen
+Ergebnissen und Quellenverweisen.</p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h2><a name="_Toc216107530"><span style='line-height:115%'>Multi-Quellen-Analyse
+&amp; Recherche-Synthese (NotebookLM, STORM)</span></a></h2>
+
+<p class=MsoNormal>Tools, die mehrere Quellen analysieren können und daraus
+strukturierte Berichte erstellen.</p>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=198 valign=top style='width:148.6pt;border:solid windowtext 1.0pt;
+  background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt;
+  color:black'>Tool / Portal</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Firma </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>(Land)</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:16.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=983 valign=top style='width:26.0cm;border:solid windowtext 1.0pt;
+  border-left:none;background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='color:black'>Kurze
+  Beschreibung</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Website</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=198 valign=top style='width:148.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>NotebookLM</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Google (USA)</p>
+  </td>
+  <td width=983 valign=top style='width:26.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Quellengebundener Dokumenten- &amp;
+  Recherche-Assistent (im Grundumfang kostenlos, mit Limits, u.a. ca. 50 Chats
+  und 3 Audio-Generierungen pro Tag).</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Bündelt bis zu 50 Quellen pro
+  Notebook (PDFs, Webseiten, YouTube-Videos, Audio, Google-Docs/-Slides/-Sheets
+  usw.) und erzeugt daraus auf Knopfdruck Studienführer, FAQs,
+  Flashcards/Quizzes, Mindmaps, Infografiken, Audio-Podcasts und
+  Video-Overviews – jeweils eng an den hochgeladenen Quellen ausgerichtet.</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Über Fast- und Deep-Research kann
+  NotebookLM bei Bedarf selbst passende Web- und Drive-Quellen zum Thema suchen,
+  strukturieren und mit Quellenliste ins Notebook übernehmen. Die
+  Ausgabesprache ist frei wählbar; Englisch bietet meist zuerst erweiterte
+  Optionen.</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Einsatzszenarien: längere Fachtexte,
+  Bücher, Vorträge und YouTube-Inhalte vorsortieren (z.B. per Mindmap), Lern-
+  und Studienmaterial aufbereiten oder aus eigenen Unterlagen
+  Audio-„Lerntracks“ generieren. NotebookLM ist m.E. eines der bislang
+  unterschätzten Tools und kann für alle, die regelmäßig mit Texten, Videos und
+  Präsentationsfolien arbeiten, zum Standard-Werkzeugkasten gehören.</p>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b>Kurzform:</b> </p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:35.4pt;line-height:normal'>NotebookLM = persönlicher
+  Quellen-Copilot: lädt eigene Texte, Videos etc. und macht daraus Überblicke,
+  Lernmaterialien und strukturierte Recherchen.</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a
+  href="https://notebooklm.google.com/">https://notebooklm.google.com/</a>  </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=198 valign=top style='width:148.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>STORM / Co-STORM</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>Stanford University (USA)</span></p>
+  </td>
+  <td width=983 valign=top style='width:26.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Open-Source-Forschungstools, die zu
+  einem Thema Wikipedia-ähnliche, zitierte Berichte auf Basis von Webrecherchen
+  erzeugen. STORM erstellt aus Internetquellen strukturierte, gut gegliederte
+  Artikel mit Quellenangaben und dokumentiert den Recherche- und Frageprozess
+  („BrainSTORMing“).</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><strong><span style='font-family:
+  "Aptos",sans-serif'>Co-STORM</span></strong> erweitert dieses Prinzip zu
+  einer Multi-Agenten-Diskussion: Mehrere KI-Agenten mit unterschiedlichen
+  Rollen und Perspektiven „debattieren“ das Thema, ein Moderations-Agent fasst
+  zusammen; intern werden die gesammelten Informationen zu einer hierarchischen
+  Begriffsstruktur (dynamische Mindmap) organisiert, die sich im
+  BrainSTORMing-Prozess nachvollziehen lässt. Nutzer können die Debatte
+  beobachten, punktuell eingreifen, Fragen stellen und Schwerpunkte verschieben
+  – hilfreich gerade für die Erkundung von „unknown unknowns“ (vgl.
+  Publikationen in der <a
+  href="https://aclanthology.org/2024.emnlp-main.554.pdf">ACL Anthology</a>).</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Der Output ist in der Regel als <b>gut
+  strukturierter Überblick</b> zu verstehen, der sich als Ausgangspunkt für
+  eigene, zielgruppengerechte Vertiefung und Nachbearbeitung eignet.</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b>Typische Einsatzszenarien:</b> überblicksorientierte
+  Themenerschließung, Hintergrundrecherchen und komplexere Sachfragen (z.B.
+  Technik, Gesellschaft, Politik), bei denen man schnell ein strukturiertes
+  Gesamtbild und verschiedene Blickwinkel gewinnen und anschließend gezielt
+  weiter vertiefen möchte.</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Die Weboberfläche und die
+  wissenschaftliche Dokumentation sind auf Englisch; für beste Qualität sind
+  englische Eingaben klar zu empfehlen.</p>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b>Kurzform:</b> </p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:35.4pt;line-height:normal'>STORM / Co-STORM = Web-Recherche +
+  Multi-Agenten-Diskurs &#8594; zitierter Überblicksartikel zu komplexen
+  Themen.</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a
+  href="https://storm.genie.stanford.edu/">https://storm.genie.stanford.edu/</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h2 style='margin-bottom:0cm'><a name="_Toc216107531"><span style='line-height:
+115%'>KI-gestützte Recherche-Tools</span></a></h2>
+
+<p class=MsoNormal><span style='line-height:115%'>Intelligente Assistenten für
+wissenschaftliche Literaturarbeit – von der Suche bis zur Analyse.</span></p>
+
+<h3 style='margin-top:18.0pt'><span style='line-height:115%'>Literatursuche
+&amp; Dokumentenverwaltung</span></h3>
+
+<p class=MsoNormal><span style='line-height:115%'>Tools, die relevante Studien
+finden, Inhalte zusammenfassen und Literatur organisieren.</span></p>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=198 valign=top style='width:148.6pt;border:solid windowtext 1.0pt;
+  background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt;
+  color:black'>Tool / Portal</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Firma </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>(Land)</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  style='font-size:7.0pt;color:black'> </span></b></p>
+  </td>
+  <td width=983 valign=top style='width:26.0cm;border:solid windowtext 1.0pt;
+  border-left:none;background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='color:black'>Kurze
+  Beschreibung</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Website</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=198 valign=top style='width:148.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>Elicit</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Elicit,
+  ehemals Ought </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(USA)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=983 valign=top style='width:26.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>KI-gestützter Forschungsassistent für
+  wissenschaftliche Literatur, der Forschungsfragen versteht und darauf präzise
+  passende Studien aus einer großen Datenbank findet. </p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Er fasst Artikelinhalte zusammen,
+  erlaubt interaktive Fragestellungen zu Texten.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://elicit.com/">https://elicit.com/</a>
+  </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=198 valign=top style='width:148.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US>Litmaps</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Litmaps</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(USA)</p>
+  </td>
+  <td width=983 valign=top style='width:26.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>KI-Tool für Literaturrecherche, das
+  Zitationsnetzwerke visualisiert und so hilft, relevante Artikel zu finden und
+  deren Beziehungen zu verstehen. </p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Es startet mit einem Ausgangsartikel
+  und zeigt vernetzte Publikationen als übersichtlichen Graphen.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.litmaps.com/"><span
+  lang=EN-US>https://www.litmaps.com/</span></a> </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=198 valign=top style='width:148.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>ResearchRabbit</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>ResearchRabbit</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(USA)</p>
+  </td>
+  <td width=983 valign=top style='width:26.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Tool für wissenschaftliche
+  Literaturrecherche; visuelle Darstellung von Zitationsbeziehungen,
+  Organisation von Literaturlisten, Zusammenarbeit in Teams. </p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Nutzer starten mit einem
+  Referenzpapier („Seed Paper“); darauf basierend schlägt ResearchRabbit
+  ähnliche Arbeiten vor, lernt aus Nutzungsmustern und erleichtert so eine
+  effiziente, visuell unterstützte Literatursuche.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a
+  href="https://app.researchrabbit.ai/">https://app.researchrabbit.ai/</a> </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=198 valign=top style='width:148.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>Semantic Scholar</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Allen
+  Institute for AI (USA)</p>
+  </td>
+  <td width=983 valign=top style='width:26.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>KI-gestützte Suchmaschine für
+  wissenschaftliche Publikationen mit einer Datenbank von über 200 Millionen
+  Artikeln. </p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Besonders hilfreich sind Funktionen
+  wie KI-generierte Zusammenfassungen (&quot;TLDR&quot;), der Semantic Reader
+  zur schnellen Textanalyse sowie Metriken zur Bewertung der wissenschaftlichen
+  Relevanz und Einflussnahme von Artikeln. </p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Semantic Scholar eignet sich gut für
+  eine schnelle Ersteinschätzung, vertiefte Recherche und langfristiges
+  Verfolgen von Forschungsthemen.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a
+  href="https://www.semanticscholar.org/"><span lang=EN-US>https://www.semanticscholar.org/</span></a>
+  </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:115%'>&nbsp;</span></p>
+
+<h3><span style='line-height:115%'>Visualisierung, Evidenz-Analyse &amp;
+Textverständnis</span></h3>
+
+<p class=MsoNormal><span style='line-height:115%'>Tools, die
+Forschungszusammenhänge sichtbar machen und neue Perspektiven eröffnen.</span></p>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt;
+  color:black'>Tool / Portal</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Firma</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>(Land)</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  style='font-size:7.0pt;color:black'> </span></b></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='color:black'>Kurze
+  Beschreibung</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Website</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>Connected Papers</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>Connected Papers (Israel)</span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Erstellt visuelle Landkarten
+  verwandter Forschungsarbeiten. Ausgehend von einem Paper zeigt es
+  Zitationsnetzwerke und thematisch ähnliche Arbeiten in einem übersichtlichen
+  Graphen. Ideal, um relevante Literatur zu entdecken, die über klassische
+  Zitationssuche hinausgeht.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a
+  href="https://www.connectedpapers.com/">https://www.connectedpapers.com/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>Consensus</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Consensus</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(USA)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>KI-gestützte Wissenschaftssuche, die
+  tausende Studien zu einer Frage analysiert und Evidenz-Scores vergibt. Zeigt
+  auf einen Blick: Gibt es wissenschaftlichen Konsens? Welche Studien
+  widersprechen einander? Nutzt GPT-4 zur Synthese. Freemium-Modell (5 Anfragen/Monat
+  kostenlos).</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://consensus.app/">https://consensus.app/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>Scite</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>Scite</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>(USA)</span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Analysiert Zitationen und zeigt, ob
+  ein Paper von anderen Arbeiten bestätigt, widerlegt oder nur erwähnt wird.
+  „Smart Citations&quot; helfen, die wissenschaftliche Debatte um eine Studie
+  zu verstehen. Besonders wertvoll zur Bewertung der Verlässlichkeit von
+  Quellen. Freemium.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://scite.ai/">https://scite.ai/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>SciSpace</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>SciSpace</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>(Indien)</span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>KI-Assistent zum Verstehen
+  wissenschaftlicher Paper. Erklärt komplexe Abschnitte, mathematische Formeln
+  und Methoden in einfacher Sprache. „Copilot&quot; beantwortet Fragen direkt
+  im PDF. Freemium-Modell.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span class=MsoHyperlink>https://typeset.io/</span></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h2><a name="_Toc216107532"><span style='line-height:115%'>Klassische
+Recherche-Portale</span></a></h2>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt;
+  color:black'>Tool / Portal</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Firma </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>(Land)</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  style='font-size:7.0pt;color:black'> </span></b></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='color:black'>Kurze
+  Beschreibung</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Website</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>BASE</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Universitätsbibliothek
+  Bielefeld (Deutschland)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:7.0pt'> </span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Eine der weltweit größten
+  Suchmaschinen für wissenschaftliche Web-Dokumente.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.base-search.net/">https://www.base-search.net/</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>ICSTI</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Internationaler
+  Rat für wissenschaftliche und technische Information, Non-Profit-Organisation
+  (Frankreich)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:7.0pt'> </span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Als privater Nutzer kann man keine
+  direkten wissenschaftlichen Studien durchsuchen. Man hat Zugang zu
+  Meta-Informationen und Analysen über die Wissenschaftskommunikation selbst:</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Berichte und Analysen zu
+  Branchentrends, Veranstaltungsdokumentation, Informationen über
+  Mitgliedsorganisationen, Einblicke in die strategischen Diskussionen und
+  politischen Empfehlungen (die Zukunft der globalen Wissenschaftskommunikation
+  betreffend).</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.icsti.org/">https://www.icsti.org/</a>
+  </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>LIVIVO</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Forschungseinrichtung
+  des BMBF (Deutschland)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Meta-Suchportal für
+  Lebenswissenschaften mit über 58 Millionen Datensätzen aus Medizin,
+  Gesundheit, Ernährung, Umwelt und Agrar. Es integriert <a
+  href="https://www.base-search.net/">BASE</a> für Open Access, ergänzt u.a.
+  durch fachspezifisches Ranking. Ideal z.B. für interdisziplinäre Recherchen
+  zu KI-Ethik oder Critical Thinking – auch mit nur entferntem Bezug zu den
+  Schwerpunkten des Portals.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.livivo.de/">https://www.livivo.de/</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>ResearchGate</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>ResearchGate
+  GmbH, Forschungsnetzwerk (Deutschland)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Soziales Netzwerk und eine
+  Suchplattform für die internationale Wissenschaftsgemeinschaft. Es ermöglicht
+  Forschern den Austausch von Publikationen und die Vernetzung.</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Öffentlich zugänglich für Privatnutzer,
+  die nach Studien suchen und frei verfügbare wissenschaftliche Artikel
+  einsehen wollen.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a
+  href="https://www.researchgate.net/">https://www.researchgate.net/</a> </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>Scholar</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Google </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(USA)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:7.0pt'> </span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Spezialisierte Suchmaschine für
+  wissenschaftliche Literatur.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://scholar.google.de/">https://scholar.google.de/</a>
+  </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>Uni-Bibliotheken</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(Deutschland)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Zusätzlich bieten
+  Universitätsbibliotheken Zugang zu zahlreichen Fachdatenbanken und Medien
+  inkl. E-Medien. Zugangsmöglichkeiten, Kosten und Ausleihbedingungen für
+  externe Gäste unterscheiden sich je nach Standort.</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Beispiel Köln: </p>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'>20 EUR
+  Jahresgebühr (mittlerer Bereich), deutscher Wohnsitz ausreichend, häufig
+  Download-Option lizenzierter E-Medien vor Ort zum persönlichen Gebrauch,
+  langfristige Buchausleihe möglich, sofern nicht vorgemerkt.</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>-
+  Universitäts- und Stadtbibliothek Köln: <a href="https://ub.uni-koeln.de/">https://ub.uni-koeln.de/</a>
+  </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>-
+  Stadtbibliothek Köln (eigenständiges Angebot, u.a. mit kostenlosem Statista-Zugang):
+  </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'> 
+  https://www.stadt-koeln.de/leben-in-koeln/stadtbibliothek/digitale-angebote-der-stadtbibliothek</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Ihre nächste
+  Uni-Bibliothek finden:</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>- Deutschland
+  (Liste): <a
+  href="https://de.wikipedia.org/wiki/Liste_von_deutschen_Universitätsbibliotheken">https://de.wikipedia.org/wiki/Liste_von_deutschen_Universitätsbibliotheken</a>
+  </p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>- NRW &amp; Rheinland-Pfalz
+  (Verbund): <a
+  href="https://www.hbz-nrw.de/produkte/verbunddienstleistungen/verbundbibliotheken">https://www.hbz-nrw.de/produkte/verbunddienstleistungen/verbundbibliotheken</a>
+  </p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Weitere Bundesländer: Suchen Sie nach
+  „verbundbibliotheken deutscher universitäten&quot;.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h2><a name="_Toc216107533">Wissenschaftliche Open-Access-Quellen</a></h2>
+
+<p class=MsoNormal><span style='line-height:115%'>Frei zugängliche
+wissenschaftliche Publikationen – ohne Bezahlschranken.</span></p>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt;
+  color:black'>Tool / Portal</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Firma</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>(Land)</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  style='font-size:7.0pt;color:black'> </span></b></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='color:black'>Kurze
+  Beschreibung</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Website</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>arXiv</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Cornell
+  University (USA)<span style='font-size:7.0pt'> </span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Preprint-Server für Physik,
+  Mathematik, Informatik, Astronomie und weitere Fachgebiete. Über 2 Millionen
+  Artikel, oft bereits vor offizieller Peer-Review-Veröffentlichung verfügbar.
+  Standard-Anlaufstelle für aktuelle Forschung in diesen Bereichen.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://arxiv.org/">https://arxiv.org/</a><span
+  class=MsoHyperlink> </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>DOAJ</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Non-Profit</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(Schweden)<span
+  style='font-size:7.0pt'> </span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Directory of Open Access Journals –
+  durchsuchbares, kuratiertes Verzeichnis von über 19.000 qualitätsgeprüften
+  Open-Access-Zeitschriften aus allen Fachgebieten. Strenge Aufnahmekriterien
+  gewährleisten akademische Standards.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://doaj.org/">https://doaj.org/</a>
+  </p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>CORE</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Open
+  University</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(UK)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Aggregiert Open-Access-Inhalte aus
+  weltweit mehr als 10.000 Repositories und Zeitschriften. Über 300 Millionen
+  wissenschaftliche Dokumente durchsuchbar. Besonders nützlich für
+  interdisziplinäre Recherchen.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://core.ac.uk/">https://core.ac.uk/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>PubMed Central</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>US National Library of Medicine</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>(USA)</span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>US National Library of Medicine (USA)
+  | Volltext-Archiv biomedizinischer und biowissenschaftlicher Literatur der
+  NIH. Über 10 Millionen frei zugängliche, peer-reviewte Artikel. Führende
+  Quelle für medizinische und gesundheitswissenschaftliche Forschung.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a
+  href="https://www.ncbi.nlm.nih.gov/pmc/">https://www.ncbi.nlm.nih.gov/pmc/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>OpenAIRE</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>EU-Kommission
+  (Europa)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Europäisches Open-Access-Netzwerk,
+  das EU-geförderte Forschungsergebnisse sammelt und durchsuchbar macht. Über
+  200 Millionen Publikationen, Daten und Software aus europäischen
+  Forschungsprojekten.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://explore.openaire.eu/">https://explore.openaire.eu/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>Internet
+  Archive Scholar </span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Internet
+  Archive</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(USA)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  style='font-size:7.0pt'> </span></b></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Über 25 Millionen wissenschaftliche
+  Artikel und Bücher, inkl. historischer und schwer zugänglicher Publikationen.
+  Besonders wertvoll für ältere Forschungsliteratur und Quellen, die anderswo
+  nicht mehr verfügbar sind.  </p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span class=MsoHyperlink>https://scholar.archive.org/</span>
+  </p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>SSRN
+  </span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Elsevier</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(USA) </p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Social Science Research Network –
+  Preprints und Arbeitspapiere aus Sozialwissenschaften, Wirtschaft, Recht und
+  Geisteswissenschaften. Über 1 Million Dokumente. Viele Inhalte frei
+  verfügbar.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.ssrn.com/">https://www.ssrn.com/</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=1027 colspan=2 valign=top style='width:770.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:8.0pt;margin-right:0cm;
+  margin-bottom:4.0pt;margin-left:0cm;text-align:center;line-height:normal'>Hinweis:
+  Viele dieser Portale bieten auch RSS-Feeds oder E-Mail-Alerts für neue
+  Publikationen in Ihrem Interessensgebiet.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>Wer gefundene Inhalte
+systematisch vertiefen möchte, kann zusätzlich auf strukturierte Online-Kurse
+und frei verfügbare Kursmaterialien zurückgreifen.</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h1 style='margin-bottom:3.0pt'><a name="_Toc216107534"><span style='line-height:
+115%'>Schwerpunkt Lernen</span></a></h1>
+
+<h2 style='margin-bottom:0cm'><a name="_Toc216107535">Strukturiertes
+Online-Lernen (MOOCs)</a></h2>
+
+<h3 style='margin-top:0cm'>Was sind MOOCs?</h3>
+
+<p class=MsoNormal>Massive Open Online Courses – kostenlose oder günstige
+Online-Kurse von Universitäten. </p>
+
+<table class="table table-responsive table-striped">>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt;
+  color:black'>Portal</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Firma</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>(Land)</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  style='font-size:7.0pt;color:black'> </span></b></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='color:black'>Kurze
+  Beschreibung</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='color:black'>Website</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>Coursera</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Coursera Inc.</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(USA)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Größte MOOC-Plattform mit Kursen von
+  über 300 Universitäten weltweit (Stanford, Yale, LMU München, HEC Paris
+  u.v.m.). Viele Kurse kostenlos auditierbar, Zertifikate gegen Gebühr (oft
+  30-90 USD). Auch vollständige Online-Studiengänge (Master) verfügbar.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.coursera.org/">https://www.coursera.org/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>edX</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>2U/edX</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(USA)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Universitätskurse von MIT, Harvard,
+  TU München, Sorbonne u.a., starker Fokus auf Technik, Wissenschaft und
+  Business. Inhalte oft kostenlos zugänglich, Zertifikate kostenpflichtig.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.edx.org/">https://www.edx.org/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>openHPI</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Hasso-Plattner-Institut
+  (Deutschland)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:7.0pt'> </span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>IT-Fokus, komplett kostenlos inkl.
+  Zertifikat.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span class=MsoHyperlink>https://open.hpi.de/</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>iMooX</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>TU Graz &amp;
+  Uni Graz (Österreich)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:7.0pt'> </span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Alle Themen, komplett kostenlos inkl.
+  Zertifikat.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span class=MsoHyperlink>https://imoox.at/</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>iversity</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>iversity</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(Deutschland)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Weiterbildung, Freemium.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://iversity.org/">https://iversity.org/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>FutureLearn</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>FutureLearn</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(UK)<b><span
+  style='font-size:7.0pt'> </span></b></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>200+ EU-Unis, Kultur/Gesellschaft,
+  Freemium.  </p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span class=MsoHyperlink>https://www.futurelearn.com/</span>
+  </p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>Kadenze</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kadenze</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(USA)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Spezialisiert auf Kreativ- und
+  Technologiefächer: Musik, Kunst, Design, Programmierung. Kooperationen mit
+  Berklee College, Stanford u.a. Kreative Projekte statt nur Theorie.
+  Freemium-Modell.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.kadenze.com/">https://www.kadenze.com/</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='line-height:115%'> </span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h3>MOOCs finden</h3>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>edukatico.org
+  </span></b>Edukatico GmbH</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>(Deutschland)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Meta-Suchmaschine für über 12.000
+  Online-Kurse verschiedener Anbieter. <span lang=EN-US style='color:#7F7F7F'>Hinweis
+  des Anbieters: „Some course providers support the operation of our search
+  portal with referral commissions&quot;.</span></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.edukatico.org/"><span
+  lang=EN-US>https://www.edukatico.org/</span></a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>MOOChub.org</span></b></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>edu-sharing.net (Deutschland)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Zentrale Übersicht zu über 290
+  deutschsprachigen MOOCs von openHPI, iMooX, oncampus und weiteren Anbietern.
+  Fokus auf qualitätsgeprüfte, universitätsbasierte Kurse im deutschsprachigen
+  Raum.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.moochub.org/">https://www.moochub.org/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>MOOC List</span></b></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span lang=EN-US>MOOC List</span></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span lang=EN-US>(USA)</span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Etabliertes MOOC-Verzeichnis mit über
+  16.000 Kursen internationaler Anbieter. Gute Filtermöglichkeiten nach Thema,
+  Anbieter und Kosten. Design etwas veraltet, aber umfassende Abdeckung.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.mooc-list.com/">https://www.mooc-list.com/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>oncampus</span></b></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span lang=EN-US>TH Lübeck</span></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span lang=EN-US>(Deutschland)</span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Kooperiert mit über 13
+  Partnerhochschulen. Schwerpunkte: berufsbegleitende Fernstudiengänge,
+  Weiterbildungen, digitale Lernplattformen für Unternehmen und
+  Bildungseinrichtungen sowie kostenlose MOOCs und Selbstlernkurse zu Themen
+  wie BWL, Marketing, Mathematik und Soft Skills.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span class=MsoHyperlink>https://oncampus.de/</span></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>KI-Campus</span></b></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Stifterverband, gefördert vom BMBF</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>(Deutschland)</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span style='font-size:7.0pt'> </span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Spezialisiert auf kostenlose
+  Online-Kurse, Videos, Podcasts und Tools zu Künstlicher Intelligenz sowie
+  Datenkompetenzen für Studierende, Berufstätige und Lebenslanges Lernen.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://ki-campus.org/">https://ki-campus.org/</a>
+  </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h3>Erfahrungen &amp; Tipps</h3>
+
+<p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;line-height:normal'><b>Aus eigener Erfahrung:</b></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;line-height:normal'>Ich habe mehrere Kurse über Coursera
+absolviert – beruflich (damals über meinen Arbeitgeber) und privat. Drei
+Aspekte erscheinen mir besonders wertvoll:</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:3.0pt;margin-right:0cm;
+margin-bottom:8.0pt;margin-left:18.0pt;text-indent:-18.0pt'><span
+style='line-height:115%'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='line-height:115%'>Lern-Community</span></b><span
+style='line-height:115%'>: Bei zeitlich getakteten Kursen entsteht Austausch
+mit anderen Lernenden auf gleichem Stand</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:3.0pt;margin-right:0cm;
+margin-bottom:8.0pt;margin-left:18.0pt;text-indent:-18.0pt'><span
+style='line-height:115%'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='line-height:115%'>Peer-Learning</span></b><span
+style='line-height:115%'>: Gegenseitige Korrekturaufgaben fördern kritisches
+Denken</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:3.0pt;margin-right:0cm;
+margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b>Sprache</b>: Die deutschen Transkripte habe ich meist verworfen –
+englische Originale waren trotz gelegentlichem Nachschlagen verständlicher und
+präziser</p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><b><span style='line-height:115%'>Kommerzielle
+Lernplattformen:</span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='line-height:115%'>Plattformen
+wie Udemy oder LinkedIn Learning bieten Online-Kurse, jedoch ohne die
+universitäre Qualitätsprüfung von MOOCs. Die Inhalte werden von verschiedenen
+Trainern erstellt, wodurch Qualität und Aktualität stark variieren können. Ein
+Blick auf Bewertungen und Trainerqualifikationen vor der Kursauswahl ist
+empfehlenswert.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><b><span style='line-height:115%'>Hinweis
+Stadtbibliothek Köln:</span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='line-height:115%'>Die
+Stadtbibliothek Köln (und einige andere Stadtbibliotheken) bieten kostenlosen
+Zugang zu LinkedIn Learning für registrierte Nutzer – eine gute Möglichkeit,
+die Plattform risikofrei zu testen.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='line-height:115%'>LinkedIn
+Learning hat einen anderen Fokus als universitäre MOOCs: Statt akademischer
+Tiefe bietet es praxisnahe Kurzformate zu konkreten Skills (Excel-Funktionen,
+PowerPoint-Design, Projektmanagement-Tools, Bewerbungsstrategien). Ideal für
+schnelle Einarbeitung in berufliche Software oder Soft Skills.</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h3>Zusätzliche Anregungen:</h3>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>Khan Academy</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>(USA)</span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Kostenlos, auch Schulfächer, sehr
+  niederschwellig.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://www.khanacademy.org/">https://www.khanacademy.org/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>Brilliant.org</span></b></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span lang=EN-US>Brilliant Worldwide</span></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span lang=EN-US>(USA)</span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Interaktive Lernplattform für
+  STEM-Fächer (Science, Technology, Engineering, Mathematics), die sich auf
+  Problemlösen durch hands-on-Übungen und visuelle Erklärungen konzentriert. Die
+  Plattform priorisiert aktives Lernen statt passiver Videos, mit
+  personalisierten Pfaden und täglichen Challenges. Kostenlose Testphase
+  möglich.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://brilliant.org/">https://brilliant.org/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>France Université Numérique</span></b></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span lang=EN-US>(Frankreich)</span></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  7.0pt'> </span></b></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Französische Uni-Kurse, teils
+  englisch.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span class=MsoHyperlink>https://www.fun-mooc.fr</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h2><a name="_Toc216107536">OpenCourseWare &amp; Universitäts-Eigenangebote</a></h2>
+
+<p class=MsoNormal><span style='line-height:115%'>Vollständige Kursmaterialien
+internationaler Spitzenuniversitäten – dauerhaft verfügbar, ohne Anmeldung,
+ohne Zeitdruck. </span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>OpenCourseWare sind keine
+interaktiven Kurse mit festem Zeitplan, sondern permanente Archive
+vollständiger Kursmaterialien. Ideal für Selbstlerner, die universitäre Inhalte
+in eigenem Tempo durcharbeiten möchten – ohne Community-Features oder
+Abgabefristen.</span></p>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  lang=EN-US style='font-size:16.0pt'>MIT OpenCourseWare </span></b><span
+  lang=EN-US>MIT</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>(USA)</span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Über 2.500 vollständige Kurse mit
+  Vorlesungsnotizen, Aufgaben, Prüfungen und oft auch Videos. Alle
+  Fachbereiche, besonders stark in Technik und Naturwissenschaften. Seit 2001
+  Vorreiter des freien Bildungszugangs.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://ocw.mit.edu/">https://ocw.mit.edu/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>Stanford Online </span></b><span lang=EN-US>Standford</span></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span lang=EN-US>(U</span><span
+  lang=EN-US>SA</span><span lang=EN-US>)</span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Freie Online-Kurse und -Materialien
+  aus Informatik, KI, Ingenieurwesen und weiteren Bereichen. Mischung aus
+  selbstgesteuerten Kursen und OCW-Materialien.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://online.stanford.edu/">https://online.stanford.edu/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+  16.0pt'>Yale Open Courses </span></b><span lang=EN-US>Yale </span></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><span lang=EN-US>(U</span><span
+  lang=EN-US>SA</span><span lang=EN-US>)</span></p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Vollständige Vorlesungsaufzeichnungen
+  vor allem aus Geisteswissenschaften, Geschichte, Philosophie. Hochwertige
+  Video-Lectures von renommierten Professoren.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://oyc.yale.edu/">https://oyc.yale.edu/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><u><span style='color:#467886'><span
+   style='text-decoration:none'>&nbsp;</span></span></u></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>TU
+  Delft OCW</span></b></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>TU Delft</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>(Niederlande)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>OpenCourseWare mit Fokus auf
+  Ingenieurwesen, Architektur, angewandte Wissenschaften. Englischsprachig,
+  praxisorientiert.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a href="https://ocw.tudelft.nl/">https://ocw.tudelft.nl/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><b><span style='font-size:16.0pt'>OpenLearn</span></b></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Open University</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>(UK)</p>
+  </td>
+  <td width=828 valign=top style='width:621.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>Über 1.000 kostenlose Kurse der
+  britischen Open University. Breites Themenspektrum, verschiedene
+  Schwierigkeitsgrade, teils mit Zertifikaten.</p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'><a
+  href="https://www.open.edu/openlearn/">https://www.open.edu/openlearn/</a></p>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h1><a name="_Toc216107537"></a><a name="_Toc213972646"><span style='line-height:
+115%'>Urheberrecht &amp; Verwendungshinweis</span></a><span style='line-height:
+115%'>, KI-Transparenz</span></h1>
+
+<p class=MsoNormal style='line-height:normal'><b>© Franz Jankowski 2025. Alle
+Rechte vorbehalten.</b><br>
+Diese Unterlagen sind urheberrechtlich geschützt und ausschließlich für den
+persönlichen, nicht-kommerziellen Gebrauch bestimmt. Jegliche Vervielfältigung
+oder Weitergabe von Kopien der Inhalte sowie jede kommerzielle Nutzung – ganz
+oder teilweise – bedürfen meiner vorherigen schriftlichen Zustimmung.
+Gesetzliche Schranken (z. B. Zitatrecht) bleiben unberührt. Das bloße Verlinken
+auf diese Seite ist erlaubt. </p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;line-height:normal'>Zur&nbsp;<b>KI-Transparenz</b>&nbsp;siehe&nbsp;<a
+href="https://fjki-info.github.io/transparenz"><i>hier</i></a>.</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
+style='font-size:10.0pt;color:#747474'>Version: v0.8 – Stand: 08.12.2025</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
+style='font-size:10.0pt;color:#747474'>&nbsp;</span></p>
+
+</div>
+<img src="https://FranzJ.goatcounter.com/count?p=/Recherche" style="display:none;">
+</body>
+
+</html>
