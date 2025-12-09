@@ -1,36 +1,129 @@
 /* Basis-Container für alle Screens */
+
+table {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* =======================
+   Basis: kleine Mobile
+   (bis 480px)
+   ======================= */
+
+body {
+  font-size: 1.2em;
+}
+
 .container {
-  max-width: 1200px;  /* Optimal für Lesbarkeit bei Tabellen */
-  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-body {
-  font-size: 1rem;
+table {
+  font-size: 1.1em;
 }
 
-/* Kleine Mobile */
-@media (max-width: 480px) {
-  body { font-size: 1.2em; }
-  .container { padding-left: 1rem; padding-right: 1rem; }  /* ~16px */
-  table { font-size: 1.1em; word-break: break-word; }
+
+/* =======================
+   Größere Smartphones /
+   kleine Tablets
+   (ab 481px)
+   ======================= */
+
+@media (min-width: 481px) {
+  body {
+    font-size: 1.4em;
+  }
+
+  .container {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+
+  table {
+    font-size: 1.3em;
+  }
+
+  img {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
 }
 
-/* Tablets/Smartphones */
-@media (max-width: 768px) {
-  body { font-size: 1.4em; }
-  .container { padding-left: 1.1rem; padding-right: 1.1rem; }  /* ~17px */
-  table { font-size: 1.3em; word-break: break-word; }
-  img { padding-left: 1.1rem; padding-right: 1.1rem; }
-}
 
-/* Desktop */
+/* =======================
+   Tablets / kleine
+   Notebooks
+   (ab 769px)
+   ======================= */
+
 @media (min-width: 769px) and (max-width: 1200px) {
-  .container { padding-left: 1.5rem; padding-right: 1.5rem; }  /* Breitere Ränder */
+  body {
+    font-size: 1em;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  table {
+    font-size: 1em;
+  }
+
+  img {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-/* Große Screens */
+
+/* =======================
+   Große Desktops
+   (ab 1201px)
+   ======================= */
+
 @media (min-width: 1201px) {
-  .container { padding-left: 4rem; padding-right: 4rem; }  /* Deutlich breiter */
+  body {
+    font-size: 1em;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  table {
+    font-size: 1em;
+  }
+
+  img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* =======================
+   Ultra Wide Desktops
+   (ab 1600px)
+   ======================= */
+
+@media (min-width: 1600px) {
+  body {
+    font-size: 1em;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  table {
+    font-size: 1em;
+  }
+
+  img {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
