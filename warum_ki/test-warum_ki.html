@@ -1,11 +1,37 @@
 <html>
 
 <head>
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<!-- Optional: Bootstrap über CDN für bessere Tabellen-Darstellung -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- =========================================
+       [PFLICHT] Zeichensatz korrekt setzen
+       → verhindert Umlaute-/Sonderzeichenprobleme
+       ========================================= -->
+  <meta charset="UTF-8">
+
+
+  <!-- =========================================
+       [PFLICHT] Viewport für Responsive Layouts
+       → sonst greifen Media Queries nicht sauber
+       ========================================= -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- =========================================
+       [OPTIONAL] Bootstrap
+       → falls du Word-Tabellen oder Basis-Design
+         etwas schöner formatiert haben willst
+       ========================================= -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+  <!-- =========================================
+       [PFLICHT] Eigene CSS nach Bootstrap
+       → überschreibt Bootstrap-Vorgaben
+       → enthält .container + Media Queries
+       ========================================= -->
+  <link rel="stylesheet" href="../style.css">
+
+
 <style>
 <!--
  /* Font Definitions */
@@ -189,23 +215,6 @@ div.WordSection1
 ul
 	{margin-bottom:0cm;}
 -->
-@media (max-width: 768px) {
-  body {
-    font-size: 1.5em;
-    padding-left: 17px;   /* Abstand links */
-    padding-right: 17px;  /* Abstand rechts */
-  }
-  
-  table {
-    font-size: 1.4em;
-  }
-}
-@media (min-width: 769px) {
-  body {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-}
 </style>
 
 </head>
@@ -213,6 +222,17 @@ ul
 <body lang=DE link="#467886" vlink="#96607D" style='word-wrap:break-word'>
 
 <div class=WordSection1>
+
+  <!-- =============================================
+       [NEU / WICHTIG]
+       Layout-Container
+       ---------------------------------------------
+       - DIESER Div muss ALLES umschließen,
+         was dein Seiteninhalt ist.
+       - Hier greifen Ränder & max-width aus style.css
+       ============================================= -->
+  <div class="container">
+
 
 <div class=MsoNormal align=center style='text-align:center'><b>
 
@@ -226,15 +246,24 @@ ul
 
 <p class=MsoSubtitle style='margin-bottom:0cm;border:none;padding:0cm'><span
 style='font-size:16.0pt;line-height:115%'>Warum sollte ich mich für KI
-interessieren?</span></p>
+interessieren? </span></p>
+
+<p class=MsoSubtitle style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;border:none;padding:0cm'>Diese Seite bietet zwei
+Perspektiven: Teil 1 beleuchtet gesellschaftliche Zusammenhänge, Teil 2 gibt
+konkrete Alltagsgründe. Nutzen Sie das Inhaltsverzeichnis, um mit dem Teil zu
+beginnen, der Sie im Moment interessiert.</p>
+
+<p class=MsoSubtitle style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;border:none;padding:0cm'><span style='font-size:1.0pt;
+line-height:115%'> </span></p>
 
 </div>
 
 <p class=MsoTocHeading>Inhalt</p>
 
-<p class=MsoToc1><a href="#_Toc214882163">Warum KI-Grundkompetenz heute
-unverzichtbar ist<span style='color:windowtext;display:none;text-decoration:
-none'> </span><span
+<p class=MsoToc1><a href="#_Toc214882163">Warum KI-Grundkompetenz heute unverzichtbar
+ist<span style='color:windowtext;display:none;text-decoration:none'> </span><span
 style='color:windowtext;display:none;text-decoration:none'>2</span></a></p>
 
 <p class=MsoToc2><a href="#_Toc214882164"><span style='font-family:"Segoe UI Emoji",sans-serif'>&#128196;</span>
@@ -267,7 +296,7 @@ style='color:windowtext;display:none;text-decoration:none'>5</span></a></p>
 
 <p class=MsoToc1><a href="#_Toc214882170">Transparenzhinweis – Entstehung
 dieses Textes<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
-style='color:windowtext;display:none;text-decoration:none'>7</span></a></p>
+style='color:windowtext;display:none;text-decoration:none'>6</span></a></p>
 
 <p class=MsoToc1><a href="#_Toc214882171">Urheberrecht &amp;
 Verwendungshinweis, KI-Transparenz<span style='color:windowtext;display:none;
@@ -315,18 +344,19 @@ style='font-size:14.0pt'>Drei Dimensionen der Notwendigkeit:</span></b></p>
 
 <p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
 normal'><span style='font-size:14.0pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:14.0pt'>Epistemische Souveränität: In
-einer Welt KI-generierter Inhalte wird die Fähigkeit, Informationsquellen zu
-bewerten, zur Kernkompetenz demokratischer Teilhabe. Wer nicht versteht, wie KI
-Texte erzeugt, Bilder manipuliert oder Suchergebnisse kuratiert, verliert die
-Orientierung im öffentlichen Diskurs.</span></p>
+</span></span><span style='font-size:14.0pt'>Epistemische Souveränität (die
+Fähigkeit, Wissen einzuordnen): In einer Welt KI-generierter Inhalte wird die
+Fähigkeit, Informationsquellen zu bewerten, zur Kernkompetenz demokratischer
+Teilhabe. Wer nicht versteht, wie KI Texte erzeugt, Bilder manipuliert oder
+Suchergebnisse kuratiert, verliert die Orientierung im öffentlichen Diskurs.</span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
 normal'><span style='font-size:14.0pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:14.0pt'>Ökonomische Selbstverteidigung:
-Die Arbeitswelt transformiert sich rasant. Nicht KI ersetzt Jobs – sondern
-Menschen mit KI-Kompetenz ersetzen Menschen ohne. Wer die Werkzeuge nicht
-kennt, kann weder seine Produktivität steigern noch seine Employability sichern.</span></p>
+</span></span><span style='font-size:14.0pt'>Ökonomische Teilhabe: Die
+Arbeitswelt transformiert sich rasant. Nicht KI ersetzt Jobs – sondern Menschen
+mit KI-Kompetenz ersetzen Menschen ohne. Wer die Werkzeuge nicht kennt, kann
+weder seine Produktivität steigern noch seine Employability (Beschäftigungsfähigkeit)
+sichern.</span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
 normal'><span style='font-size:14.0pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -365,8 +395,8 @@ Handlungsprogramm:</span></a></h3>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Die
 Frage ist nicht mehr, <i>ob</i> KI unser Leben verändert, sondern <i>wie</i> –
-und wer darüber entscheidet. Wer sich heute nicht informiert, hat morgen keine
-Stimme.</span></p>
+und wer darüber entscheidet. Wer sich heute nicht informiert, hat es morgen
+deutlich schwerer, seine Stimme geltend zu machen.</span></p>
 
 <p class=MsoNormal style='line-height:normal'>&nbsp;</p>
 
@@ -472,12 +502,13 @@ Gefühle, kreative Originalität, Verantwortung übernehmen)</span></p>
 <p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
 "Segoe UI Emoji",sans-serif'>&#9989;</span><span style='font-size:14.0pt;
 line-height:115%'> <b>Reden Sie mit anderen:</b> Tauschen Sie sich aus. Was
-nutzen Freunde/Kollegen? Was finden sie gut, was problematisch?</span></p>
+nutzen andere? Was finden sie gut, was problematisch?</span></p>
 
 <p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
 "Segoe UI Emoji",sans-serif'>&#9989;</span><span style='font-size:14.0pt;
 line-height:115%'> <b>Bleiben Sie kritisch:</b> KI macht Fehler, kann täuschen,
-hat blinde Flecken. Glauben Sie nicht alles, was sie ausspuckt.</span></p>
+hat blinde Flecken. Glauben Sie nicht alles - prüfen Sie nach, wie bei anderen
+Quellen auch.</span></p>
 
 <div class=MsoNormal align=center style='text-align:center'><span
 style='font-size:11.0pt;line-height:115%'>
@@ -493,8 +524,8 @@ Missverständnisse – vermeiden Sie diese:</span></b></p>
 "Segoe UI Emoji",sans-serif'>&#10060;</span><span style='font-size:14.0pt;
 line-height:115%'> &quot;Ich brauche den Kontakt zu Menschen, nicht zu
 Maschinen.&quot;<br>
-&#8594; Richtig! KI ersetzt keine Menschen. Sie soll Ihnen nur helfen, mehr
-Zeit für echte Kontakte zu haben.</span></p>
+&#8594; Richtig! KI ersetzt keine Menschen. Sie kann Ihnen helfen, mehr Zeit
+für echte Kontakte zu haben.</span></p>
 
 <p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
 "Segoe UI Emoji",sans-serif'>&#10060;</span><span style='font-size:14.0pt;
@@ -506,8 +537,9 @@ möglich, aber zunehmend schwierig.</span></p>
 <p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
 "Segoe UI Emoji",sans-serif'>&#10060;</span><span style='font-size:14.0pt;
 line-height:115%'> &quot;Das ist doch alles nur unpersönlich.&quot;<br>
-&#8594; Kann sein, wenn man es falsch nutzt. Richtig eingesetzt spart KI Zeit
-für das Persönliche.</span></p>
+&#8594; Stimmt, KI selbst ist unpersönlich. Aber sie übernimmt das Mechanische.
+Wenn sie Ihnen 20 Minuten Recherche abnimmt, gewinnen Sie 20 Minuten für das,
+was Ihnen wichtig ist.</span></p>
 
 <div class=MsoNormal align=center style='text-align:center'><span
 style='font-size:11.0pt;line-height:115%'>
@@ -574,14 +606,28 @@ kommerzielle Nutzung – ganz oder teilweise – bedürfen meiner vorherigen
 schriftlichen Zustimmung. Gesetzliche Schranken (z. B. Zitatrecht) bleiben
 unberührt. Das bloße Verlinken auf diese Seite ist ausdrücklich erlaubt. </span></p>
 
-<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Zur&nbsp;<b>KI-Transparenz</b>&nbsp;siehe&nbsp;</span><i><a
-href="https://fjki-info.github.io/transparenz"><span style='font-size:14.0pt'>hier</span></a></i><span
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Zur&nbsp;<b>KI-Transparenz</b>&nbsp;siehe&nbsp;</span><a
+href="https://fjki-info.github.io/transparenz"><i><span style='font-size:14.0pt'>hier</span></i></a><span
 style='font-size:14.0pt'>.</span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
-style='font-size:10.0pt;color:#747474'>Version: v0.9 – Stand: 24.11.2025</span></p>
+style='font-size:10.0pt;color:#747474'>Version: v0.9b – Stand: 06.12.2025</span></p>
 
 </div>
+  <!-- ======= [NEU] Container sauber schließen ======= -->
+
+
+</div>
+<!-- ======= [NEU] WordSection sauber schließen ======= -->
+
+
+<!-- =============================================
+     [OPTIONAL]
+     Tracking / Statistik / Zähl-Pixel
+     → bleibt AUSSERHALB des Containers
+     ============================================= -->
+<img src="https://FranzJ.goatcounter.com/count?p=/test-warum_ki" style="display:none;">
+     style="display:none">
 
 </body>
 
