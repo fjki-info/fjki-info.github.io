@@ -1,0 +1,600 @@
+<html>
+
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<!-- Optional: Bootstrap über CDN für bessere Tabellen-Darstellung -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Aptos Display";}
+@font-face
+	{font-family:"Segoe UI Emoji";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+h1
+	{mso-style-link:"Überschrift 1 Zchn";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Überschrift 2 Zchn";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Überschrift 3 Zchn";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:12.0pt;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	font-weight:bold;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:24.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Untertitel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+a:link, span.MsoHyperlink
+	{color:#467886;
+	text-decoration:underline;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift1Zchn
+	{mso-style-name:"Überschrift 1 Zchn";
+	mso-style-link:"Überschrift 1";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift2Zchn
+	{mso-style-name:"Überschrift 2 Zchn";
+	mso-style-link:"Überschrift 2";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift3Zchn
+	{mso-style-name:"Überschrift 3 Zchn";
+	mso-style-link:"Überschrift 3";
+	font-family:"Times New Roman",serif;
+	color:#0F4761;}
+span.TitelZchn
+	{mso-style-name:"Titel Zchn";
+	mso-style-link:Titel;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+span.UntertitelZchn
+	{mso-style-name:"Untertitel Zchn";
+	mso-style-link:Untertitel;
+	font-family:"Times New Roman",serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:841.9pt 595.3pt;
+	margin:70.85pt 70.85pt 70.85pt 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+@media (max-width: 768px) {
+  body {
+    font-size: 1.5em;
+    padding-left: 17px;   /* Abstand links */
+    padding-right: 17px;  /* Abstand rechts */
+  }
+  
+  table {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+}
+</style>
+
+</head>
+
+<body lang=DE link="#467886" vlink="#96607D" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<div class=MsoNormal align=center style='text-align:center'><b>
+
+<hr size=1 width="100%" align=center>
+
+</b></div>
+
+<p class=MsoTitle>KI – Na und?</p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoSubtitle style='margin-bottom:0cm;border:none;padding:0cm'><span
+style='font-size:16.0pt;line-height:115%'>Warum sollte ich mich für KI
+interessieren? </span></p>
+
+<p class=MsoSubtitle style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;border:none;padding:0cm'>Diese Seite bietet zwei
+Perspektiven: Teil 1 beleuchtet gesellschaftliche Zusammenhänge, Teil 2 gibt
+konkrete Alltagsgründe. Nutzen Sie das Inhaltsverzeichnis, um mit dem Teil zu
+beginnen, der Sie im Moment interessiert.</p>
+
+<p class=MsoSubtitle style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;border:none;padding:0cm'><span style='font-size:1.0pt;
+line-height:115%'> </span></p>
+
+</div>
+
+<p class=MsoTocHeading>Inhalt</p>
+
+<p class=MsoToc1><a href="#_Toc214882163">Warum KI-Grundkompetenz heute unverzichtbar
+ist<span style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc214882164"><span style='font-family:"Segoe UI Emoji",sans-serif'>&#128196;</span>
+Mein Blick auf KI: Hintergrund &amp; Einordnung<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc214882165">KI als Disruption: Warum
+Grundkompetenz zur Bürgerpflicht wird<span style='color:windowtext;display:
+none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc214882166">Minimales Handlungsprogramm:<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc214882167"><span style='font-family:"Segoe UI Emoji",sans-serif'>&#9889;</span>
+Was heißt das für Ihren Alltag? Konkrete Gründe &amp; erste Schritte<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>4</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc214882168">Warum KI auch Sie betrifft – 7
+Gründe, die zählen<span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>4</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc214882169">Was sollten Sie konkret tun?<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc214882170">Transparenzhinweis – Entstehung
+dieses Textes<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>6</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc214882171">Urheberrecht &amp;
+Verwendungshinweis, KI-Transparenz<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>7</span></a></p>
+
+<p class=MsoNormal style='line-height:normal'>&nbsp;</p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:14.0pt'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<h1><a name="_Toc214875782"></a><a name="_Toc214875777"></a><a
+name="_Toc214882163">Warum KI-Grundkompetenz heute unverzichtbar ist</a></h1>
+
+<h2><a name="_Toc214882164"><span style='font-size:18.0pt;line-height:115%;
+font-family:"Segoe UI Emoji",sans-serif'>&#128196;</span></a><span
+style='font-size:18.0pt;line-height:115%'> Mein Blick auf KI: Hintergrund &amp;
+Einordnung</span></h2>
+
+<h3><a name="_Toc214882165"><span style='font-size:16.0pt;line-height:115%'>KI
+als Disruption: Warum Grundkompetenz zur Bürgerpflicht wird</span></a></h3>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Wir
+befinden uns am Anfang einer technologischen Umwälzung, die in ihrer
+Geschwindigkeit und Reichweite historisch beispiellos ist. Anders als frühere
+Innovationswellen – die Elektrifizierung brauchte Jahrzehnte, das Internet zwei
+Generationen – vollzieht sich die KI-Disruption in Echtzeit und durchdringt
+simultan nahezu alle Lebensbereiche: Arbeit, Bildung, Verwaltung, Medien,
+Gesundheit, Justiz.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt'>Die
+zentrale Herausforderung:</span></b><span style='font-size:14.0pt'> Diese
+Transformation findet statt, ob wir uns damit beschäftigen oder nicht. KI ist
+längst keine Zukunftsvision mehr, sondern operative Realität in Suchmaschinen,
+Textverarbeitungen, Bewerbungssystemen, Kreditprüfungen, medizinischen
+Diagnosen. Wer heute auf KI-Grundkompetenz verzichtet, verzichtet auf
+Mitsprache – bei Entscheidungen, die das eigene Leben direkt betreffen.</span></p>
+
+<p class=MsoNormal style='margin-top:18.0pt;line-height:normal'><b><span
+style='font-size:14.0pt'>Drei Dimensionen der Notwendigkeit:</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+normal'><span style='font-size:14.0pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt'>Epistemische Souveränität (die
+Fähigkeit, Wissen einzuordnen): In einer Welt KI-generierter Inhalte wird die
+Fähigkeit, Informationsquellen zu bewerten, zur Kernkompetenz demokratischer
+Teilhabe. Wer nicht versteht, wie KI Texte erzeugt, Bilder manipuliert oder
+Suchergebnisse kuratiert, verliert die Orientierung im öffentlichen Diskurs.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+normal'><span style='font-size:14.0pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt'>Ökonomische Teilhabe: Die
+Arbeitswelt transformiert sich rasant. Nicht KI ersetzt Jobs – sondern Menschen
+mit KI-Kompetenz ersetzen Menschen ohne. Wer die Werkzeuge nicht kennt, kann
+weder seine Produktivität steigern noch seine Employability (Beschäftigungsfähigkeit)
+sichern.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+normal'><span style='font-size:14.0pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt'>Ethische Gestaltungsmacht: KI
+wirft fundamentale Fragen auf – nach Datenschutz, Bias, Autonomie, Macht. Wer
+diese Diskussionen nicht führen kann, überlässt sie Tech-Konzernen und
+Algorithmus-Designern. KI-Kompetenz ist politische Bildung für das 21. Jahrhundert.</span></p>
+
+<p class=MsoNormal style='margin-top:18.0pt;line-height:normal'><b><span
+style='font-size:14.0pt'>Keine Frage des Enthusiasmus:</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Es
+geht nicht darum, KI zu &quot;lieben&quot; oder technikgläubig zu werden. Im
+Gegenteil: Gerade kritische, skeptische Menschen sollten sich informieren – um
+qualifiziert widersprechen, Grenzen ziehen und Alternativen einfordern zu
+können. Ignoranz ist keine Position, sondern Kapitulation.</span></p>
+
+<h3 style='margin-top:18.0pt'><a name="_Toc214875783"></a><a
+name="_Toc214882166"><span style='font-size:16.0pt;line-height:115%'>Minimales
+Handlungsprogramm:</span></a></h3>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Experimentieren
+     Sie mit einem KI-Assistenten (ChatGPT, Claude, Gemini) – nicht als Ersatz
+     für Denken, sondern als Denk-Sparringspartner.</span></li>
+ <li class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Verstehen
+     Sie die Grundprinzipien: Was kann KI? Was kann sie nicht? Wo sind ihre
+     blinden Flecken?</span></li>
+ <li class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Entwickeln
+     Sie eine persönliche KI-Ethik: Wo setzen Sie KI ein – und wo bewusst
+     nicht?</span></li>
+ <li class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Bleiben
+     Sie im Diskurs: Lesen Sie kritische Analysen, diskutieren Sie mit anderen,
+     bilden Sie sich eine Position.</span></li>
+</ul>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Die
+Frage ist nicht mehr, <i>ob</i> KI unser Leben verändert, sondern <i>wie</i> –
+und wer darüber entscheidet. Wer sich heute nicht informiert, hat es morgen
+deutlich schwerer, seine Stimme geltend zu machen.</span></p>
+
+<p class=MsoNormal style='line-height:normal'>&nbsp;</p>
+
+<h2><a name="_Toc214875779"></a><a name="_Toc214882167"><span style='font-size:
+18.0pt;line-height:115%;font-family:"Segoe UI Emoji",sans-serif'>&#9889;</span></a><span
+style='font-size:18.0pt;line-height:115%'> Was heißt das für Ihren Alltag?
+Konkrete Gründe &amp; erste Schritte</span></h2>
+
+<h3><a name="_Toc214882168"><span style='font-size:16.0pt;line-height:115%'>Warum
+KI auch Sie betrifft – 7 Gründe, die zählen</span></a></h3>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>1. KI
+kommt überall hin – ob Sie wollen oder nicht</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>KI steckt heute schon in Ihrem Handy, Ihrer Google-Suche,
+Office-Programmen, Banking-Apps, Behördenportalen. Sie nutzen KI längst, ohne
+es zu merken. Die Frage ist: Verstehen Sie, was da passiert?</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>2. Wer KI
+nicht versteht, wird leichter manipuliert</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Gefälschte Bilder, KI-geschriebene Fake-News, manipulierte
+Videos – wer nicht weiß, wie KI funktioniert, kann nicht mehr unterscheiden,
+was echt ist. Das ist gefährlich.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>3. Ihre
+Arbeit verändert sich – mit oder ohne Sie</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Fast jeder Job wird von KI berührt: Büro, Handwerk, Pflege,
+Verkauf. Nicht KI nimmt Ihnen den Job weg – sondern Kollegen, die KI nutzen und
+dadurch schneller/besser arbeiten. Wer nicht mitkommt, verliert Chancen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>4. KI kann
+Ihnen Zeit sparen – wenn Sie wissen, wie</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+     line-height:115%'>Briefe formulieren? KI hilft beim ersten Entwurf.</span></li>
+ <li class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+     line-height:115%'>Etwas recherchieren? KI fasst zusammen.</span></li>
+ <li class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+     line-height:115%'>Ideen sortieren? KI strukturiert.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Sie müssen es nicht nutzen – aber es ist klug zu wissen, dass
+es geht.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>5. Andere
+entscheiden für Sie – wenn Sie schweigen</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Firmen und Politik gestalten gerade die KI-Zukunft. Wer
+nichts über KI weiß, kann nicht mitreden. Dann entscheiden andere, wie KI Ihr
+Leben beeinflusst. Ein bisschen Wissen ist Selbstschutz.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>6. KI
+ersetzt keine Menschen – aber Sie sollten den Unterschied kennen</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>Echte Gespräche, Freundschaft, Empathie – das bleibt zwischen
+Menschen. KI ist nur ein Werkzeug. Aber wenn Sie nicht verstehen, wo die Grenze
+ist, kann es sich vermischen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><span style='font-size:14.0pt;line-height:115%'>7. Sie
+dürfen Grenzen setzen – aber nur, wenn Sie informiert sind</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><span style='font-size:14.0pt;
+line-height:115%'>KI-Kompetenz heißt nicht: &quot;Ich mache alles mit KI.&quot;
+Sondern: &quot;Ich weiß, wo KI hilft – und wo ich sie bewusst ausschalte.&quot;
+Aber ohne Grundwissen können Sie diese Grenze nicht ziehen.</span></p>
+
+<div class=MsoNormal align=center style='margin-bottom:0cm;text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<h3><a name="_Toc214875780"></a><a name="_Toc214882169"><span style='font-size:
+16.0pt;line-height:115%'>Was sollten Sie konkret tun?</span></a></h3>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
+"Segoe UI Emoji",sans-serif'>&#9989;</span><span style='font-size:14.0pt;
+line-height:115%'> <b>Probieren Sie es einmal aus:</b> Gehen Sie auf ChatGPT
+oder einen anderen KI-Chat. Stellen Sie eine Frage. Sehen Sie, was passiert.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
+"Segoe UI Emoji",sans-serif'>&#9989;</span><span style='font-size:14.0pt;
+line-height:115%'> <b>Verstehen Sie die Basics:</b> Was kann KI gut? (Texte
+schreiben, zusammenfassen, Ideen entwickeln) Was kann sie nicht? (Echte
+Gefühle, kreative Originalität, Verantwortung übernehmen)</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
+"Segoe UI Emoji",sans-serif'>&#9989;</span><span style='font-size:14.0pt;
+line-height:115%'> <b>Reden Sie mit anderen:</b> Tauschen Sie sich aus. Was
+nutzen andere? Was finden sie gut, was problematisch?</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
+"Segoe UI Emoji",sans-serif'>&#9989;</span><span style='font-size:14.0pt;
+line-height:115%'> <b>Bleiben Sie kritisch:</b> KI macht Fehler, kann täuschen,
+hat blinde Flecken. Glauben Sie nicht alles - prüfen Sie nach, wie bei anderen
+Quellen auch.</span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;line-height:115%'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Typische
+Missverständnisse – vermeiden Sie diese:</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
+"Segoe UI Emoji",sans-serif'>&#10060;</span><span style='font-size:14.0pt;
+line-height:115%'> &quot;Ich brauche den Kontakt zu Menschen, nicht zu
+Maschinen.&quot;<br>
+&#8594; Richtig! KI ersetzt keine Menschen. Sie kann Ihnen helfen, mehr Zeit
+für echte Kontakte zu haben.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
+"Segoe UI Emoji",sans-serif'>&#10060;</span><span style='font-size:14.0pt;
+line-height:115%'> &quot;Ich komme doch ohne KI klar.&quot;<br>
+&#8594; Heute vielleicht. Aber KI wird in immer mehr Systeme eingebaut. Bald
+ist &quot;Ohne KI klarkommen&quot; wie &quot;Ohne Internet klarkommen&quot; –
+möglich, aber zunehmend schwierig.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
+"Segoe UI Emoji",sans-serif'>&#10060;</span><span style='font-size:14.0pt;
+line-height:115%'> &quot;Das ist doch alles nur unpersönlich.&quot;<br>
+&#8594; Stimmt, KI selbst ist unpersönlich. Aber sie übernimmt das Mechanische.
+Wenn sie Ihnen 20 Minuten Recherche abnimmt, gewinnen Sie 20 Minuten für das,
+was Ihnen wichtig ist.</span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;line-height:115%'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal style='margin-bottom:0cm'><b><span style='font-size:16.0pt;
+line-height:115%'>Die Kernbotschaft:</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Es geht
+nicht darum, KI zu lieben. Es geht darum, <b>selbstbestimmt zu bleiben</b> in
+einer Welt, in der KI sowieso vorkommt. Wer sich nicht informiert, gibt
+Kontrolle ab – an Firmen, Algorithmen, andere Menschen.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Ein
+bisschen KI-Grundwissen ist heute so wichtig wie früher Lesen und Schreiben.</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='line-height:normal'>&nbsp;</p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:normal'>
+
+<hr size=4 width="100%" align=center>
+
+</div>
+
+<h1><a name="_Toc214875784"></a><a name="_Toc214882170"><span
+class=berschrift1Zchn>Transparenzhinweis – Entstehung dieses Textes</span></a></h1>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Dieser Text
+basiert auf meinen eigenen Gedanken und Erfahrungen zum Thema KI.<br>
+Ich habe sie zunächst frei per Diktat festgehalten und anschließend mit Hilfe
+von KI-Werkzeugen (ChatGPT und Claude) strukturieren und in eine gut lesbare
+Form bringen lassen.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Zum Schluss
+habe ich den Text redaktionell überarbeitet und an einigen Stellen inhaltlich
+ergänzt.<br>
+So nutze ich KI hier genauso, wie ich es in meinen Veranstaltungen empfehle:
+als Unterstützung beim Sortieren, Verdichten und Formulieren – die
+Verantwortung für Inhalt und Aussagen liegt bei mir.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=4 width="100%" align=center>
+
+</div>
+
+<h1><a name="_Toc214121149"></a><a name="_Toc214875785"></a><a
+name="_Toc214882171"></a><a name="_Toc213972646">Urheberrecht &amp;
+Verwendungshinweis</a>, KI-Transparenz</h1>
+
+<p class=MsoNormal style='line-height:normal'><b>© Franz Jankowski 2025. Alle
+Rechte vorbehalten.</b><br>
+<span style='font-size:14.0pt'>Diese Unterlagen sind urheberrechtlich geschützt
+und ausschließlich für den persönlichen, nicht-kommerziellen Gebrauch bestimmt.
+Jegliche Vervielfältigung oder Weitergabe von Kopien der Inhalte sowie jede
+kommerzielle Nutzung – ganz oder teilweise – bedürfen meiner vorherigen
+schriftlichen Zustimmung. Gesetzliche Schranken (z. B. Zitatrecht) bleiben
+unberührt. Das bloße Verlinken auf diese Seite ist ausdrücklich erlaubt. </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Zur&nbsp;<b>KI-Transparenz</b>&nbsp;siehe&nbsp;</span><a
+href="https://fjki-info.github.io/transparenz"><i><span style='font-size:14.0pt'>hier</span></i></a><span
+style='font-size:14.0pt'>.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
+style='font-size:10.0pt;color:#747474'>Version: v0.9b – Stand: 06.12.2025</span></p>
+
+</div>
+<img src="https://FranzJ.goatcounter.com/count?p=/warum_ki" style="display:none;">
+</body>
+
+</html>
