@@ -1,11 +1,37 @@
 <html>
 
 <head>
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<!-- Optional: Bootstrap über CDN für bessere Tabellen-Darstellung -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- =========================================
+       [PFLICHT] Zeichensatz korrekt setzen
+       → verhindert Umlaute-/Sonderzeichenprobleme
+       ========================================= -->
+  <meta charset="UTF-8">
+
+
+  <!-- =========================================
+       [PFLICHT] Viewport für Responsive Layouts
+       → sonst greifen Media Queries nicht sauber
+       ========================================= -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- =========================================
+       [OPTIONAL] Bootstrap
+       → falls du Word-Tabellen oder Basis-Design
+         etwas schöner formatiert haben willst
+       ========================================= -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+  <!-- =========================================
+       [PFLICHT] Eigene CSS nach Bootstrap
+       → überschreibt Bootstrap-Vorgaben
+       → enthält .container + Media Queries
+       ========================================= -->
+  <link rel="stylesheet" href="style.css">
+
+
 <style>
 <!--
  /* Font Definitions */
@@ -118,23 +144,6 @@ div.WordSection1
 ul
 	{margin-bottom:0cm;}
 -->
-@media (max-width: 768px) {
-  body {
-    font-size: 1.5em;
-    padding-left: 17px;   /* Abstand links */
-    padding-right: 17px;  /* Abstand rechts */
-  }
-  
-  table {
-    font-size: 1.4em;
-  }
-}
-@media (min-width: 769px) {
-  body {
-    padding-left: 28px;
-    padding-right: 28px;
-  }
-}
 </style>
 
 </head>
@@ -142,6 +151,16 @@ ul
 <body lang=DE link="#467886" vlink="#96607D" style='word-wrap:break-word'>
 
 <div class=WordSection1>
+
+  <!-- =============================================
+       [NEU / WICHTIG]
+       Layout-Container
+       ---------------------------------------------
+       - DIESER Div muss ALLES umschließen,
+         was dein Seiteninhalt ist.
+       - Hier greifen Ränder & max-width aus style.css
+       ============================================= -->
+  <div class="container">
 
 <h1 align=center style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
 margin-left:0cm;text-align:center'><a name="_Toc214626412">
@@ -156,7 +175,7 @@ Franz Jankowski</a></p>
 <div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
 
 <p class=MsoNormal style='margin-bottom:0cm;border:none;padding:0cm'><span
-style='font-size:16.0pt;line-height:115%'>(Testversion) Anlaufstelle für ergänzende Informationen<a
+style='font-size:16.0pt;line-height:115%'>Anlaufstelle für ergänzende Informationen --- TEST-VERSION (experimentell oder alt)<a
 name="_Toc214626413"></a></span></p>
 
 </div>
@@ -174,7 +193,7 @@ Informationen</span></h1>
    <p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%;
    color:black'>Unterlage</span></b><span style='font-size:16.0pt;line-height:
    115%;color:black'> </span><span style='font-size:14.0pt;line-height:115%;
-   color:black'>(ggf. anklicken)</span></p>
+   color:black'>(Test-Versionen)</span></p>
    </td>
    <td width="72%" style='width:72.9%;border:solid #DDDDDD 1.0pt;border-left:
    none;background:#F2F2F2;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:60.7pt'>
@@ -187,13 +206,28 @@ Informationen</span></h1>
   <td width="27%" style='width:27.1%;border:solid #DDDDDD 1.0pt;border-top:
   none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
   <p class=MsoNormal><a href="https://fjki-info.github.io/tools/test-tools.html"><b><span
-  style='font-size:16.0pt;line-height:115%'>Tools – ChatBots und mehr</span></b></a></p>
+  style='font-size:16.0pt;line-height:115%'>Tools – ChatBots</span></b></a></p>
   </td>
   <td width="72%" style='width:72.9%;border-top:none;border-left:none;
   border-bottom:solid #DDDDDD 1.0pt;border-right:solid #DDDDDD 1.0pt;
   padding:6.0pt 6.0pt 6.0pt 6.0pt'>
   <p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>Bekannte
-  ChatBots, Recherche-Portale mit und ohne KI</span></p>
+  ChatBots mit Kurzprofilen, Empfehlungen für Beginner und Tipps für bessere
+  KI-Antworten.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="27%" style='width:27.1%;border:solid #DDDDDD 1.0pt;border-top:
+  none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal><a href="https://fjki-info.github.io/recherche"><b><span
+  style='font-size:16.0pt;line-height:115%'>Recherche &amp; Lernen</span></b></a></p>
+  </td>
+  <td width="72%" style='width:72.9%;border-top:none;border-left:none;
+  border-bottom:solid #DDDDDD 1.0pt;border-right:solid #DDDDDD 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>KI-gestützte
+  Recherche- und Lernwege: NotebookLM &amp; STORM, spezialisierte
+  Recherche-Portale, Open-Access-Quellen, MOOCs und OpenCourseWare.</span></p>
   </td>
  </tr>
  <tr>
@@ -206,20 +240,20 @@ Informationen</span></h1>
   border-bottom:solid #DDDDDD 1.0pt;border-right:solid #DDDDDD 1.0pt;
   padding:6.0pt 6.0pt 6.0pt 6.0pt'>
   <p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>Erläuterung
-  einiger in den Veranstaltungen und Unterlagen verwendeter Begriffe</span></p>
+  einiger in den Veranstaltungen und Unterlagen verwendeter Begriffe.</span></p>
   </td>
  </tr>
  <tr>
   <td width="27%" style='width:27.1%;border:solid #DDDDDD 1.0pt;border-top:
   none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-  <p class=MsoNormal><a href="https://fjki-info.github.io/ideen-buffet/test-ideen-buffet.html"><b><span
+  <p class=MsoNormal><a href="https://fjki-info.github.io/ideen-buffet"><b><span
   style='font-size:16.0pt;line-height:115%'>Ideen-Buffet</span></b></a></p>
   </td>
   <td width="72%" style='width:72.9%;border-top:none;border-left:none;
   border-bottom:solid #DDDDDD 1.0pt;border-right:solid #DDDDDD 1.0pt;
   padding:6.0pt 6.0pt 6.0pt 6.0pt'>
   <p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>Was kann
-  KI für mich tun? Ein paar Anregungen</span></p>
+  KI für mich tun? Ein paar Anregungen.</span></p>
   </td>
  </tr>
  <tr>
@@ -238,14 +272,14 @@ Informationen</span></h1>
  <tr>
   <td width="27%" style='width:27.1%;border:solid #DDDDDD 1.0pt;border-top:
   none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-  <p class=MsoNormal><a href="https://fjki-info.github.io/transparenz/test-transparenz.html"><b><span
+  <p class=MsoNormal><a href="https://fjki-info.github.io/transparenz"><b><span
   style='font-size:16.0pt;line-height:115%'>Transparenzangaben</span></b></a></p>
   </td>
   <td width="72%" style='width:72.9%;border-top:none;border-left:none;
   border-bottom:solid #DDDDDD 1.0pt;border-right:solid #DDDDDD 1.0pt;
   padding:6.0pt 6.0pt 6.0pt 6.0pt'>
   <p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>Hinweis zu
-  den KIs, die während der Erstellung der Unterlagen verwendet wurden</span></p>
+  den KIs, die während der Erstellung der Unterlagen verwendet wurden.</span></p>
   </td>
  </tr>
 </table>
@@ -312,7 +346,7 @@ text-decoration:none'>4</span></a></p>
 <h1><a name="_Toc214626414"><span style='color:windowtext'>Wie meine </span>KI-Sessions
 aufgebaut sind</a></h1>
 
-<p class=MsoNormal><img width=954 height=537 src="test-hub-Dateien/image001.png"></p>
+<p class=MsoNormal><img width=1134 height=638 src="index-Dateien/image001.png"></p>
 
 <h1><a name="_Toc214626415">Warum mache ich das?</a></h1>
 
@@ -335,12 +369,11 @@ ich dieses Engagement weiterentwickle, werde ich von Zeit zu Zeit neu bewerten.<
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><img width=359 height=269 id="Picture 2"
-src="test-hub-Dateien/image002.jpg"
-alt="I generated images with the prompt: 'Grafik für den Anfang der Veranstaltung: Eine visuelle Darstellung der Veranstaltungskomponenten, einschließlich dieser Präsentation, live Erläuterungen, ausgelagerte Dokumente, Praxisfälle in den Tools, Mitwirkung des Publikums (Fragen, Beiträge, praktische Übungen) und Diskussionen. Design sollte klar und ansprechend sein, mit Symbolen für jede Komponente.'"></p>
+<p class=MsoNormal><img width=1137 height=830 src="index-Dateien/image002.jpg"
+alt="Ein Bild, das Person, Kleidung, Cartoon, Im Haus enthält."></p>
 
 <p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'><img
-width=147 height=20 id="Grafik 1" src="test-hub-Dateien/image003.png"></span></p>
+width=147 height=20 id="Grafik 1" src="index-Dateien/image003.png"></span></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
@@ -364,9 +397,9 @@ href="https://fjki-info.github.io/transparenz/test-transparenz.html"><i><span st
 style='font-size:14.0pt'>. </span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-color:#7F7F7F'>Version: v0.9b – Stand: 06.12.2025. </span><span
+color:#7F7F7F'>Version: v0.9 – Stand: 09.12.2025. </span><span
 style='font-size:11.0pt;color:#D1D1D1'>Testversionen </span><a
-href="https://fjki-info.github.io/test-hub"><i><span style='font-size:11.0pt;
+href="https://fjki-info.github.io/test-hub.html"><i><span style='font-size:11.0pt;
 color:#E8E8E8'>hier</span></i></a><span style='font-size:11.0pt;color:#D1D1D1'>
 (experimentell, pre-final, etc.).</span></p>
 
@@ -388,9 +421,18 @@ color:#E8E8E8'>hier</span></i></a><span style='font-size:11.0pt;color:#D1D1D1'>
 
 <p class=MsoNormal>&nbsp;</p>
 
+
+
+  </div>
+  <!-- ======= [NEU] Container sauber schließen ======= -->
+
+
 </div>
-<img src="https://FranzJ.goatcounter.com/count?p=/Test-Hub" style="display:none;">
+<!-- ======= [NEU] WordSection sauber schließen ======= -->
+
+
+</div>
+<img src="https://FranzJ.goatcounter.com/count?p=/test-Hub" style="display:none;">
 </body>
 
 </html>
-
