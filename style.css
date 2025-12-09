@@ -23,6 +23,13 @@ table {
   font-size: 1.1em;
 }
 
+/* Basisregel für alle Bilder – sorgt für responsives Verhalten */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 /* =======================
    Größere Smartphones /
