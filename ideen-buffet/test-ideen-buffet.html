@@ -1,11 +1,36 @@
 <html>
 
 <head>
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<!-- Optional: Bootstrap über CDN für bessere Tabellen-Darstellung -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- =========================================
+       [PFLICHT] Zeichensatz korrekt setzen
+       → verhindert Umlaute-/Sonderzeichenprobleme
+       ========================================= -->
+  <meta charset="UTF-8">
+
+
+  <!-- =========================================
+       [PFLICHT] Viewport für Responsive Layouts
+       → sonst greifen Media Queries nicht sauber
+       ========================================= -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- =========================================
+       [OPTIONAL] Bootstrap
+       → falls du Word-Tabellen oder Basis-Design
+         etwas schöner formatiert haben willst
+       ========================================= -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+  <!-- =========================================
+       [PFLICHT] Eigene CSS nach Bootstrap
+       → überschreibt Bootstrap-Vorgaben
+       → enthält .container + Media Queries
+       ========================================= -->
+  <link rel="stylesheet" href="../style.css">
+
 <style>
 <!--
  /* Font Definitions */
@@ -68,11 +93,6 @@ p.MsoToc2, li.MsoToc2, div.MsoToc2
 	line-height:115%;
 	font-size:12.0pt;
 	font-family:"Aptos",sans-serif;}
-p.MsoHeader, li.MsoHeader, div.MsoHeader
-	{mso-style-link:"Kopfzeile Zchn";
-	margin:0cm;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
 p.MsoTitle, li.MsoTitle, div.MsoTitle
 	{mso-style-link:"Titel Zchn";
 	margin-top:0cm;
@@ -131,9 +151,6 @@ span.TitelZchn
 	mso-style-link:Titel;
 	font-family:"Aptos Display",sans-serif;
 	letter-spacing:-.5pt;}
-span.KopfzeileZchn
-	{mso-style-name:"Kopfzeile Zchn";
-	mso-style-link:Kopfzeile;}
 .MsoChpDefault
 	{font-size:12.0pt;
 	font-family:"Aptos",sans-serif;}
@@ -152,18 +169,6 @@ div.WordSection1
 ul
 	{margin-bottom:0cm;}
 -->
-@media (max-width: 768px) {
-  body {
-    font-size: 1.5em;
-    padding-left: 17px;   /* Abstand links */
-    padding-right: 17px;  /* Abstand rechts */
-  }
-  
-  table {
-    font-size: 1.4em;
-  }
-
-}
 </style>
 
 </head>
@@ -172,24 +177,44 @@ ul
 
 <div class=WordSection1>
 
-<p class=MsoTitle>Was KI für mich tun kann – Ideen zum Ausprobieren</p>
 
-<p class=MsoHeader><span style='font-size:14.0pt'>&nbsp;</span></p>
+  <!-- =============================================
+       [NEU / WICHTIG]
+       Layout-Container
+       ---------------------------------------------
+       - DIESER Div muss ALLES umschließen,
+         was dein Seiteninhalt ist.
+       - Hier greifen Ränder & max-width aus style.css
+       ============================================= -->
+  <div class="container">
 
-<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>KI-Chatbots
-liefern Vorschläge in Textform, mit denen Sie weiterarbeiten können.<br>
+<div class=MsoNormal align=center style='text-align:center'><b>
+
+<hr size=1 width="100%" align=center>
+
+</b></div>
+
+<p class=MsoTitle>Ideen-Buffet</p>
+
+<p class=MsoNormal style='margin-top:8.0pt;line-height:normal'><span
+style='font-size:16.0pt;color:#595959;letter-spacing:.75pt'>Was KI für mich tun
+kann – Ideen zum Ausprobieren.</span></p>
+
+<p class=MsoNormal style='margin-top:8.0pt;line-height:normal'><span
+style='font-size:14.0pt;color:#595959;letter-spacing:.75pt'>KI-Chatbots liefern
+Vorschläge in Textform, mit denen Sie weiterarbeiten können.<br>
 Sie nehmen Ihnen nicht das Denken ab, können aber vieles&nbsp;<b>strukturieren,
 erklären und formulieren</b>, damit Sie schneller vorankommen.</span></p>
 
 <div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
 
-<p class=MsoNormal style='line-height:normal;border:none;padding:0cm'><span
-style='font-size:14.0pt'>Diese Seite ist als&nbsp;<b>Ideen-Buffet</b>&nbsp;gedacht:
-Wählen Sie ein oder zwei Bereiche, die gut zu Ihrem Alltag passen, und
-probieren Sie dort erste Schritte aus.</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;border:none;
+padding:0cm'><span style='font-size:14.0pt;color:#595959;letter-spacing:.75pt'>Wählen
+Sie ein oder zwei Bereiche, die gut zu Ihrem Alltag passen, und probieren Sie
+dort erste Schritte aus.</span></p>
 
-<p class=MsoNormal style='line-height:normal;border:none;padding:0cm'><span
-style='font-size:14.0pt'>&nbsp;</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;border:none;
+padding:0cm'><span style='font-size:14.0pt'>&nbsp;</span></p>
 
 </div>
 
@@ -240,9 +265,10 @@ style='font-size:14.0pt'>Tipp für den Einstieg</span><span style='font-size:
 14.0pt;color:windowtext;display:none;text-decoration:none'>. </span><span
 style='font-size:14.0pt;color:windowtext;display:none;text-decoration:none'>1</span></a></p>
 
-<p class=MsoToc1 style='line-height:normal'><a href="#_Toc214636041"><span
-style='font-size:14.0pt'>Urheberrecht &amp; Verwendungshinweis, KI-Transparenz</span><span
-style='font-size:14.0pt;color:windowtext;display:none;text-decoration:none'>. </span><span
+<p class=MsoToc1 style='margin-top:12.0pt;line-height:normal'><a
+href="#_Toc214636041"><span style='font-size:14.0pt'>Urheberrecht &amp;
+Verwendungshinweis, KI-Transparenz</span><span style='font-size:14.0pt;
+color:windowtext;display:none;text-decoration:none'>. </span><span
 style='font-size:14.0pt;color:windowtext;display:none;text-decoration:none'>1</span></a></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
@@ -515,15 +541,23 @@ oder teilweise – bedürfen meiner vorherigen schriftlichen Zustimmung.
 Gesetzliche Schranken (z. B. Zitatrecht) bleiben unberührt. Das bloße Verlinken
 auf diese Seite ist ausdrücklich erlaubt. </span></p>
 
-<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Zur&nbsp;<b>KI-Transparenz</b>&nbsp;siehe&nbsp;</span><a
-href="https://fjki-info.github.io/transparenz"><span style='font-size:14.0pt'>diese
-Seite</span></a><span style='font-size:14.0pt'>.</span></p>
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Zur&nbsp;<b>KI-Transparenz</b>&nbsp;siehe&nbsp;</span><i><a
+href="https://fjki-info.github.io/transparenz"><span style='font-size:14.0pt'>hier</span></a></i><span
+style='font-size:14.0pt'>.</span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
-style='font-size:10.0pt;color:#747474'>Version: v0.8 – Stand: 24.11.2025</span></p>
+style='font-size:10.0pt;color:#747474'>Version: v0.8 – Stand: 09.12.2025</span></p>
 
 </div>
 
+
+  </div>
+  <!-- ======= [NEU] Container sauber schließen ======= -->
+
+</div>
+<!-- ======= [NEU] WordSection sauber schließen ======= -->
+
+<img src="https://FranzJ.goatcounter.com/count?p=/Ideen-Buffet" style="display:none;">
 </body>
 
 </html>
