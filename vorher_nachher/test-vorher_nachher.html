@@ -1,0 +1,663 @@
+<html>
+
+<head>
+
+  <!-- Schritt 1a =========================================
+       [PFLICHT] Zeichensatz korrekt setzen
+       → verhindert Umlaute-/Sonderzeichenprobleme
+
+       trotzdem nicht vergessen, HTML mit Notepad++ in UTF-8 zu konvertieren
+
+       ========================================= -->
+  <meta charset="UTF-8">
+
+
+  <!-- Schritt 1b =========================================
+       [PFLICHT] Viewport für Responsive Layouts
+       → sonst greifen Media Queries nicht sauber
+       ========================================= -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Schritt 1c =========================================
+       [OPTIONAL] Bootstrap
+       → falls du Word-Tabellen oder Basis-Design
+         etwas schöner formatiert haben willst
+       ========================================= -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+  <!-- Schritt 1d =========================================
+       [PFLICHT] Eigene CSS nach Bootstrap
+       → überschreibt Bootstrap-Vorgaben
+       → enthält .container + Media Queries
+       ========================================= -->
+  <link rel="stylesheet" href="../style.css">
+
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Aptos Display";}
+@font-face
+	{font-family:"Segoe UI Emoji";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+h1
+	{mso-style-link:"Überschrift 1 Zchn";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Überschrift 2 Zchn";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:35.4pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+a:link, span.MsoHyperlink
+	{color:#467886;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift1Zchn
+	{mso-style-name:"Überschrift 1 Zchn";
+	mso-style-link:"Überschrift 1";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift2Zchn
+	{mso-style-name:"Überschrift 2 Zchn";
+	mso-style-link:"Überschrift 2";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.TitelZchn
+	{mso-style-name:"Titel Zchn";
+	mso-style-link:Titel;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:841.9pt 595.3pt;
+	margin:70.85pt 70.85pt 70.85pt 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DE link="#467886" vlink="#96607D" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+  <!-- Schritt 2 =============================================
+       [NEU / WICHTIG]
+       Layout-Container
+       ---------------------------------------------
+       - DIESER Div muss ALLES umschließen,
+         was dein Seiteninhalt ist.
+       - Hier greifen Ränder & max-width aus style.css
+       ============================================= -->
+  <div class="container">
+
+
+<h1 align=center style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:0cm;text-align:center'><a name="_Toc214626412"></a><a
+name="_Toc216213119"></a><a name="_Toc216226780">
+
+<hr size=1 width="100%" align=center>
+
+</a></h1>
+
+<p class=MsoTitle><a name="_Toc213972646">Wie könnte Ihre Erfolgsstory
+aussehen?</a></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='margin-bottom:0cm;border:none;padding:0cm'><a
+name="_Toc214626413"><span style='font-size:16.0pt;line-height:115%'>Ein
+realistisches Beispiel</span></a><a name="_Toc213972647"></a></p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoTocHeading>Inhalt</p>
+
+<p class=MsoToc1><a href="#_Toc216226780"></a><a name="_Toc216226679"></a></p>
+
+<div class=MsoToc1 align=center style='text-align:center'><a
+href="#_Toc216226780"><span style='color:windowtext;text-decoration:none'>
+
+<hr size=1 width="100%" align=center>
+
+</span></a></div>
+
+<p class=MsoToc1><a href="#_Toc216226780"><span style='color:windowtext;
+display:none;text-decoration:none'>................................................................................................ </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc216226781">Vielleicht Ihre Geschichte in Bildern<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc216226782">Die kleine Erfolgsstory in acht
+Szenen<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc216226783">Haben Sie Lust auf Ihren eigenen
+entspannten Einstieg in KI?<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc216226784">Wie diese Bildergeschichte entstanden
+ist<span style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoNormal><span style='font-size:1.0pt;line-height:115%'> </span></p>
+
+<p class=MsoToc1><a href="#_Toc216226785">Noch eine kleine Geschichte:
+Ablenkung &amp; verpasste Chancen<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoNormal><span style='font-size:1.0pt;line-height:115%'> </span></p>
+
+<p class=MsoToc1><a href="#_Toc216226786">Urheberrecht &amp;
+Verwendungshinweis, KI-Transparenz<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name="_Toc216213120"></a><a name="_Toc216226781">Vielleicht Ihre
+Geschichte in Bildern</a></h1>
+
+<p class=MsoNormal>Sie mögen in dieser kleinen Bildergeschichte die eine oder andere vertraute Situation entdecken:<br>
+Am Anfang steht Überforderung durch Schlagzeilen und KI-Hype, dazwischen die Frage „Brauche ich das überhaupt?" – und am Ende ein entspannter, souveräner Umgang mit KI im eigenen Alltag.</p>
+
+<p class=MsoNormal>Die gezeigte Person ist fiktiv, aber ihr Weg ist
+realistisch:</p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal>von <i>Unsicherheit</i> zu <i>Neugier</i>,</li>
+ <li class=MsoNormal>von „Ich verstehe das alles nicht“ zu „Ich probiere es
+     Schritt für Schritt aus“,</li>
+ <li class=MsoNormal>und schließlich zu „Ich kann jetzt sogar anderen beim
+     Einstieg helfen“.</li>
+</ul>
+
+<p class=MsoNormal><b>So könnte es aussehen</b>, wenn Sie sich entscheiden, KI
+als Werkzeug und Lernchance zu betrachten – in Ihrem eigenen Tempo und mit Raum
+für Fragen.</p>
+
+<h2><a name="_Toc216213121">&nbsp;</a></h2>
+
+<h2><a name="_Toc216226782">Die kleine Erfolgsstory in acht Szenen</a> </h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1408 height=768 src="test-vorher_nachher-Dateien/image001.jpg"></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>‚KI REVOLUTION‘ hier, ‚KI ERSETZT JOBS? ‘ da – offenbar ist die Zukunft
+schon längst angekommen, nur meine Hirnsoftware hat noch kein Update bekommen.
+Bevor ich entscheide, ob ich begeistert oder panisch sein soll, bräuchte ich
+ehrlich gesagt erstmal eine verständliche Gebrauchsanleitung – idealerweise
+eine, die mein Nervensystem nicht gleich überfordert.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1408 height=768 src="test-vorher_nachher-Dateien/image002.jpg"></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ich scrolle durch meinen Newsfeed und bekomme gefühlt nur zwei
+Botschaften: Entweder rettet KI die Welt – oder sie frisst meinen Job zum
+Frühstück. In meinem Kopf steht jedenfalls: großes Fragezeichen, kleine
+Gewitterwolke und die Frage: ‚Nur Hype – oder bin ich die Einzige ohne
+Einweisung in dieses ganze KI-Chaos? ‘</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1408 height=768 src="test-vorher_nachher-Dateien/image003.jpg"></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Oh – zum ersten Mal seit Tagen sehe ich etwas über KI, das nicht nach
+Weltuntergang oder Wunderwaffe klingt: ‚INFO-SESSION: KI entspannt nutzen‘.
+Verständlich erklärt, praktisch ausprobiert … klingt fast so, als hätte jemand
+in meinen Kopf geschaut. Ein Teil von mir bleibt skeptisch – der andere denkt:
+Vielleicht ist das ja genau die Gebrauchsanleitung, nach der ich heimlich
+gesucht habe.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1408 height=736 src="test-vorher_nachher-Dateien/image004.png"></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'>4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ich sitze also tatsächlich in so einem KI-Workshop – und niemand lacht,
+wenn jemand fragt: ‚Was genau macht diese KI da eigentlich?‘ Statt
+Fachchinesisch gibt’s Glühbirnen, Sprechblasen und einfache Beispiele. Ich
+ertappe mich dabei, wie ich die Hand hebe und eine Frage stelle. Und das
+Überraschende: Es fühlt sich nicht peinlich an, sondern eher so, als würde mein
+Gehirn zum ersten Mal eine freundliche Einführung in ‚KI für Menschen ohne
+Superkräfte‘ bekommen.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1408 height=736 id="Grafik 5"
+src="test-vorher_nachher-Dateien/image005.png"></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'>5)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ich sitze abends am Schreibtisch, meine Notizen mit ‚Tipps &amp;
+Prompts‘ neben mir, und teste zum ersten Mal allein diese KI aus. Auf dem
+Bildschirm steht freundlich: ‚Hallo! Wie kann ich helfen?‘ – und ich denke mir:
+‚Na, fangen wir mal klein an, bevor wir die Welt retten.‘ Ich tippe meine
+ersten vorsichtigen Fragen ein – und merke: Das fühlt sich gar nicht nach
+Science-Fiction an, sondern eher wie ein ziemlich geduldiger Assistent, der mir
+tatsächlich Arbeit abnimmt. Ganz leise kommt der Gedanke: <i>Vielleicht war
+meine Panik vor ein paar Tagen etwas… überdimensioniert.</i></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1408 height=736 id="Grafik 6"
+src="test-vorher_nachher-Dateien/image006.png"></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'>6)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Vor einer Woche hätte ich noch geschworen, dass KI nur etwas für
+Tech-Nerds und Großkonzerne ist. Jetzt sitze ich im Café, zeige meinen
+Freunden, wie mir das Ding Texte kürzt, Ideen sortiert und Mails vorformuliert
+– und wir lachen gemeinsam über eine besonders kreative Formulierung der KI.
+Irgendwie verrückt: Statt Angst, ‚abgehängt‘ zu werden, ertappe ich mich dabei,
+wie <i>ich</i> plötzlich erkläre, wie man den ersten Schritt mit KI macht.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1408 height=736 id="Grafik 7"
+src="test-vorher_nachher-Dateien/image007.png"></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'>7)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Links
+(vorher): So sah mein Alltag früher aus – mein Schreibtisch als Mahnmal für
+‚Irgendwas wollte ich doch noch erledigen…‘ und ich mittendrin, kurz davor, mir
+selbst eine Überlastungs-Mail zu schreiben. Rechts (nachher): dieselben
+Aufgaben, aber endlich sortiert, übersichtlich als To-do-Liste, daneben ein
+kleines KI-Chatfenster, das mir beim Strukturieren, Formulieren und
+Priorisieren hilft. </p>
+
+<p class=MsoListParagraphCxSpLast>Fazit: Die KI hat mein Leben nicht übernommen
+– sie sorgt nur dafür, dass ich meinen Tee austrinken kann, bevor er kalt wird.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1408 height=736 id="Grafik 8"
+src="test-vorher_nachher-Dateien/image008.png"></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'>8)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Neulich noch unter Zeitungen mit ‚KI REVOLUTION‘ vergraben, heute stehe
+ich hier mit meinem Tablet und erkläre anderen die ersten Schritte. Ich zeige,
+wie man Fragen stellt, Ergebnisse prüft und die KI als hilfreiches Werkzeug
+nutzt – ohne Hype, ohne Panik. Ganz ehrlich: Ich hätte nie gedacht, dass <i>ich</i>
+mal zu den Leuten gehöre, die sagen: ‚Probier’s einfach aus, ich zeig dir, wie
+du entspannt einsteigen kannst.‘ Und das Schönste: Die Zukunft fühlt sich
+plötzlich weniger nach Drohung und mehr nach Einladung an. <span
+style='font-family:"Segoe UI Emoji",sans-serif'>&#128588; </span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><a name="_Toc216213122"></a><a name="_Toc216226783"><span
+class=berschrift2Zchn><span style='font-size:16.0pt;line-height:115%'>Haben Sie
+Lust auf Ihren eigenen entspannten Einstieg in KI?</span></span></a><span
+style='font-size:14.0pt;line-height:115%'><br>
+</span>Wenn Sie sich in Teilen dieser Geschichte wiederfinden – zwischen
+Informationsflut, Skepsis und vorsichtiger Neugier – dann könnten meine
+KI-Sessions ein passender nächster Schritt für Sie sein.</p>
+
+<p class=MsoNormal>Dort haben Sie die Gelegenheit,</p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal>KI in Ruhe auszuprobieren,</li>
+ <li class=MsoNormal>Ihre eigenen Fragen zu stellen und</li>
+ <li class=MsoNormal>konkrete Anwendungsfälle aus Ihrem Alltag zu testen – ohne
+     Fachjargon, ohne Hype.</li>
+</ul>
+
+<p class=MsoNormal><span style='font-family:"Segoe UI Emoji",sans-serif'>Haben
+Sie Interesse?  &#128073;</span> Halten Sie nach Terminen Ausschau und melde
+Sie sich an <span style='font-family:"Segoe UI Emoji",sans-serif'>&#128521;</span> 
+<i><span style='color:#747474'>(wird ergänzt)</span></i><span style='color:
+#747474'> <b> </b></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc216213123"></a><a name="_Toc216226784">Wie diese
+Bildergeschichte entstanden ist</a></h2>
+
+<p class=MsoNormal>Die Bildergeschichte ist selbst ein kleines Praxisbeispiel
+dafür, wie sich verschiedene KI-Werkzeuge sinnvoll kombinieren lassen.</p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal>Zuerst habe ich die Grundidee und den groben Ablauf der
+     Story in einem Dialog mit ChatGPT entwickelt. Daraus entstanden
+     detaillierte Szenenbeschreibungen für acht Bilder.</li>
+ <li class=MsoNormal>Diese Beschreibungen habe ich anschließend an Google
+     Gemini übergeben. Gemini hat daraus einen einheitlichen „Style-Kontext“
+     und englische Bild-Prompts erzeugt, die sich gut für die Bilderzeugung
+     eignen.</li>
+ <li class=MsoNormal>Mit diesen Prompts wurden dann über das integrierte
+     Bilderstellungs-Tool („Nano Banana“) die acht Illustrationen generiert –
+     ein begrenztes Kontingent im Pro-Modus, das nach der Nutzung erst einmal
+     eine Weile gesperrt war.</li>
+ <li class=MsoNormal>Die Prompts selbst habe ich mit DeepL übersetzt und erneut
+     an ChatGPT geschickt, um passende Bildunterschriften in Ich-Perspektive
+     formulieren zu lassen – Schritt für Schritt, im Austausch.</li>
+</ul>
+
+<p class=MsoNormal>Das Ergebnis sehen Sie hier: eine kleine
+„Vorher–Nachher“-Geschichte, die zeigt, wie aus Überforderung und Skepsis
+Neugier, Kompetenz und Gelassenheit im Umgang mit KI werden können – und
+gleichzeitig demonstriert, wie solche Inhalte heute mit Hilfe von KI-Werkzeugen
+entstehen.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name="_Toc216226785">Noch eine kleine Geschichte: Ablenkung &amp;
+verpasste Chancen</a></h1>
+
+<p class=MsoNormal>Vielleicht kommt Ihnen dieses Muster bekannt vor: Sie wachen
+ausgeschlafen auf, haben eine gute Idee oder einen klaren Vorsatz – und greifen
+„nur kurz“ zum Handy. Aus dem kurzen Blick werden Minuten, manchmal mehr.
+Nachrichten, Social Media, Meldungen, Links … und irgendwann ist die Zeit weg –
+und mit ihr die ursprüngliche Gelegenheit.</p>
+
+<p class=MsoNormal>Diese kleine Bildergeschichte erzählt so einen Moment: vom
+guten Start in den Tag über den Sog des Smartphones bis zur Erkenntnis, dass
+ein Konzertbesuch an endlosem Scrollen gescheitert ist. Als freundliche
+Erinnerung daran, dass wir unsere Aufmerksamkeit bewusster lenken können.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1024 height=1024 id="Grafik 1"
+src="test-vorher_nachher-Dateien/image009.png"></p>
+
+<p class=MsoNormal><b>Bild 1/4 – Die ursprüngliche Situation</b></p>
+
+<p class=MsoNormal>Ausgeschlafen aufwachen, gute Idee, Möglichkeiten sehen.</p>
+
+<p class=MsoNormal><b>Der Tag fängt eigentlich großartig an: Ich wache
+ausgeschlafen auf, der Kopf ist klar – und da ist sie, diese eine gute Idee: <i>Heute
+buche ich endlich die Konzerttickets.</i> Alles ist möglich, ich muss es nur
+kurz erledigen … eigentlich.</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1024 height=1024 id="Grafik 2"
+src="test-vorher_nachher-Dateien/image010.png"></p>
+
+<p class=MsoNormal><b>Bild 2 /4 – Der Moment der Entscheidung</b></p>
+
+<p class=MsoNormal>Handy in der Hand, Ablenkung, Moment der Entscheidung.</p>
+
+<p class=MsoNormal><b>Ich will nur eben das Handy nehmen, um die Tickets zu
+bestellen – ganz kurz. Im nächsten Moment scrolle ich schon durch Mails, News
+und Benachrichtigungen. Meine gute Idee sitzt brav daneben und schaut zu, wie
+meine Aufmerksamkeit im Autopilot-Modus auf ‚Nur noch schnell …‘ umschaltet.</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1024 height=1024 id="Grafik 3"
+src="test-vorher_nachher-Dateien/image011.png"
+alt="Ein Bild, das Menschliches Gesicht, Mädchen, Kleidung, Person enthält.&#10;&#10;KI-generierte Inhalte können fehlerhaft sein."></p>
+
+<p class=MsoNormal><b>Bild 3/4 – Der Verlust der Zeit</b></p>
+
+<p class=MsoNormal>Endloses Scrollen, Zeit verlieren, verloren in der digitalen
+Welt.</p>
+
+<p class=MsoNormal><b>Und dann passiert es wieder: Endloses Scrollen. Um mich
+herum ein bunter Wirbel aus Apps, News und Clips – und irgendwo darin
+verschwinden meine Zeit und meine ursprüngliche Absicht. Ich bin komplett in
+der digitalen Welt versunken, während die echte Uhr im Hintergrund still und
+leise Überstunden macht.</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=1024 height=1024 id="Grafik 4"
+src="test-vorher_nachher-Dateien/image012.png"></p>
+
+<p class=MsoNormal><b>Bild 4/4 – Die Erkenntnis</b></p>
+
+<p class=MsoNormal>Zu spät, Gelegenheit verpasst, Bedauern.</p>
+
+<p class=MsoNormal><b>Als ich endlich den Blick vom Handy löse, ist es zu spät:
+Konzert ausverkauft, Gelegenheit verpasst. Auf dem Tisch liegt nur noch der
+Zettel mit der Erinnerung. In meinem Kopf sitzt das leise ‚Hättest du mal …‘ –
+und die Erkenntnis, dass nicht das Handy schuld ist, sondern meine Art, mich
+von ihm wegziehen zu lassen.</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><b>Und was hat das mit KI zu tun?</b><br>
+KI kann die Ablenkung nicht für mich abschaffen – aber sie kann mir helfen, </p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>klarer zu planen</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>mir Muster zu veranschaulichen, sodass sich Aufmerksamkeit erhöht</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>aus solchen Situationen kleine Lern- oder Reflexionsgeschichten zu
+machen</p>
+
+<p class=MsoNormal>So wird KI zu einem Werkzeug, das mir hilft, meine Zeit und
+Aufmerksamkeit bewusster einzusetzen.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name="_Toc214626416"></a><a name="_Toc216213124"></a><a
+name="_Toc216226786">Urheberrecht &amp; Verwendungshinweis, KI-Transparenz</a></h1>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'>© Franz Jankowski 2025. Alle
+Rechte vorbehalten.</p>
+
+<p class=MsoNormal style='line-height:normal'>Diese Unterlagen sind
+urheberrechtlich geschützt und ausschließlich für den persönlichen,
+nicht-kommerziellen Gebrauch bestimmt. Jegliche Vervielfältigung oder
+Weitergabe von Kopien der Inhalte sowie jede kommerzielle Nutzung – ganz oder
+teilweise – bedürfen meiner vorherigen schriftlichen Zustimmung. Gesetzliche
+Schranken (z. B. Zitatrecht) bleiben unberührt. Das bloße Verlinken auf diese
+Seite ist erlaubt. </p>
+
+<p class=MsoNormal style='line-height:normal'>Zur KI-Transparenz siehe&nbsp;<a
+href="https://fjki-info.github.io/transparenz/test-transparenz.html"><i>hier</i></a>.          </p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
+color:#7F7F7F'>Version: v0.8 – Stand: 10.12.2025</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+  <!-- Schritt 3 =============================================
+========================================= -->
+
+  </div>
+  <!-- ======= [NEU] Container sauber schließen ======= -->
+
+
+</div>
+<!-- ======= [NEU] WordSection sauber schließen ======= -->
+
+</body>
+
+</html>
+<img src="https://FranzJ.goatcounter.com/count?p=/test-vorher_nachher" style="display:none;">
