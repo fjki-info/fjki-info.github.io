@@ -31,7 +31,7 @@
 🔗 Link: [https://fjki-info.github.io/test-hub](https://fjki-info.github.io/test-hub)  
   
 🔗 Link: [https://fjki-info.github.io/tools/test-tools](https://fjki-info.github.io/tools/test-tools)  
-🔗 Link: [https://fjki-info.github.io/recherche/test-recherche](https://fjki-info.github.io/recherche/test-recherche) 
+🔗 Link: [https://fjki-info.github.io/recherche/test-recherche](https://fjki-info.github.io/recherche/test-recherche)  
 🔗 Link: [https://fjki-info.github.io/glossar/test-glossar](https://fjki-info.github.io/glossar/test-glossar)  
 🔗 Link: [https://fjki-info.github.io/ideen-buffet/test-ideen-buffet](https://fjki-info.github.io/ideen-buffet/test-ideen-buffet)  
 🔗 Link: [https://fjki-info.github.io/vorher_nachher/test-vorher_nachher](https://fjki-info.github.io/vorher_nachher/test-vorher_nachher)  
