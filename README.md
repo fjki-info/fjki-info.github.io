@@ -5,8 +5,11 @@
 
 ## In Veranstaltungen und Handouts verwendete Links
 
-**- ChatBots-Liste mit Recherche-Portalen** <BR>
+**- ChatBots-Liste und Anfänger-Tipps** <BR>
 🔗 Link: [https://fjki-info.github.io/tools/](https://fjki-info.github.io/tools/)
+
+**- Recherche & Lernen** <BR>
+🔗 Link: [https://fjki-info.github.io/recherche/](https://fjki-info.github.io/recherche/)
 
 **- Kleines KI-Glossar** <BR>
 🔗 Link: [https://fjki-info.github.io/glossar/](https://fjki-info.github.io/glossar/)
@@ -14,19 +17,24 @@
 **- Ideen-Buffet - Was kann KI für mich tun?** <BR>
 🔗 Link: [https://fjki-info.github.io/ideen-buffet/](https://fjki-info.github.io/ideen-buffet/)
 
+**- Vorher - Nachher - Eine Erfolgstory in 8 Szenen (etc.)** <BR>
+🔗 Link: [https://fjki-info.github.io/vorher_nachher/](https://fjki-info.github.io/vorher_nachher/)
+
 **- Transparenzangaben** <BR>
 🔗 Link: [https://fjki-info.github.io/transparenz/](https://fjki-info.github.io/transparenz/)
 
 <p> <br><br><br> </p> 
 
 ---
-# Aufruf von Test-Versionen
+# Aufruf von Test-Versionen (sofern verfügbar)
 
 🔗 Link: [https://fjki-info.github.io/test-hub](https://fjki-info.github.io/test-hub)  
   
 🔗 Link: [https://fjki-info.github.io/tools/test-tools](https://fjki-info.github.io/tools/test-tools)  
+🔗 Link: [https://fjki-info.github.io/recherche/test-recherche](https://fjki-info.github.io/recherche/test-recherche) 
 🔗 Link: [https://fjki-info.github.io/glossar/test-glossar](https://fjki-info.github.io/glossar/test-glossar)  
 🔗 Link: [https://fjki-info.github.io/ideen-buffet/test-ideen-buffet](https://fjki-info.github.io/ideen-buffet/test-ideen-buffet)  
+🔗 Link: [https://fjki-info.github.io/vorher_nachher/test-vorher_nachher](https://fjki-info.github.io/vorher_nachher/test-vorher_nachher)  
 🔗 Link: [https://fjki-info.github.io/transparenz/test-transparenz](https://fjki-info.github.io/transparenz/test-transparenz)  
 
 <p> <br><br><br> </p> 
