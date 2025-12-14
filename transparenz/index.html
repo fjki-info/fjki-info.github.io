@@ -1,21 +1,24 @@
 <html>
 
 <head>
-  <!-- =========================================
+  <!-- Schritt 1a =========================================
        [PFLICHT] Zeichensatz korrekt setzen
        → verhindert Umlaute-/Sonderzeichenprobleme
+
+       trotzdem nicht vergessen, HTML mit Notepad++ in UTF-8 zu konvertieren
+
        ========================================= -->
   <meta charset="UTF-8">
 
 
-  <!-- =========================================
+  <!-- Schritt 1b =========================================
        [PFLICHT] Viewport für Responsive Layouts
        → sonst greifen Media Queries nicht sauber
        ========================================= -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-  <!-- =========================================
+  <!-- Schritt 1c =========================================
        [OPTIONAL] Bootstrap
        → falls du Word-Tabellen oder Basis-Design
          etwas schöner formatiert haben willst
@@ -24,7 +27,7 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
 
-  <!-- =========================================
+  <!-- Schritt 1d =========================================
        [PFLICHT] Eigene CSS nach Bootstrap
        → überschreibt Bootstrap-Vorgaben
        → enthält .container + Media Queries
@@ -44,6 +47,9 @@
 	{font-family:Aptos;}
 @font-face
 	{font-family:"Aptos Display";}
+@font-face
+	{font-family:"Segoe UI Emoji";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{margin-top:0cm;
@@ -59,18 +65,21 @@ p.MsoTitle, li.MsoTitle, div.MsoTitle
 	margin-right:0cm;
 	margin-bottom:4.0pt;
 	margin-left:0cm;
+	line-height:normal;
 	font-size:28.0pt;
 	font-family:"Aptos Display",sans-serif;
 	letter-spacing:-.5pt;}
 p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
 	{mso-style-link:"Titel Zchn";
 	margin:0cm;
+	line-height:normal;
 	font-size:28.0pt;
 	font-family:"Aptos Display",sans-serif;
 	letter-spacing:-.5pt;}
 p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
 	{mso-style-link:"Titel Zchn";
 	margin:0cm;
+	line-height:normal;
 	font-size:28.0pt;
 	font-family:"Aptos Display",sans-serif;
 	letter-spacing:-.5pt;}
@@ -80,9 +89,13 @@ p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
 	margin-right:0cm;
 	margin-bottom:4.0pt;
 	margin-left:0cm;
+	line-height:normal;
 	font-size:28.0pt;
 	font-family:"Aptos Display",sans-serif;
 	letter-spacing:-.5pt;}
+a:link, span.MsoHyperlink
+	{color:#467886;
+	text-decoration:underline;}
 span.TitelZchn
 	{mso-style-name:"Titel Zchn";
 	mso-style-link:Titel;
@@ -109,11 +122,10 @@ ul
 
 </head>
 
-<body lang=DE style='word-wrap:break-word'>
+<body lang=DE link="#467886" vlink="#96607D" style='word-wrap:break-word'>
 
 <div class=WordSection1>
-
-  <!-- =============================================
+  <!-- Schritt 2 =============================================
        [NEU / WICHTIG]
        Layout-Container
        ---------------------------------------------
@@ -122,7 +134,6 @@ ul
        - Hier greifen Ränder & max-width aus style.css
        ============================================= -->
   <div class="container">
-
 
 <div class=MsoNormal align=center style='text-align:center'><b>
 
@@ -177,15 +188,12 @@ geprüft und kuratiert.</span></p>
 Vollständigkeit, Richtigkeit und Aktualität wird keine Gewähr übernommen.</span></p>
 
 <p class=MsoNormal style='margin-top:18.0pt'><b><span style='font-size:14.0pt;
-line-height:115%'>Verwendete KI-Tools</span></b></p>
+line-height:115%'>Tools und Arbeitsweise</span></b></p>
 
-<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Für
-die Erstellung und Überarbeitung meiner Unterlagen nutze ich verschiedene
-moderne KI-Tools, überwiegend große Sprachmodelle mit inzwischen meist
-multimodalen Fähigkeiten (Text, Bilder, teils auch Audio und Tabellen).</span></p>
-
-<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Aktuell
-gehören unter anderem dazu:</span></p>
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Ich setze
+KI-Tools nicht nur zur Arbeitserleichterung, sondern primär zur
+Qualitätskontrolle ein. Hier sind die strategisch wichtigsten Werkzeuge in
+meinem Workflow:</span></p>
 
 <p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt'><span
 style='font-size:14.0pt;line-height:115%;font-family:Symbol'>·<span
@@ -226,6 +234,8 @@ style='font-size:14.0pt;line-height:115%'> wie DeepSeek, Qwen, Kimi AI –
 insbesondere, um unterschiedliche Einschätzungen, Argumentationsstile und
 Kostenstrukturen zu nutzen.</span></p>
 
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></b></p>
+
 <p class=MsoNormal style='margin-top:18.0pt;line-height:normal'><span
 style='font-size:14.0pt'>Um die Qualität wichtiger Inhalte zu gewährleisten,
 setze ich mehrere KI-Modelle parallel ein: Ich lasse verschiedene Systeme
@@ -233,6 +243,54 @@ dieselbe Fragestellung bearbeiten, vergleiche deren Ergebnisse und prüfe
 Abweichungen bei Bedarf anhand eigener Quellen oder Fachliteratur. Dieser
 Ansatz hilft, blinde Flecken einzelner Modelle sowie mögliche Halluzinationen
 zu identifizieren.</span></p>
+
+<p class=MsoNormal style='margin-top:18.0pt;line-height:normal'><span
+style='font-size:1.0pt'> </span></p>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=1096 valign=top style='width:29.0cm;border:solid #CCCCCC 4.5pt;
+  padding:12.0pt 18.0pt 12.0pt 18.0pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:normal'><b><span
+  style='font-size:14.0pt;color:black'>Besondere Qualitätssicherung &amp; Tipp</span></b></p>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:normal'><b><span
+  style='font-size:14.0pt;color:black'>NotebookLM – Mein KI-Test-Publikum (Dual
+  Use):</span></b><span style='font-size:14.0pt;color:black'> Dieses Tool nutze
+  ich für tiefe Recherchen, die Vertiefung von Quellen sowie zur&nbsp;<b>Qualitätssicherung</b>&nbsp;meiner
+  Inhalte. Ich lade Präsentations-PDFs hoch und lasse mir daraus Mindmaps,
+  Berichte sowie (meist englische) Podcasts/Videos erstellen.</span></p>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><span
+  style='font-size:14.0pt;line-height:115%;color:black'>Der&nbsp;<b>Dual Use</b>&nbsp;verfolgt
+  zwei Hauptziele:</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+  margin-left:36.0pt;text-indent:-18.0pt;line-height:115%'><span
+  style='font-size:14.0pt;line-height:115%;font-family:"Courier New"'>o<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+  style='font-size:14.0pt;line-height:115%;color:black'>Inhaltliche Prüfung:</span></b><span
+  style='font-size:14.0pt;line-height:115%;color:black'>&nbsp;Wurden wichtige
+  Punkte akzentuiert, die Logik korrekt abgebildet und die Struktur klar
+  formuliert?</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:36.0pt;text-indent:-18.0pt;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span><b><span style='font-size:14.0pt;color:black'>Zusatznutzen:</span></b><span
+  style='font-size:14.0pt;color:black'>&nbsp;Ganz nebenbei trainiere ich mein
+  englisches Hörverständnis für einen möglichen Auslandsaufenthalt. </span><span
+  style='font-size:14.0pt;font-family:"Segoe UI Emoji",sans-serif;color:black'>&#128522;</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:36.0pt;line-height:normal'><span style='font-size:14.0pt;
+  color:black'>(Wenn <i>Sie mehr über die technischen Funktionen, Limits und
+  Links von NotebookLM sowie über die anderen genannten Tools erfahren möchten,
+  konsultieren Sie bitte die Übersicht der&nbsp;</i></span><span
+  style='color:black'><a href="https://fjki-info.github.io/recherche/"><b><i><span
+  style='font-size:14.0pt'>Recherche- und Lerntools</span></i></b></a></span><span
+  style='font-size:14.0pt;color:black'>.)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:18.0pt;line-height:normal'><span
+style='font-size:14.0pt'>&nbsp;</span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Die
 Entwicklung in diesem Bereich verläuft sehr dynamisch – welche konkreten
@@ -249,13 +307,15 @@ KI-Systemen erzielen – vorausgesetzt, die Ergebnisse werden kritisch
 reflektiert und abschließend geprüft.</span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
-style='font-size:10.0pt;color:#747474'>Version: v0.8 – Stand: 09.12.2025</span></p>
+style='font-size:10.0pt;color:#747474'>Version: v0.9 – Stand: 14.12.2025</span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
 
 <p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
 
 </div>
+  <!-- Schritt 3 =============================================
+========================================= -->
 
   </div>
   <!-- ======= [NEU] Container sauber schließen ======= -->
@@ -263,8 +323,6 @@ style='font-size:10.0pt;color:#747474'>Version: v0.8 – Stand: 09.12.2025</span
 
 </div>
 <!-- ======= [NEU] WordSection sauber schließen ======= -->
-
-
 <img src="https://FranzJ.goatcounter.com/count?p=/Transparenz" style="display:none;">
 </body>
 
