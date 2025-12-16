@@ -1,136 +1,94 @@
-/* Basis-Container für alle Screens */
+/* ==========================================================================
+   style-try-generated.css
+   Ziel: Bootstrap 5.3 nutzen + Word-HTML (Tabellen mit class="table table-responsive …")
+   - Konsistenter Rand (Container-Gutter)
+   - Ruhige Typografie (ohne harte Sprünge)
+   - Tabellen: 1. Spalte (Produktname/TOC) nicht hässlich umbrechen
+              letzte Spalte (Beschreibung/Links) darf flexibel umbrechen
+              bei schmalen Viewports lieber horizontal scrollen
+   ========================================================================== */
 
-table {
-  word-break: break-word;
-  overflow-wrap: break-word;
+/* --- Layout / Rand (Bootstrap-konform) ----------------------------------- */
+/* 1rem links + 1rem rechts (Bootstrap halbiert intern) */
+.container,
+.container-fluid{
+  --bs-gutter-x: 2rem;
 }
 
-/* =======================
-   Basis: kleine Mobile
-   (bis 480px)
-   ======================= */
-
-body {
-  font-size: 1.2em;
+/* --- Typografie ---------------------------------------------------------- */
+/* Ruhige, weiche Skalierung statt Sprüngen */
+body{
+  font-size: clamp(16px, 0.9vw + 14px, 19px);
+  line-height: 1.5;
 }
 
-.container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-table {
-  font-size: 1.1em;
-}
-
-/* Basisregel für alle Bilder – sorgt für responsives Verhalten */
-img {
+/* --- Bilder -------------------------------------------------------------- */
+img{
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* =======================
-   Größere Smartphones /
-   kleine Tablets
-   (ab 481px)
-   ======================= */
+/* --- Tabellen: Grundsätzliches ------------------------------------------ */
+/* (Bootstrap .table ist i.d.R. schon width:100%; das ist nur zur Sicherheit) */
+table{
+  width: 100%;
+}
 
-@media (min-width: 481px) {
-  body {
-    font-size: 1.4em;
-  }
+/* ==========================================================================
+   Tabellen-Feintuning (dein typisches Muster: Spalte 1 kurz, letzte Spalte Text)
+   Hinweis: Du nutzt "table-responsive" direkt am <table> (nicht als Wrapper),
+            daher das CSS-Fallback mit overflow-x auf dem table selbst.
+   ========================================================================== */
 
-  .container {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-  }
-
-  table {
-    font-size: 1.3em;
-  }
-
-  img {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
+/* Bei schmalen Viewports (z.B. halbe Notebook-Breite) lieber scrollen als zerhacken */
+@media (max-width: 991.98px){
+  table.table-responsive{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
-
-/* =======================
-   Tablets / kleine
-   Notebooks
-   (ab 769px)
-   ======================= */
-
-@media (min-width: 769px) and (max-width: 1200px) {
-  body {
-    font-size: 1em;
-  }
-
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  table {
-    font-size: 1em;
-  }
-
-  img {
-    padding-left: 0;
-    padding-right: 0;
-  }
+/* 1. Spalte (Produktname/TOC): NICHT innerhalb von Wörtern umbrechen */
+table.table-responsive th:first-child,
+table.table-responsive td:first-child{
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: manual;
 }
 
-
-/* =======================
-   Große Desktops
-   (ab 1201px)
-   ======================= */
-
-@media (min-width: 1201px) {
-  body {
-    font-size: 1em;
-  }
-
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  table {
-    font-size: 1em;
-  }
-
-  img {
-    padding-left: 0;
-    padding-right: 0;
-  }
+/* Spalten 2..n (Beschreibung, ggf. Links): dürfen flexibel umbrechen */
+table.table-responsive th:not(:first-child),
+table.table-responsive td:not(:first-child){
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
 }
 
-/* =======================
-   Ultra Wide Desktops
-   (ab 1600px)
-   ======================= */
-
-@media (min-width: 1600px) {
-  body {
-    font-size: 1em;
-  }
-
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  table {
-    font-size: 1em;
-  }
-
-  img {
-    padding-left: 0;
-    padding-right: 0;
-  }
+/* Sichtbare Links: v.a. in Beschreibungen -> nur dort aggressiver umbrechen */
+table.table-responsive th:not(:first-child) a,
+table.table-responsive td:not(:first-child) a{
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
+
+/* Sonderfall: einzellige Tabellen (deine Kommentarboxen) sollen weiter gut umbrechen */
+table.table-responsive th:only-child,
+table.table-responsive td:only-child,
+table.table-responsive th:only-child a,
+table.table-responsive td:only-child a{
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* --- Links außerhalb von Tabellen: moderat umbrechen --------------------- */
+/* (bricht lange URLs bei Bedarf, ohne überall "anywhere" zu erzwingen) */
+a{
+  overflow-wrap: break-word;
+}
+
