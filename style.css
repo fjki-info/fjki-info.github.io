@@ -1,5 +1,5 @@
 /* ==========================================================================
-   style-try-generated.css
+   style.css
    Ziel: Bootstrap 5.3 nutzen + Word-HTML (Tabellen mit class="table table-responsive …")
    - Konsistenter Rand (Container-Gutter)
    - Ruhige Typografie (ohne harte Sprünge)
@@ -37,7 +37,7 @@ table{
 }
 
 /* ==========================================================================
-   Tabellen-Feintuning (dein typisches Muster: Spalte 1 kurz, letzte Spalte Text)
+   Tabellen-Feintuning (typisches Muster: Spalte 1 kurz, letzte Spalte Text)
    Hinweis: Du nutzt "table-responsive" direkt am <table> (nicht als Wrapper),
             daher das CSS-Fallback mit overflow-x auf dem table selbst.
    ========================================================================== */
@@ -90,5 +90,51 @@ table.table-responsive td:only-child a{
 /* (bricht lange URLs bei Bedarf, ohne überall "anywhere" zu erzwingen) */
 a{
   overflow-wrap: break-word;
+}
+
+
+/* ===== Hub: responsive quicklinks (<=520px) ===== */
+
+/* Desktop default */
+.quicklinks-desktop { display: block; }
+.quicklinks-mobile  { display: none; }
+
+/* Mobile: Direktzugriff einklappen, Startpfad bleibt normal */
+@media (max-width: 520px) {
+  .quicklinks-list { padding-left: 1.1em; }
+}
+@media (max-width: 520px) {
+  .quicklinks-desktop { display: none; }
+  .quicklinks-mobile  { display: block; margin: 0 0 2px 0; }
+
+  .quicklinks-mobile summary { cursor: pointer; }
+  .quicklinks-mobile summary::-webkit-details-marker { display: none; } /* optional */
+
+  .quicklinks-mobile summary::before { content: "▸ "; }
+  .quicklinks-mobile[open] summary::before { content: "▾ "; }
+
+  .quicklinks-list { margin-top: 2px; }
+  .quicklinks-list a { display: block; padding: 4px 0; }
+}
+
+@media (max-width: 520px) {
+  .quicklinks-mobile summary {
+    cursor: pointer;
+    list-style: none;      /* wichtig */
+  }
+
+  /* Marker in WebKit/Blink ausblenden */
+  .quicklinks-mobile summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Marker in Firefox ausblenden */
+  .quicklinks-mobile summary::marker {
+    content: "";
+  }
+
+  /* Dein eigener Pfeil */
+  .quicklinks-mobile summary::before { content: "▸ "; }
+  .quicklinks-mobile[open] summary::before { content: "▾ "; }
 }
 
