@@ -95,6 +95,15 @@ a{
 
 /* ===== Hub: responsive quicklinks (<=520px) ===== */
 
+.quicklinks-desktop,
+.quicklinks-mobile,
+.startpath { font-size: 0.87rem; }
+@media (max-width: 520px) {
+  .quicklinks-mobile,
+  .startpath { font-size: 1rem; }   /* Mobile gut lesbar */
+}
+
+
 /* Desktop default */
 .quicklinks-desktop { display: block; }
 .quicklinks-mobile  { display: none; }
