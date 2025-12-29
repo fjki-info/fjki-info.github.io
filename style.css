@@ -147,4 +147,6 @@ a{
   .quicklinks-mobile[open] summary::before { content: "▾ "; }
 }
 
+.quicklinks-list a.ql-link { padding: 4px 0; text-decoration: none; }
+.quicklinks-list .ql-hint  { display: block; font-size: 0.85em; opacity: 0.75; }
 
