@@ -150,3 +150,25 @@ a{
 .quicklinks-list a.ql-link { padding: 4px 0; text-decoration: none; }
 .quicklinks-list .ql-hint  { display: block; font-size: 0.85em; opacity: 0.75; }
 
+/* PDF-Embed: responsive Höhe (Desktop + Mobile) */
+.pdfWrap object,
+.pdfWrap embed,
+.pdfWrap iframe {
+  width: 100%;
+  height: min(80vh, 900px);
+  border: 0;
+}
+
+/* Optional: etwas Luft darunter */
+.pdfWrap {
+  margin: 0.5rem 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .pdfWrap object,
+  .pdfWrap embed,
+  .pdfWrap iframe {
+    height: 85vh;
+  }
+}
+
