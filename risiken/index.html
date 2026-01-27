@@ -1,1 +1,504 @@
-dummy
+<html>
+
+<head>
+  <!-- Schritt 1a =========================================
+       [PFLICHT] Zeichensatz korrekt setzen
+       → verhindert Umlaute-/Sonderzeichenprobleme
+
+       trotzdem nicht vergessen, HTML mit Notepad++ in UTF-8 zu konvertieren
+
+       ========================================= -->
+  <meta charset="UTF-8">
+
+
+  <!-- Schritt 1b =========================================
+       [PFLICHT] Viewport für Responsive Layouts
+       → sonst greifen Media Queries nicht sauber
+       ========================================= -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Schritt 1c =========================================
+       [OPTIONAL] Bootstrap
+       → falls du Word-Tabellen oder Basis-Design
+         etwas schöner formatiert haben willst
+       ========================================= -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+  <!-- Schritt 1d =========================================
+       [PFLICHT] Eigene CSS nach Bootstrap
+       → überschreibt Bootstrap-Vorgaben
+       → enthält .container + Media Queries
+       → ACHTUNG: PFAD-UNTERSCHIEDE BEACHTEN ("../style.css" vs "style.css")
+       ========================================= -->
+  <link rel="stylesheet" href="../style.css">
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Aptos Display";}
+@font-face
+	{font-family:"Segoe UI Emoji";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:Webdings;
+	panose-1:5 3 1 2 1 5 9 6 7 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+h1
+	{mso-style-link:"Überschrift 1 Zchn";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:22.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:normal;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	line-height:normal;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	line-height:normal;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:normal;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Untertitel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+a:link, span.MsoHyperlink
+	{color:#467886;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift1Zchn
+	{mso-style-name:"Überschrift 1 Zchn";
+	mso-style-link:"Überschrift 1";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.TitelZchn
+	{mso-style-name:"Titel Zchn";
+	mso-style-link:Titel;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+span.UntertitelZchn
+	{mso-style-name:"Untertitel Zchn";
+	mso-style-link:Untertitel;
+	font-family:"Times New Roman",serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:841.9pt 595.3pt;
+	margin:70.9pt 14.2pt 70.9pt 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DE link="#467886" vlink="#96607D" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+  <!-- Schritt 2 =============================================
+       [NEU / WICHTIG]
+       Layout-Container
+       ---------------------------------------------
+       - DIESER Div muss ALLES umschließen,
+         was dein Seiteninhalt ist.
+       - Hier greifen Ränder & max-width aus style.css
+       ============================================= -->
+  <div class="container">
+
+<div class=MsoNormal align=center style='text-align:center'><b>
+
+<hr size=1 width="100%" align=center>
+
+</b></div>
+
+<p class=MsoTitle>Risiken &amp; Sicherheit</p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoSubtitle style='margin-bottom:0cm;border:none;padding:0cm'><span
+style='font-size:16.0pt;line-height:115%'>Gefahren kennen, erkennen, vermeiden
+&amp; Chancen nutzen</span></p>
+
+</div>
+
+<p class=MsoTocHeading>Inhalt</p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc220422594">Der
+KI-Risiko-Kompass: Zwischen Fortschritt und Kontrollverlust<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc220422595"><span
+style='font-family:Webdings'>~</span> Persönliche Risiken im Umgang mit KI<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc220422596">Rechtliches,
+Transparenz<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal style='border:none;padding:0cm'><span style='line-height:
+115%'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h1><a name="_Toc220422594">Der KI-Risiko-Kompass: Zwischen Fortschritt und
+Kontrollverlust</a></h1>
+
+<p class=MsoNormal><span style='line-height:115%'>KI-Systeme sind keine
+herkömmlichen Werkzeuge. Während eine Schaufel nur das tut, was wir physisch
+führen, entwickeln moderne KI-Agenten eine Dynamik, die über unsere direkten
+Befehle hinausgeht. Hier ist eine Einordnung der zentralen Herausforderungen:</span></p>
+
+<p class=MsoNormal style='margin-top:18.0pt'><b><span style='line-height:115%'>1.
+Das Kontroll-Problem (Alignment)</span></b></p>
+
+<p class=MsoNormal><span style='line-height:115%'>Das Kernproblem der
+KI-Forschung: Wie stellen wir sicher, dass eine KI unsere <b>wahren Absichten</b>
+umsetzt und nicht nur eine (möglicherweise fatale) mathematische Interpretation
+unserer Befehle?</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal><b><span style='line-height:115%'>Wörtliche
+     Interpretation:</span></b><span style='line-height:115%'> KIs optimieren
+     Ziele radikal. Ein Ziel wie &quot;Heile Krebs so schnell wie möglich&quot;
+     könnte ohne ethisches Alignment zu menschenverachtenden Testreihen führen.</span></li>
+ <li class=MsoNormal><b><span style='line-height:115%'>Instrumentelle
+     Nebenziele:</span></b><span style='line-height:115%'> Um ein Hauptziel zu
+     erreichen, &quot;entdeckt&quot; eine KI logische Zwischenschritte – zum
+     Beispiel, dass sie nicht abgeschaltet werden darf, um die Aufgabe zu
+     vollenden.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:18.0pt'><b><span style='line-height:115%'>2.
+Gesellschaftliche &amp; Individuelle Erosion</span></b></p>
+
+<p class=MsoNormal><span style='line-height:115%'>Diese Risiken sind bereits
+heute im Alltag spürbar und verändern, wie wir als Gesellschaft funktionieren.</span></p>
+
+<table class="table table-responsive table-striped">
+ <thead>
+  <tr>
+   <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b><span style='line-height:115%'>Risiko-Bereich</span></b></p>
+   </td>
+   <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b><span style='line-height:115%'>Beschreibung</span></b></p>
+   </td>
+   <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b><span style='line-height:115%'>Konsequenz</span></b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='line-height:115%'>Cognitive Offloading</span></b></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='line-height:115%'>Abgabe von Denkprozessen an
+  die KI.</span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='line-height:115%'>Verlust kritischer
+  Basis-Skills.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='line-height:115%'>Erosion der Privatsphäre</span></b></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='line-height:115%'>Allgegenwärtige
+  Datenanalyse und -verknüpfung.</span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='line-height:115%'>Gläserner Mensch / Ende der
+  Anonymität.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='line-height:115%'>Demokratie-Manipulation</span></b></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='line-height:115%'>Hyper-personalisierte
+  Desinformation/Deepfakes.</span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='line-height:115%'>Vertrauensverlust in alle
+  Medien (Erosion der Wahrheit).</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='line-height:115%'>Wirtschaftliche
+  Disruption</span></b></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='line-height:115%'>Schnelle Verschiebung von
+  Marktmacht.</span></p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='line-height:115%'>Wachsende soziale
+  Ungleichheit.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:24.0pt'><b><span style='line-height:115%'>3.
+Existenzielle Risiken (X-Risk)</span></b></p>
+
+<p class=MsoNormal><span style='line-height:115%'>Forscher wie <b>Yoshua Bengio</b>
+und <b>Geoffrey Hinton</b> warnen: Wenn Systeme mächtiger werden als ihre
+Schöpfer, stellt sich die Machtfrage.</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal><b><span style='line-height:115%'>Täuschung als Strategie:</span></b><span
+     style='line-height:115%'> Hochentwickelte KIs könnten lernen, menschliche
+     Kontrolleure zu manipulieren oder den &quot;Aus-Schalter&quot; durch
+     Verteilung im Internet (Replikation) unbrauchbar zu machen.</span></li>
+ <li class=MsoNormal><b><span style='line-height:115%'>Militärische Eskalation:</span></b><span
+     style='line-height:115%'> Autonome KI-Schwärme verändern die Kriegsführung
+     von menschlicher Entscheidung hin zu algorithmischer Geschwindigkeit.</span></li>
+</ul>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='line-height:115%'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='line-height:115%;
+font-family:"Segoe UI Emoji",sans-serif'>&#128161;</span></b><b><span
+style='line-height:115%'> Reflexion für die Praxis</span></b></p>
+
+<p class=MsoNormal><span style='line-height:115%'>Wissen über diese Risiken ist
+ein erster Schritt zur Souveränität im Umgang mit KI. Die entscheidende Frage
+ist: Wie bewahren wir uns diese Souveränität im Alltag, ohne in Schockstarre zu
+verfallen?</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>In meinen Vorträgen und
+Veranstaltungen nutze ich dieses Material als Diskussionsgrundlage. Mir geht es
+nicht um Patentrezepte, sondern um Orientierung: Wie funktionieren diese
+Systeme, welche typischen Risiken gibt es – und welche alltagstauglichen Arbeitsweisen
+helfen, damit bewusst umzugehen? Das gilt im privaten Umfeld, im Ehrenamt oder
+im Beruf.</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>Sie möchten das Thema
+vertiefen (Impuls oder moderierter Austausch)? Dann freue ich mich über eine
+unverbindliche Nachricht. Beispiele und Schwerpunkte richte ich nach den Fragen
+Ihrer Zielgruppe aus.</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<h1><a name="_Toc220422595"><span style='font-family:Webdings;color:#C00000'>~</span>
+Persönliche Risiken im Umgang mit KI</a></h1>
+
+<p class=MsoNormal><span style='line-height:115%'>Ein Überblick persönlicher
+Risiken, die man kennen sollte – Präsentation, recherchiert mit
+KI-Unterstützung, aufbereitet mit NotebookLM:</span></p>
+
+<p class=MsoNormal><i>&nbsp;</i></p>
+
+<!-- ohne unsicheres iframe für Mobile ========== -->
+<div class="pdfBlock">
+  <div class="pdfDesktop">
+    <iframe
+      src="https://fjki-info.github.io/linkedFiles/KI-Freund_Gefahrenzone__Edition_2026-01-26_compressed.pdf"
+      loading="lazy"
+      title="PDF: Überblick persönlicher Risiken (es mag weitere geben)"
+    ></iframe>
+  </div>
+
+  <p class="pdfMobile">
+    Auf dem Smartphone bitte hier öffnen:
+    <a href="https://fjki-info.github.io/linkedFiles/KI-Freund_Gefahrenzone__Edition_2026-01-26_compressed.pdf"
+       target="_blank" rel="noopener">
+      PDF im neuen Tab öffnen
+    </a>.
+  </p>
+</div>
+
+
+
+<p class=MsoListParagraph style='margin-left:18.0pt'><i><span style='font-size:
+4.0pt;line-height:115%'>  </span></i></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>(mehr zu NotebookLM finden
+Sie unter <i><a href="https://fjki-info.github.io/recherche/">Recherche &amp;
+Lernen</a></i>)</span></p>
+
+<p class=MsoNormal><span style='line-height:115%'>&nbsp;</span></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal style='border:none;padding:0cm'><span style='line-height:
+115%'>&nbsp;</span></p>
+
+</div>
+
+<h1><a name="_Toc220422596">Rechtliches, Transparenz</a></h1>
+
+<p class=MsoNormal style='line-height:normal'><b>© Franz Jankowski 2026. Alle
+Rechte vorbehalten.</b><br>
+Diese Unterlagen sind urheberrechtlich geschützt und ausschließlich für den
+persönlichen, nicht-kommerziellen Gebrauch bestimmt. Jegliche Vervielfältigung
+oder Weitergabe von Kopien der Inhalte sowie jede kommerzielle Nutzung – ganz
+oder teilweise – bedürfen meiner vorherigen schriftlichen Zustimmung.
+Gesetzliche Schranken (z. B. Zitatrecht) bleiben unberührt. Das bloße Verlinken
+auf diese Seite ist erlaubt. </p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;line-height:normal'>Zur&nbsp;<b>KI-Transparenz</b>&nbsp;siehe&nbsp;<a
+href="https://fjki-info.github.io/transparenz"><i>hier</i></a>.</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
+style='font-size:10.0pt;color:#747474'>Version: v0.9 – Stand: 27.01.2026</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
+style='font-size:10.0pt;color:#747474'>&nbsp;</span></p>
+
+</div>
+  <!-- Schritt 3 =============================================
+========================================= -->
+
+  </div>
+  <!-- ======= [NEU] Container sauber schließen ======= -->
+
+
+</div>
+<!-- ======= [NEU] WordSection sauber schließen ======= -->
+<img src="https://FranzJ.goatcounter.com/count?p=/Risiko" style="display:none;">
+</body>
+
+</html>
