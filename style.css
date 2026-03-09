@@ -199,3 +199,14 @@ a{
 }
 
 
+/* --- */
+
+/* Schutz vor einfachen Scrapern durch visuelle Umkehrung */
+.reverse-text {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+    display: inline-block;
+}
+
+/* --- */
