@@ -1,36 +1,363 @@
-<!DOCTYPE html>
-<html lang="de">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wartungsmodus</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 { font-size: 1.5rem; margin-bottom: 1rem; }
-        p { color: #666; }
-    </style>
+<meta name="robots" content="noindex">
+  <!-- Schritt 1a =========================================
+       [PFLICHT] Zeichensatz korrekt setzen
+       → verhindert Umlaute-/Sonderzeichenprobleme
+
+       trotzdem nicht vergessen, HTML mit Notepad++ in UTF-8 zu konvertieren
+
+       ========================================= -->
+  <meta charset="UTF-8">
+
+
+  <!-- Schritt 1b =========================================
+       [PFLICHT] Viewport für Responsive Layouts
+       → sonst greifen Media Queries nicht sauber
+       ========================================= -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Schritt 1c =========================================
+       [OPTIONAL] Bootstrap
+       → falls du Word-Tabellen oder Basis-Design
+         etwas schöner formatiert haben willst
+       ========================================= -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+  <!-- Schritt 1d =========================================
+       [PFLICHT] Eigene CSS nach Bootstrap
+       → überschreibt Bootstrap-Vorgaben
+       → enthält .container + Media Queries
+       ========================================= -->
+  <link rel="stylesheet" href="../style.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Aptos Display";}
+@font-face
+	{font-family:"Segoe UI Emoji";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+h1
+	{mso-style-link:"Überschrift 1 Zchn";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:normal;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	line-height:normal;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	line-height:normal;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:normal;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+a:link, span.MsoHyperlink
+	{color:#467886;
+	text-decoration:underline;}
+span.berschrift1Zchn
+	{mso-style-name:"Überschrift 1 Zchn";
+	mso-style-link:"Überschrift 1";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.TitelZchn
+	{mso-style-name:"Titel Zchn";
+	mso-style-link:Titel;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 2.0cm 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
 </head>
-<body>
-    <div class="container">
-        <h1>Diese Seite ist vorübergehend offline.</h1>
-        <p>Die Inhalte werden derzeit aktualisiert und stehen in Kürze wieder zur Verfügung.</p>
-        <p><small>Voraussichtliche Rückkehr: 11. März 2026</small></p>
-    </div>
+
+<body lang=DE link="#467886" vlink="#96607D" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+  <!-- Schritt 2 =============================================
+       [NEU / WICHTIG]
+       Layout-Container
+       ---------------------------------------------
+       - DIESER Div muss ALLES umschließen,
+         was dein Seiteninhalt ist.
+       - Hier greifen Ränder & max-width aus style.css
+       ============================================= -->
+  <div class="container">
+
+<div class=MsoNormal align=center style='text-align:center'><b>
+
+<hr size=1 width="100%" align=center>
+
+</b></div>
+
+<p class=MsoTitle>Transparenzangaben</p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='border:none;padding:0cm'><span style='font-size:16.0pt;
+line-height:115%;color:#595959;letter-spacing:.75pt'>Redaktionelle Hinweise zur
+Erstellung der Dokumente.</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:18.0pt'><span style='font-size:1.0pt;
+line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:16.0pt;
+line-height:115%'>Transparenzhinweis (KI-Einsatz)</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Die
+vorliegenden Unterlagen wurden unter Verwendung verschiedener KI-Werkzeuge
+erstellt und überarbeitet.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Der
+KI-Einsatz dient der Präzisierung von Formulierungen, der Optimierung komplexer
+Inhaltsstrukturen sowie der Verbesserung der Verständlichkeit. Sämtliche
+dargestellten Fakten und Empfehlungen wurden vor Veröffentlichung sorgfältig
+geprüft und kuratiert.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Für
+Vollständigkeit, Richtigkeit und Aktualität wird keine Gewähr übernommen.</span></p>
+
+<p class=MsoNormal style='margin-top:18.0pt'><b><span style='font-size:14.0pt;
+line-height:115%'>Tools und Arbeitsweise</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Ich setze
+KI-Tools nicht nur zur Arbeitserleichterung, sondern primär zur
+Qualitätskontrolle ein. Hier sind die strategisch wichtigsten Werkzeuge in
+meinem Workflow:</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-size:14.0pt;line-height:115%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:14.0pt;line-height:115%'>ChatGPT (OpenAI) </span></b><span
+style='font-size:14.0pt;line-height:115%'> – primär für Strukturierung,
+Formulierungen, Erklärtexte, Beispiele und gelegentlich Bildvorschläge.</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-size:14.0pt;line-height:115%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:14.0pt;line-height:115%'>Perplexity</span></b><span
+style='font-size:14.0pt;line-height:115%'> – für faktenorientierte Recherchen,
+häufig kombiniert mit nachgelagerten Prüf- und Umformulierungsschritten in
+anderen Tools.</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-size:14.0pt;line-height:115%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:14.0pt;line-height:115%'>Gemini (Google)</span></b><span
+style='font-size:14.0pt;line-height:115%'> – für alternative   Sichtweisen,
+Webrecherchen und multimodale Aufgaben; insbes. aus dem <b>Google AI Studio</b>
+heraus, dort nutze ich u. a. die Möglichkeit, Systemvorgaben zu setzen und
+Parameter wie Temperature anzupassen.<b> </b></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-size:14.0pt;line-height:115%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:14.0pt;line-height:115%'>Copilot / Microsoft-Umgebungen</span></b><span
+style='font-size:14.0pt;line-height:115%'> – vor allem in Verbindung mit
+Office-Dokumenten.</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-size:14.0pt;line-height:115%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:14.0pt;line-height:115%'>Weitere internationale Modelle</span></b><span
+style='font-size:14.0pt;line-height:115%'> wie DeepSeek, Qwen, Kimi AI –
+insbesondere, um unterschiedliche Einschätzungen, Argumentationsstile und
+Kostenstrukturen zu nutzen.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:18.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Um die Qualität wichtiger Inhalte zu gewährleisten,
+setze ich mehrere KI-Modelle parallel ein: Ich lasse verschiedene Systeme
+dieselbe Fragestellung bearbeiten, vergleiche deren Ergebnisse und prüfe
+Abweichungen bei Bedarf anhand eigener Quellen oder Fachliteratur. Dieser
+Ansatz hilft, blinde Flecken einzelner Modelle sowie mögliche Halluzinationen
+zu identifizieren.</span></p>
+
+<p class=MsoNormal style='margin-top:18.0pt;line-height:normal'><span
+style='font-size:1.0pt'> </span></p>
+
+<table class="table table-responsive table-striped">
+ <tr>
+  <td width=1096 valign=top style='width:29.0cm;border:solid #CCCCCC 4.5pt;
+  padding:12.0pt 18.0pt 12.0pt 18.0pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:normal'><b><span
+  style='font-size:14.0pt;color:black'>Besondere Qualitätssicherung &amp; Tipp</span></b></p>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:normal'><b><span
+  style='font-size:14.0pt;color:black'>NotebookLM – Mein KI-Test-Publikum (Dual
+  Use):</span></b><span style='font-size:14.0pt;color:black'> Dieses Tool nutze
+  ich für tiefe Recherchen, die Vertiefung von Quellen sowie zur&nbsp;<b>Qualitätssicherung</b>&nbsp;meiner
+  Inhalte. Ich lade Präsentations-PDFs hoch und lasse mir daraus Mindmaps,
+  Berichte sowie (meist englische) Podcasts/Videos erstellen.</span></p>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><span
+  style='font-size:14.0pt;line-height:115%;color:black'>Der&nbsp;<b>Dual Use</b>&nbsp;verfolgt
+  zwei Hauptziele:</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+  margin-left:36.0pt;text-indent:-18.0pt;line-height:115%'><span
+  style='font-size:14.0pt;line-height:115%;font-family:"Courier New"'>o<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+  style='font-size:14.0pt;line-height:115%;color:black'>Inhaltliche Prüfung:</span></b><span
+  style='font-size:14.0pt;line-height:115%;color:black'>&nbsp;Wurden wichtige
+  Punkte akzentuiert, die Logik korrekt abgebildet und die Struktur klar
+  formuliert?</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:36.0pt;text-indent:-18.0pt;line-height:normal'><span
+  style='font-size:14.0pt;font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+  </span></span><b><span style='font-size:14.0pt;color:black'>Zusatznutzen:</span></b><span
+  style='font-size:14.0pt;color:black'>&nbsp;Ganz nebenbei trainiere ich mein
+  englisches Hörverständnis für einen möglichen Auslandsaufenthalt. </span><span
+  style='font-size:14.0pt;font-family:"Segoe UI Emoji",sans-serif;color:black'>&#128522;</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:36.0pt;line-height:normal'><span style='font-size:14.0pt;
+  color:black'>(Wenn <i>Sie mehr über die technischen Funktionen, Limits und
+  Links von NotebookLM sowie über die anderen genannten Tools erfahren möchten,
+  konsultieren Sie bitte die Übersicht der&nbsp;</i></span><span
+  style='color:black'><a href="https://fjki-info.github.io/recherche/"><b><i><span
+  style='font-size:14.0pt'>Recherche- und Lerntools</span></i></b></a></span><span
+  style='font-size:14.0pt;color:black'>.)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:18.0pt;line-height:normal'><span
+style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Die
+Entwicklung in diesem Bereich verläuft sehr dynamisch – welche konkreten
+Modelle in einzelnen Unterlagen zum Einsatz kommen, kann sich daher ändern.
+Entscheidend ist nicht ein bestimmtes Markenwerkzeug, sondern der zweckmäßige
+Einsatz von KI-Systemen insgesamt: Je nach Aufgabe wähle ich diejenigen
+Modelle, die für Perspektivenvielfalt, Qualitätssicherung und Effizienz am
+besten geeignet sind.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Für
+die Nutzung der Unterlagen sind dieselben Tools nicht erforderlich.
+Vergleichbare Ergebnisse lassen sich häufig mit anderen, funktional ähnlichen
+KI-Systemen erzielen – vorausgesetzt, die Ergebnisse werden kritisch
+reflektiert und abschließend geprüft.</span></p>
+
+<p class=MsoNormal><a name="_Toc220353975"><b>&nbsp;</b></a></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<h1>Rechtliches, Transparenz</h1>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='line-height:normal;border:none;padding:0cm'><span
+style='font-size:10.0pt;color:#747474'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:normal'><a
+href="https://fjki-info.github.io/transparenz"><span style='font-size:14.0pt'>KI-Transparenz</span></a><span
+style='font-size:14.0pt'> | </span><a
+href="https://fjki-info.github.io/datenschutz"><span style='font-size:14.0pt'>Datenschutz</span></a><span
+style='font-size:14.0pt'> | </span><a
+href="https://fjki-info.github.io/impressum"><span style='font-size:14.0pt'>Impressum</span></a><span
+style='font-size:14.0pt'><br>
+<br>
+© 2026 Franz Jankowski<br>
+<br>
+Die Inhalte dieser Webseite sind urheberrechtlich geschützt. Sie dürfen für
+persönliche Lern- und Informationszwecke verwendet werden. Eine weitergehende
+Nutzung, insbesondere kommerzielle Verwendung oder Vervielfältigung, bedarf
+meiner vorherigen Zustimmung. Gesetzliche Schranken des Urheberrechts (z. B.
+Zitatrecht) bleiben unberührt.<br>
+<br>
+Das bloße Verlinken auf diese Seite ist ausdrücklich erlaubt.<br>
+<br>
+</span><a href="https://fjki-info.github.io"><span style='font-size:14.0pt'>Zur
+Startseite</span></a></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
+style='font-size:10.0pt;color:#747474'>Version: v1 – Stand: 10.03.2026</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+</div>
+  <!-- Schritt 3 =============================================
+========================================= -->
+
+  </div>
+  <!-- ======= [NEU] Container sauber schließen ======= -->
+
+
+</div>
+<!-- ======= [NEU] WordSection sauber schließen ======= -->
+<img src="https://FranzJ.goatcounter.com/count?p=/Transparenz" style="display:none;">
 </body>
+
 </html>
