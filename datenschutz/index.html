@@ -1,36 +1,340 @@
-<!DOCTYPE html>
-<html lang="de">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wartungsmodus</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 { font-size: 1.5rem; margin-bottom: 1rem; }
-        p { color: #666; }
-    </style>
+<meta name="robots" content="noindex">
+  <!-- Schritt 1a =========================================
+       [PFLICHT] Zeichensatz korrekt setzen
+       → verhindert Umlaute-/Sonderzeichenprobleme
+
+       trotzdem nicht vergessen, HTML mit Notepad++ in UTF-8 zu konvertieren
+
+       ========================================= -->
+  <meta charset="UTF-8">
+
+
+  <!-- Schritt 1b =========================================
+       [PFLICHT] Viewport für Responsive Layouts
+       → sonst greifen Media Queries nicht sauber
+       ========================================= -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Schritt 1c =========================================
+       [OPTIONAL] Bootstrap
+       → falls du Word-Tabellen oder Basis-Design
+         etwas schöner formatiert haben willst
+       ========================================= -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+  <!-- Schritt 1d =========================================
+       [PFLICHT] Eigene CSS nach Bootstrap
+       → überschreibt Bootstrap-Vorgaben
+       → enthält .container + Media Queries
+       ========================================= -->
+  <link rel="stylesheet" href="../style.css">
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Aptos Display";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+h1
+	{mso-style-link:"Überschrift 1 Zchn";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+a:link, span.MsoHyperlink
+	{color:#467886;
+	text-decoration:underline;}
+span.berschrift1Zchn
+	{mso-style-name:"Überschrift 1 Zchn";
+	mso-style-link:"Überschrift 1";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:841.9pt 595.3pt;
+	margin:70.85pt 70.85pt 70.85pt 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
 </head>
-<body>
-    <div class="container">
-        <h1>Diese Seite ist vorübergehend offline.</h1>
-        <p>Die Inhalte werden derzeit aktualisiert und stehen in Kürze wieder zur Verfügung.</p>
-        <p><small>Voraussichtliche Rückkehr: 11. März 2026</small></p>
-    </div>
+
+<body lang=DE link="#467886" vlink="#96607D" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+  <!-- Schritt 2 =============================================
+       [NEU / WICHTIG]
+       Layout-Container
+       ---------------------------------------------
+       - DIESER Div muss ALLES umschließen,
+         was dein Seiteninhalt ist.
+       - Hier greifen Ränder & max-width aus style.css
+       ============================================= -->
+  <div class="container">
+
+<div class=MsoNormal align=center style='text-align:center'><b>
+
+<hr size=1 width="100%" align=center>
+
+</b></div>
+
+<h1>Datenschutzerklärung </h1>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:14.0pt'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal><a name="_Toc220353975"><b><span style='font-size:14.0pt;
+line-height:115%'>1. Allgemeine Hinweise</span></b></a></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Diese
+Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung
+personenbezogener Daten beim Besuch dieser Website.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Personenbezogene
+Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Diese
+Website dient der Bereitstellung von Informationsmaterialien und
+weiterführenden Hinweisen zu KI-Sessions und verwandten Themen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:14.0pt;
+line-height:115%'>2. Verantwortlicher</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Verantwortlicher
+für die Datenverarbeitung auf dieser Website ist:</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Franz
+Jankowski<br>
+Anschrift siehe Impressum<br>
+E-Mail: fjki.info@gmail.com</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:14.0pt;
+line-height:115%'>3. Hosting über GitHub Pages</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Diese
+Website wird als statische Website über GitHub Pages bereitgestellt. </span><span
+lang=EN-US style='font-size:14.0pt;line-height:115%'>Anbieter ist GitHub, Inc.,
+88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Beim Aufruf
+dieser Website erfasst GitHub aus technischen Gründen insbesondere die
+IP-Adresse des zugreifenden Systems sowie weitere technische Informationen, die
+zur Bereitstellung und Absicherung des Angebots erforderlich sind.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Die
+Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das
+berechtigte Interesse liegt in der technisch sicheren und zuverlässigen
+Bereitstellung dieser Website.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Weitere
+Informationen zur Datenverarbeitung durch GitHub finden Sie in der
+Datenschutzerklärung von GitHub: </span><a
+href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"><span
+style='font-size:14.0pt;line-height:115%'>https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement</span></a></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Da GitHub
+ein Anbieter mit Sitz in den USA ist, kann eine Datenübermittlung in ein
+Drittland nicht ausgeschlossen werden. GitHub verweist hierzu auf seine
+Datenschutzinformationen und die dort beschriebenen Mechanismen für
+internationale Datenübermittlungen.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:14.0pt;
+line-height:115%'>4. Reichweitenmessung mit GoatCounter</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Diese
+Website verwendet GoatCounter zur datensparsamen statistischen Auswertung der
+Nutzung des Angebots.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>GoatCounter
+arbeitet nach Angaben des Anbieters ohne Cookies und speichert aggregierte
+statistische Daten, etwa zu aufgerufenen Seiten, Zeitpunkt des Abrufs,
+Referrer, Browsertyp, Betriebssystem, Sprachinformationen sowie ungefähren
+Standortdaten auf Länderebene.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Die
+Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das
+berechtigte Interesse liegt in der anonymitätsfreundlichen Analyse der Nutzung
+dieser Website, um Inhalte und Struktur des Angebots verbessern zu können.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Weitere
+Informationen zu GoatCounter finden Sie unter: </span><a
+href="https://www.goatcounter.com/help/privacy"><span style='font-size:14.0pt;
+line-height:115%'>https://www.goatcounter.com/help/privacy</span></a></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>5. Externe CSS-Ressource </span></b><span
+lang=EN-US style='font-size:14.0pt;line-height:115%'>(Bootstrap über jsDelivr)</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Zur
+einheitlichen und responsiven Darstellung dieser Website wird das CSS-Framework
+Bootstrap verwendet.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Die
+Bootstrap-CSS-Datei wird derzeit über ein externes Content Delivery Network
+(CDN) von jsDelivr geladen. Dadurch wird beim Aufruf der Website eine
+Verbindung zu Servern von jsDelivr bzw. von durch jsDelivr eingesetzten
+technischen Dienstleistern hergestellt. In diesem Zusammenhang können
+insbesondere die IP-Adresse, Browserinformationen sowie Zeitpunkt und Umfang
+des Abrufs verarbeitet werden.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Die
+Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das
+berechtigte Interesse liegt in einer technisch stabilen, schnellen und
+einheitlichen Darstellung der Website auf unterschiedlichen Endgeräten.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Weitere
+Informationen finden Sie unter: </span><a
+href="https://www.jsdelivr.com/terms/privacy-policy"><span style='font-size:
+14.0pt;line-height:115%'>https://www.jsdelivr.com/terms/privacy-policy</span></a></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:14.0pt;
+line-height:115%'>6. Schriftarten</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Nach
+aktuellem Stand dieser Website werden keine externen Font-Dienste wie Google
+Fonts eingebunden. Verwendet werden ausschließlich lokal verfügbare
+Schriftarten bzw. Schriftartenbezeichnungen, die keine gesonderte Verbindung zu
+einem externen Font-<b>Anbieter auslösen.</b></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:14.0pt;
+line-height:115%'>7. Cookies und vergleichbare Technologien</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Diese
+Website verwendet keine Cookies zu Werbe-, Tracking- oder
+Profilbildungszwecken.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:14.0pt;
+line-height:115%'>8. Speicherdauer</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Die
+Speicherdauer technisch erforderlicher Daten richtet sich nach den Vorgaben der
+jeweils eingesetzten technischen Dienstleister. Auf konkrete Speicherfristen
+bei GitHub oder dem extern eingebundenen CDN habe ich keinen unmittelbaren
+Einfluss.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Statistische
+Daten aus der Reichweitenmessung werden nur in der vom eingesetzten Dienst
+vorgesehenen Form gespeichert.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:14.0pt;
+line-height:115%'>9. Ihre Rechte</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Sie haben im
+Rahmen der gesetzlichen Bestimmungen das Recht auf Auskunft über die Sie
+betreffenden personenbezogenen Daten, auf Berichtigung unrichtiger Daten, auf
+Löschung, auf Einschränkung der Verarbeitung sowie auf Widerspruch gegen die
+Verarbeitung.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Außerdem
+haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt'><b><span style='font-size:14.0pt;
+line-height:115%'>10. Kontakt</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Bei Fragen
+zum Datenschutz auf dieser Website können Sie sich an mich wenden:</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Franz
+Jankowski<br>
+E-Mail: fjki.info@gmail.com</span></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<h1>Rechtliches, Transparenz</h1>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='line-height:normal;border:none;padding:0cm'><span
+style='font-size:10.0pt;color:#747474'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:normal'><a
+href="https://fjki-info.github.io/transparenz"><span style='font-size:14.0pt'>KI-Transparenz</span></a><span
+style='font-size:14.0pt'> | </span><a
+href="https://fjki-info.github.io/datenschutz"><span style='font-size:14.0pt'>Datenschutz</span></a><span
+style='font-size:14.0pt'> | </span><a
+href="https://fjki-info.github.io/impressum"><span style='font-size:14.0pt'>Impressum</span></a><span
+style='font-size:14.0pt'><br>
+<br>
+© 2026 Franz Jankowski<br>
+<br>
+Die Inhalte dieser Webseite sind urheberrechtlich geschützt. Sie dürfen für
+persönliche Lern- und Informationszwecke verwendet werden. Eine weitergehende
+Nutzung, insbesondere kommerzielle Verwendung oder Vervielfältigung, bedarf
+meiner vorherigen Zustimmung. Gesetzliche Schranken des Urheberrechts (z. B.
+Zitatrecht) bleiben unberührt.<br>
+<br>
+Das bloße Verlinken auf diese Seite ist ausdrücklich erlaubt.<br>
+<br>
+</span><a href="https://fjki-info.github.io"><span style='font-size:14.0pt'>Zur
+Startseite</span></a></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
+style='font-size:10.0pt;color:#747474'>Version: v1 – Stand: 10.03.2026</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
+style='font-size:10.0pt;color:#747474'>&nbsp;</span></p>
+
+</div>
+  <!-- Schritt 3 =============================================
+========================================= -->
+
+  </div>
+  <!-- ======= [NEU] Container sauber schließen ======= -->
+
+
+</div>
+<!-- ======= [NEU] WordSection sauber schließen ======= -->
+<img src="https://FranzJ.goatcounter.com/count?p=/Datenschutz" style="display:none;">
 </body>
+
 </html>
