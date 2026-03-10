@@ -17,8 +17,14 @@
 **- Ideen-Buffet - Was kann KI für mich tun?** <BR>
 🔗 Link: [https://fjki-info.github.io/ideen-buffet/](https://fjki-info.github.io/ideen-buffet/)
 
+**- Risiken - Einie persönliche Risiken und wie man sie verindern kann** <BR>
+🔗 Link: [https://fjki-info.github.io/risiken/](https://fjki-info.github.io/risiken/)
+
 **- Vorher - Nachher - Eine Erfolgstory in 8 Szenen (etc.)** <BR>
 🔗 Link: [https://fjki-info.github.io/vorher_nachher/](https://fjki-info.github.io/vorher_nachher/)
+
+**- Warum KI - Warum sollte mich KI interssieren?** <BR>
+🔗 Link: [https://fjki-info.github.io/warum_ki/](https://fjki-info.github.io/warum_ki/)
 
 **- Transparenzangaben** <BR>
 🔗 Link: [https://fjki-info.github.io/transparenz/](https://fjki-info.github.io/transparenz/)
@@ -34,7 +40,9 @@
 🔗 Link: [https://fjki-info.github.io/recherche/test-recherche](https://fjki-info.github.io/recherche/test-recherche)  
 🔗 Link: [https://fjki-info.github.io/glossar/test-glossar](https://fjki-info.github.io/glossar/test-glossar)  
 🔗 Link: [https://fjki-info.github.io/ideen-buffet/test-ideen-buffet](https://fjki-info.github.io/ideen-buffet/test-ideen-buffet)  
+🔗 Link: [https://fjki-info.github.io/risiken/test-risiken](https://fjki-info.github.io/risiken/test-risiken)  
 🔗 Link: [https://fjki-info.github.io/vorher_nachher/test-vorher_nachher](https://fjki-info.github.io/vorher_nachher/test-vorher_nachher)  
+🔗 Link: [https://fjki-info.github.io/warum_ki/test-warum_ki](https://fjki-info.github.io/warum_ki/test-warum_ki)  
 🔗 Link: [https://fjki-info.github.io/transparenz/test-transparenz](https://fjki-info.github.io/transparenz/test-transparenz)  
 
 <p> <br><br><br> </p> 
@@ -56,3 +64,6 @@
 
 *Tags: #KI #Workshops #ChatBots #Transparenz #Glossar #AI #Bildung*
 
+
+---
+[Datenschutz](https://fjki-info.github.io/datenschutz) | [Impressum](https://fjki-info.github.io/impressum)
