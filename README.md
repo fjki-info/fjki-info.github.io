@@ -5,6 +5,10 @@
 
 ## In Veranstaltungen und Handouts verwendete Links
 
+**- Startseite für den Einstieg . Alle Detailseiten sind dort kommentiert und verlinkt** <BR>
+🔗 Link: [https://fjki-info.github.io/](https://fjki-info.github.io/)
+
+
 **- ChatBots-Liste und Anfänger-Tipps** <BR>
 🔗 Link: [https://fjki-info.github.io/tools/](https://fjki-info.github.io/tools/)
 
