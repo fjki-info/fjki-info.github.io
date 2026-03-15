@@ -1,1 +1,674 @@
-dummy
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+<meta name="robots" content="noindex">
+  <!-- Schritt 1a =========================================
+       [PFLICHT] Zeichensatz korrekt setzen
+       → verhindert Umlaute-/Sonderzeichenprobleme
+
+       trotzdem nicht vergessen, HTML mit Notepad++ in UTF-8 zu konvertieren
+
+       ========================================= -->
+  <meta charset="UTF-8">
+
+
+  <!-- Schritt 1b =========================================
+       [PFLICHT] Viewport für Responsive Layouts
+       → sonst greifen Media Queries nicht sauber
+       ========================================= -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Schritt 1c =========================================
+       [OPTIONAL] Bootstrap
+       → falls du Word-Tabellen oder Basis-Design
+         etwas schöner formatiert haben willst
+       ========================================= -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+  <!-- Schritt 1d =========================================
+       [PFLICHT] Eigene CSS nach Bootstrap
+       → überschreibt Bootstrap-Vorgaben
+       → enthält .container + Media Queries
+       ========================================= -->
+  <link rel="stylesheet" href="../style.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Aptos Display";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+h1
+	{mso-style-link:"Überschrift 1 Zchn";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Überschrift 2 Zchn";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:12.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#467886;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift1Zchn
+	{mso-style-name:"Überschrift 1 Zchn";
+	mso-style-link:"Überschrift 1";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.berschrift2Zchn
+	{mso-style-name:"Überschrift 2 Zchn";
+	mso-style-link:"Überschrift 2";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:841.9pt 595.3pt;
+	margin:70.85pt 70.85pt 70.85pt 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DE link="#467886" vlink="#96607D" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+  <!-- Schritt 2 =============================================
+       [NEU / WICHTIG]
+       Layout-Container
+       ---------------------------------------------
+       - DIESER Div muss ALLES umschließen,
+         was dein Seiteninhalt ist.
+       - Hier greifen Ränder & max-width aus style.css
+       ============================================= -->
+  <div class="container">
+
+<div class=MsoNormal align=center style='text-align:center'><b>
+
+<hr size=1 width="100%" align=center>
+
+</b></div>
+
+<p class=MsoNormal style='margin-top:8.0pt;line-height:normal'><span
+style='font-size:28.0pt;font-family:"Aptos Display",sans-serif;letter-spacing:
+-.5pt'>Ideen-Werkstatt</span></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal;border:none;
+padding:0cm'><span style='font-size:16.0pt;color:#595959;letter-spacing:.75pt'>Potenziale
+und Grenzen der KI.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal;border:none;
+padding:0cm'><span style='font-size:14.0pt;color:#595959;letter-spacing:.75pt'>Erleben
+Sie, wie KI-Chatbots Sie beim Strukturieren, Erklären und Formulieren
+unterstützen können. Betrachten Sie die Ergebnisse jedoch grundsätzlich als
+unverbindliche Entwürfe, die eine eigenständige Prüfung erfordern.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;border:none;
+padding:0cm'><span style='font-size:14.0pt;color:#595959;letter-spacing:.75pt'>Wichtig:
+KI-Modelle arbeiten statistisch, nicht logisch oder faktisch gesichert. Sie
+können falsche Fakten erfinden oder wesentliche Details auslassen. Nutzen Sie
+die KI als Werkzeug zur Effizienzsteigerung, aber behalten Sie die alleinige
+Verantwortung für die finale Richtigkeit. Überprüfen Sie wichtige Auskünfte
+stets an Primärquellen.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;border:none;
+padding:0cm'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoTocHeading style='line-height:normal'><span style='font-size:18.0pt'>Inhaltsverzeichnis</span></p>
+
+<p class=MsoToc1><a
+href="#_Toc224496165"><span style='font-size:14.0pt;line-height:115%'>Ideen-Werkstatt</span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc224496166"><span style='font-size:14.0pt;
+line-height:115%'>Alltag &amp; Organisation</span><span style='font-size:14.0pt;
+line-height:115%;color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc224496167"><span style='font-size:14.0pt;
+line-height:115%'>Lernen &amp; Wissen</span><span style='font-size:14.0pt;
+line-height:115%;color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc224496168"><span style='font-size:14.0pt;
+line-height:115%'>Texte &amp; Kommunikation</span><span style='font-size:14.0pt;
+line-height:115%;color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc224496169"><span style='font-size:14.0pt;
+line-height:115%'>Gesundheit &amp; Arzttermine</span><span style='font-size:
+14.0pt;line-height:115%;color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc224496171"><span style='font-size:14.0pt;
+line-height:115%'>Familie, Gespräche &amp; Soziales</span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc224496172"><span style='font-size:14.0pt;
+line-height:115%'>Kreativität, Bilder &amp; Medien</span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc224496173"><span style='font-size:14.0pt;
+line-height:115%'>Vertiefung &amp; Recherchen („Deep Research“)</span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc224496174"><span style='font-size:14.0pt;
+line-height:115%'>Tipp für den Einstieg</span><span style='font-size:14.0pt;
+line-height:115%;color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc224496175"><span style='font-size:14.0pt;
+line-height:115%'>Rechtliches, Transparenz</span><span style='font-size:14.0pt;
+line-height:115%;color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;color:windowtext;display:none;
+text-decoration:none'>1</span></a></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:14.0pt'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<h1 style='line-height:normal'><a name="_Toc224496165"><span style='font-size:
+22.0pt'>Ideen-Werkstatt</span></a></h1>
+
+<h2 style='line-height:normal'><a name="_Toc224496166"><span style='font-size:
+18.0pt'>Alltag &amp; Organisation</span></a></h2>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Rezepte &amp; Kochtipps</span></b><span
+style='font-size:14.0pt'><br>
+Aus vorhandenen Zutaten passende Gerichte vorschlagen lassen.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Beispiel: <i>„Ich habe Kartoffeln, Karotten, Linsen,
+Tomatenpassata und Gewürze im Haus. Bitte schlage mir 3 einfache, vegetarische
+Gerichte vor – möglichst mit wenig Abwasch.“</i></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Einkaufslisten &amp;
+Wochenplanung</span></b><span style='font-size:14.0pt'><br>
+Einkaufszettel aus einem Wochenplan oder aus Ernährungswünschen erzeugen
+lassen.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Beispiel:&nbsp;<i>„Stelle mir einen günstigen,
+vegetarischen Einkaufszettel für eine Woche zusammen, mit Fokus auf viel Gemüse
+und Hülsenfrüchte.“</i></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Kurzreisen &amp; Ausflüge</span></b><span
+style='font-size:14.0pt'><br>
+Ideen für Tagesausflüge oder Wochenenden mit Bahn/ÖPNV, inklusive grobem
+Ablaufplan.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Beispiel:&nbsp;<i>„Ich wohne bei Köln, habe ein
+Deutschlandticket und möchte einen schönen Tagesausflug in eine andere Stadt
+machen. Bitte schlage drei Ziele vor und gib eine grobe Tagesplanung.“</i></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:14.0pt'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<h2 style='line-height:normal'><a name="_Toc224496167"><span style='font-size:
+18.0pt'>Lernen &amp; Wissen</span></a></h2>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Sachen verständlich erklären
+lassen</span></b><span style='font-size:14.0pt'><br>
+Begriffe, Nachrichten oder Fachtexte in wenigen, einfachen Sätzen erklären
+lassen.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Beispiel:&nbsp;<i>„Erkläre mir in 5 einfachen Sätzen,
+was mit ›künstlichen neuronalen Netzen‹ gemeint ist – so, als würdest du es
+einem interessierten Laien erklären.“</i></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Lernpläne</span></b><span
+style='font-size:14.0pt'><br>
+Lernpläne für Sprachen, ein Instrument, Programmiergrundlagen oder andere
+Themen in kleine, machbare Schritte gegliedert.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Beispiel:&nbsp;<i>„Erstelle einen 14-Tage-Lernplan, um
+mein Englisch aufzufrischen. Jeden Tag 20–30 Minuten. Bitte mische Lesen,
+Schreiben und Hören.“</i></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Texte zusammenfassen</span></b><span
+style='font-size:14.0pt'><br>
+Lange Artikel oder Dokumente auf die wichtigsten Punkte reduzieren lassen.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Beispiel:&nbsp;<i>„Fasse den folgenden Text in maximal
+10 Stichpunkten zusammen und markiere die 3 wichtigsten Aussagen.“</i></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:14.0pt'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<h2 style='line-height:normal'><a name="_Toc224496168"><span style='font-size:
+18.0pt'>Texte &amp; Kommunikation</span></a></h2>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>E-Mails und Briefe überarbeiten</span></b><span
+style='font-size:14.0pt'><br>
+Texte kürzer, freundlicher oder klarer formulieren lassen – ohne den Inhalt zu
+verändern.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Beispiel:&nbsp;<i>„Überarbeite den folgenden Text so,
+dass er freundlich, klar und gut strukturiert wirkt, aber inhaltlich
+unverändert bleibt.“</i></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Aus Stichpunkten fertige Texte
+machen</span></b><span style='font-size:14.0pt'><br>
+Zum Beispiel Einladung, Aushang oder Vereinsrundmail aus ein paar Notizen
+erstellen lassen.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Beispiel:&nbsp;<i>„Formuliere aus diesen Stichpunkten
+eine kurze Einladung für unseren Vereins-Infoabend in verständlicher
+Alltagssprache.“</i></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Heikle Nachrichten vorbereiten</span></b><span
+style='font-size:14.0pt'><br>
+Formulierungsvorschläge für Absagen, Beschwerden oder sensible Themen
+erarbeiten lassen.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Beispiel:&nbsp;<i>„Hilf mir, eine freundliche Absage
+zu einer Einladung zu formulieren, weil ich an dem Tag bereits verplant bin.“</i></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:14.0pt'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<h2 style='line-height:normal'><a name="_Toc224496169"><span style='font-size:
+18.0pt'>Gesundheit &amp; Arzttermine</span></a></h2>
+
+<p style='margin-bottom:8.0pt'><b><span style='font-size:14.0pt;font-family:
+"Aptos",sans-serif'>WICHTIG: Kein Ersatz für medizinische Beratung oder
+Diagnosen!</span></b><span style='font-size:14.0pt;font-family:"Aptos",sans-serif'>
+Chatbots sind reine Sprachmodelle, keine medizinischen Experten. Sie können
+medizinisch falsche Informationen sprachlich perfekt und täuschend echt
+formulieren (Halluzinationen). </span></p>
+
+<p style='margin-top:8.0pt'><b><span style='font-size:14.0pt;font-family:"Aptos",sans-serif'>Wenden
+Sie sich in Notfällen sofort an den Rettungsdienst (112) oder eine Notaufnahme!</span></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+8.0pt;margin-left:17.85pt;line-height:normal'><a name="_Toc224496170"><b><span
+style='font-size:16.0pt;color:#0F4761'>Mögliche Anwendungsbereiche</span></b></a></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Begriffe erklären lassen</span></b><span
+style='font-size:14.0pt'><br>
+Medizinische Fachwörter oder Teile eines Beipackzettels in Alltagssprache
+übersetzen lassen.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Hinweis: Prüfen Sie insbesondere Dosierhinweise und
+Warnungen immer am Originaltext gegen.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Arztgespräch vorbereiten<br>
+</span></b><span style='font-size:14.0pt'>Eigene Beobachtungen und Fragen für
+den Termin strukturieren.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;line-height:normal'><span style='font-size:14.0pt'>Beispiel:
+„Ich habe seit Wochen Rückenschmerzen. Hilf mir, meine Symptome und Fragen so
+zu ordnen, dass ich sie dem Arzt effizient schildern kann.“</span></p>
+
+<p class=MsoNormal style='margin-left:35.7pt;line-height:normal'><span
+style='font-size:14.0pt'>Vorsicht: Die KI entscheidet statistisch, was
+„wichtig“ klingt. Streichen Sie keine Symptome aus Ihrem Bericht, nur weil die
+KI sie in der Zusammenfassung auslässt.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Fragenkataloge erstellen<br>
+</span></b><span style='font-size:14.0pt'>Einen Überblick gewinnen, welche
+Fragen vor einer Untersuchung oder Therapieentscheidung relevant sein könnten
+(z. B. Risiken, Alternativen, Erfolgsaussichten).</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+8.0pt;margin-left:17.85pt;line-height:normal'><b><span style='font-size:16.0pt;
+color:#0F4761'>Sicherheitshinweise</span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Datenschutz</span></b><span
+style='font-size:14.0pt'>: Geben Sie niemals Klarnamen, Geburtsdaten oder
+hochsensible Befunde in öffentliche Chatbots ein. Nutzen Sie allgemeine
+Beschreibungen.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Verifikation: </span></b><span
+style='font-size:14.0pt'>Nutzen Sie KI-Ergebnisse ausschließlich als
+Vorbereitung oder Zweitmeinung zur Strukturierung. Die finale Deutung und
+Entscheidungshoheit liegt zwingend bei medizinischem Fachpersonal.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:14.0pt'>&nbsp;</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:14.0pt'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<h2 style='line-height:normal'><a name="_Toc224496171"><span style='font-size:
+18.0pt'>Familie, Gespräche &amp; Soziales</span></a></h2>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt'>Ideen
+     für gemeinsame Aktivitäten</span></b><span style='font-size:14.0pt'><br>
+     Vorschläge für Unternehmungen mit Kindern, Enkelkindern, Freunden oder
+     Gruppen.</span></li>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt'>Geschenkideen</span></b><span
+     style='font-size:14.0pt'><br>
+     Anhand einiger Angaben zur Person passende Vorschläge sammeln lassen.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:35.7pt;text-indent:-17.85pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt'>Gespräche vorbereiten<br>
+</span></b><span style='font-size:14.0pt'>Zum Beispiel Feedback-Gespräch,
+Klärung eines Konflikts oder eine Bitte an Nachbarn.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Beispiel: <i>„Hilf mir, ein Gespräch mit meinem
+Nachbarn vorzubereiten, weil ich ihn freundlich auf nächtliche Lautstärke
+hinweisen möchte.“</i></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>&nbsp;</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:14.0pt'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<h2 style='line-height:normal'><a name="_Toc224496172"><span style='font-size:
+18.0pt'>Kreativität, Bilder &amp; Medien</span></a></h2>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt'>Ideen
+     sammeln</span></b><span style='font-size:14.0pt'><br>
+     Themen, Titel oder Szenen für Theater, Rollenspiel, Blog, Vortrag,
+     Fotoserien und vieles mehr.</span></li>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt'>Bilder
+     beschreiben</span></b><span style='font-size:14.0pt'><br>
+     Hilfe beim Formulieren von Bildbeschreibungen oder Alternativtexten
+     (Alt-Text) für Fotos.</span></li>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt'>Präsentationen
+     &amp; Überschriften</span></b><span style='font-size:14.0pt'><br>
+     Strukturvorschläge, Titelideen und Varianten für Folien und Handouts.</span></li>
+</ul>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:14.0pt'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<h2 style='line-height:normal'><a name="_Toc224496173"><span style='font-size:
+18.0pt'>Vertiefung &amp; Recherchen („Deep Research“)</span></a></h2>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt'>Einstieg
+     in neue Themen</span></b><span style='font-size:14.0pt'><br>
+     Zum Beispiel E-Bike-Kauf, neues Hobby oder Weiterbildung – wichtige Fragen
+     und Entscheidungskriterien sammeln.</span></li>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt'>Pro-
+     und Contra-Listen</span></b><span style='font-size:14.0pt'><br>
+     Argumente für und gegen eine Entscheidung strukturieren lassen, z.B. für
+     einen Kauf, einen Umzug oder ein ehrenamtliches Engagement. </span></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:normal'><span
+style='font-size:14.0pt'>Tipp: Bei größeren Entscheidungen können Sie Ihre
+Anfrage in mehreren KI-Chatbots stellen und die unterschiedlichen Argumente und
+Warnhinweise vergleichen – das hilft gegen Tunnelblick und Filterblasen.</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt'>Recherche
+     strukturieren</span></b><span style='font-size:14.0pt'><br>
+     Vorschläge für Suchbegriffe, Fragelisten und grobe Gliederungen, um
+     anschließend gezielter weiter zu recherchieren (mit Suchmaschinen,
+     Fachseiten etc.).</span></li>
+</ul>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;line-height:115%'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<h2><a name="_Toc224496174"><span style='font-size:18.0pt;line-height:115%'>Tipp
+für den Einstieg</span></a></h2>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Wählen
+Sie ein Thema, das in den nächsten Tagen wirklich ansteht:<br>
+zum Beispiel eine E-Mail, ein Einkauf, ein Arzttermin, eine kleine
+Entscheidung.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>Formulieren
+Sie Ihre Aufgabe möglichst konkret, probieren Sie ein oder zwei Varianten der
+Anfrage aus – und prüfen Sie die Antworten kritisch, bevor Sie sie übernehmen. </span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt'>Wenn
+es wichtig ist</span></b><span style='font-size:14.0pt'>, stellen Sie dieselbe
+Frage ruhig in zwei oder drei verschiedenen KI-Chatbots – so wie man früher
+mehrere Quellen oder Meinungen eingeholt hat.</span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;line-height:115%'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><a name="_Toc220353975"><b>&nbsp;</b></a></p>
+
+<h1><a name="_Toc224496175">Rechtliches, Transparenz</a></h1>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='line-height:normal;border:none;padding:0cm'><span
+style='font-size:10.0pt;color:#747474'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:normal'><a
+href="https://fjki-info.github.io/transparenz"><span style='font-size:14.0pt'>KI-Transparenz</span></a><span
+style='font-size:14.0pt'> | </span><a
+href="https://fjki-info.github.io/datenschutz" rel="nofollow"><span style='font-size:14.0pt'>Datenschutz</span></a><span
+style='font-size:14.0pt'> | </span><a
+href="https://fjki-info.github.io/impressum" rel="nofollow"><span style='font-size:14.0pt'>Impressum</span></a><span
+style='font-size:14.0pt'><br>
+<br>
+© 2026 Franz Jankowski<br>
+<br>
+Die Inhalte dieser Webseite sind urheberrechtlich geschützt. Sie dürfen für
+persönliche Lern- und Informationszwecke verwendet werden. Eine weitergehende
+Nutzung, insbesondere kommerzielle Verwendung oder Vervielfältigung, bedarf
+meiner vorherigen Zustimmung. Gesetzliche Schranken des Urheberrechts (z. B.
+Zitatrecht) bleiben unberührt.<br>
+<br>
+Das bloße Verlinken auf diese Seite ist ausdrücklich erlaubt.<br>
+<br>
+</span><a href="https://fjki-info.github.io"><span style='font-size:14.0pt'>Zur
+Startseite</span></a></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span
+style='font-size:10.0pt;color:#747474'>Version: v1 – Stand: 15.03.2026</span></p>
+
+<h1><span style='font-size:10.0pt;line-height:115%;color:#747474'>&nbsp;</span></h1>
+
+</div>
+  <!-- Schritt 3 =============================================
+========================================= -->
+
+  </div>
+  <!-- ======= [NEU] Container sauber schließen ======= -->
+
+
+</div>
+<!-- ======= [NEU] WordSection sauber schließen ======= -->
+<img src="https://FranzJ.goatcounter.com/count?p=/Ideen-Buffet" alt="Besuchszähler" style="display:none;">
+</body>
+
+</html>
