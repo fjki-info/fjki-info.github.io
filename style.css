@@ -201,6 +201,37 @@ a{
 
 /* --- */
 
+.site-header {
+  background: #f8f9fa;
+  border-bottom: 1px solid #e2e5e8;
+  padding: 0.55rem 0.75rem;
+  margin-bottom: 1.4rem;
+}
+
+.site-brand {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.site-brand a {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.site-brand a:hover,
+.site-brand a:focus {
+   color: #111;
+}
+
+.site-subtitle {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.15rem;
+}
+
+/* --- */
 
 .orientierungsbox {
   max-width: 42rem;
