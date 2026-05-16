@@ -211,6 +211,7 @@ a{
 .site-brand {
   font-size: 0.95rem;
   font-weight: 600;
+  color: #333;
 }
 
 .site-brand a {
@@ -222,7 +223,7 @@ a{
 
 .site-brand a:hover,
 .site-brand a:focus {
-   color: #111;
+  color: #111;
 }
 
 .site-subtitle {
