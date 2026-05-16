@@ -205,13 +205,15 @@ a{
   background: #f8f9fa;
   border-bottom: 1px solid #e2e5e8;
   padding: 0.55rem 0.75rem;
-  margin-bottom: 1.4rem;
+  margin: 0 0 1.1rem 0;
 }
 
 .site-brand {
   font-size: 0.95rem;
   font-weight: 600;
   color: #333;
+  margin: 0;
+  line-height: 1.35;
 }
 
 .site-brand a {
@@ -229,7 +231,13 @@ a{
 .site-subtitle {
   font-size: 0.85rem;
   color: #666;
-  margin-top: 0.15rem;
+  margin: 0.15rem 0 0 0;
+  line-height: 1.35;
+}
+
+/* Wichtig: Das direkt folgende Element soll keinen zusätzlichen oberen Abstand erzeugen */
+.site-header + * {
+  margin-top: 0;
 }
 
 /* --- */
